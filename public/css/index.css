@@ -1,0 +1,361 @@
+#sifah {
+    /* Rectangle 1 */
+    position: absolute;
+    width: 1280px;
+    height: 363px;
+    left: 0px;
+    top: 0px;
+
+    background: #2a9d8f;
+}
+#regis {
+    /* Component 2 */
+    position: absolute;
+    width: 151px;
+    height: 55px;
+    left: 886px;
+    top: 38px;
+
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+
+    color: #1a3244;
+    border: 0px;
+    background: #FFEB85;
+    border-radius: 20px;
+}
+#signin {
+    /* Component 3 */
+    position: absolute;
+    width: 151px;
+    height: 55px;
+    left: 1067px;
+    top: 38px;
+
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+
+    color: #1a3244;
+    border: 0px;
+
+
+    background: #FFEB85;
+    border-radius: 20px;
+}
+#yellow {
+    /* Rectangle 10 */
+    position: absolute;
+    width: 1201px;
+    height: 113px;
+    left: 40px;
+    top: 303px;
+
+    background: #FFEB85;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+}
+
+#hua {
+    position: absolute;
+    width: 261.02px;
+    height: 60px;
+    left: 22px;
+    top: 24px;
+
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+
+    color: #FFFFFF;
+}
+
+#search {
+    /* Find your next stay... */
+    position: absolute;
+    width: 650px;
+    height: 96px;
+    left: 58px;
+    top: 179px;
+    cursor: context-menu;
+
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 48px;
+
+    color: #FFFFFF;
+}
+
+
+
+
+
+
+
+#whereareyougoing {
+    position: absolute;
+    width: 451px;
+    height: 88px;
+    left: 75px;
+    top: 317px;
+}
+
+#w {
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 7.95%;
+    bottom: 6.82%;
+    padding-left: 24.83%;
+    background: #FFFFFF;
+    border-radius: 7px;
+    border: 0px;
+
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 19px;
+
+    color: #1a3244;
+}
+
+#w::placeholder {
+    position: absolute;
+    left: 24.83%;
+    right: 4%;
+    top: 34.09%;
+
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 19px;
+
+    color: #1a3244bd;
+}
+
+#calendar {
+    position: absolute;
+    width: 302px;
+    height: 75px;
+    left: 564px;
+    top: 324px;
+
+    background: #FFFFFF;
+    border-radius: 7px;
+}
+
+#guest {
+    position: absolute;
+    width: 302px;
+    height: 75px;
+    left: 903px;
+    top: 324px;
+    background: #FFFFFF;
+    border-radius: 7px;
+}
+
+#people {
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 7.95%;
+    bottom: 6.82%;
+
+    padding-left: 30%;
+
+    background: #FFFFFF;
+    border-radius: 7px;
+    border: 0px;
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 19px;
+
+    color: #1a3244;
+}
+
+#people::placeholder {
+    position: absolute;
+    left: 30%;
+    top: 33.00%;
+
+
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 19px;
+
+    color: #1a3244bd;
+}
+
+#pum {
+    position: absolute;
+    width: 200px;
+    height: 80px;
+    left: 545px;
+    top: 502px;
+    background: #4399FF;
+    border-radius: 35px;
+    position: absolute;
+
+
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 77px;
+    /* identical to box height */
+    border: 0px;
+
+    color: #FFFFFF;
+}
+
+#roob:hover {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    cursor: pointer;
+}
+
+.blue:hover {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    cursor: pointer;
+}
+
+.blue:active {
+    filter: grayscale(70%)brightness(150%);
+}
+
+.yellow:hover {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    cursor: pointer;
+}
+
+.yellow:active {
+    filter: grayscale(50%)brightness(105%);
+}
+
+#username {
+    position: absolute;
+    width: 547px;
+    height: 52px;
+    left: 574px;
+    top: 20px;
+
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 37px;
+    line-height: 45px;
+
+    color: #FFFFFF;
+    text-align: right;
+}
+
+#roob {
+    cursor: pointer;
+    position: absolute;
+    width: 71px;
+    height: 73px;
+    left: 1142px;
+    top: 37px;
+
+    border-radius: 217px;
+    background: #c0c8f7;
+}
+
+#hua:hover {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    cursor: pointer;
+}
+
+#home {
+    position: relative;
+    left: 230px;
+    top: 62px;
+    width: 38px;
+    height: 42px;
+}
+
+#bed {
+    position: relative;
+    top: 2px;
+    left: 25px;
+    width: 72px;
+    height: 88px;
+}
+
+#calendar1 {
+    position: relative;
+    width: 55px;
+    height: 60px;
+    left: 22px;
+    top: 9px;
+}
+
+#person {
+    position: relative;
+    width: 34px;
+    height: 43px;
+    left: 27px;
+    top: 14px;
+}
+
+#patitin {
+    position: relative;
+    width: 120px;
+    height: 43px;
+    left: 33px;
+    top: -17px;
+}
+
+input[type="date"] {
+
+    background-color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 48px;
+    text-align: center;
+}
+
+input[type="date"]:hover {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    cursor: pointer;
+}
+
+#weAreTeam {
+    position: absolute;
+    top: 150px;
+    left: 1100px;
+    background-color: black;
+    height: 120px;
+    cursor: zoom-in;
+    border-radius: 15px;
+}
+
+#groupName {
+    position: absolute;
+    top: 240px;
+    left: 1020px;
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 45px;
+    color: #FFFFFF;
+}

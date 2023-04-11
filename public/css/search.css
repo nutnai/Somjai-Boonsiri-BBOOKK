@@ -1,0 +1,448 @@
+#sifah{
+    /* Rectangle 1 */
+    position: absolute;
+    width: 1280px;
+    height: 148px;
+    left: 0px;
+    top: 0px;
+
+    background: #4399FF;
+}
+#hua{
+    position: absolute;
+    width: 261.02px;
+    height: 60px;
+    left: 22px;
+    top: 24px;
+    cursor: pointer;
+
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+
+    color: #FFFFFF;
+}
+#regis{
+    /* Component 2 */
+    position: absolute;
+    width: 151px;
+    height: 55px;
+    left: 886px;
+    top: 38px;
+    
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+
+    color: #1A3244;
+    border: 0px;
+    background: #FFEB85;
+    border-radius: 20px;
+}
+#signin{
+    /* Component 3 */
+    position: absolute;
+    width: 151px;
+    height: 55px;
+    left: 1067px;
+    top: 38px;
+
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+
+    color: #1A3244;
+    border: 0px;
+
+    background: #FFEB85;
+    border-radius: 20px;
+}
+#sifah2{
+    position: absolute;
+    width: 389px;
+    height: 460px;
+    left: 60px;
+    top: 254px;
+
+    background: #4399FF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+}
+#where{
+    position: absolute;
+    width: 328px;
+    height: 63px;
+    left: 90px;
+    top: 297px;
+    border: 0px;
+
+    background: #FFFFFF;
+    border-radius: 7px;
+
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+
+}
+#w{
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    padding-left: 23%;
+    background: #FFFFFF;
+    border-radius: 7px;
+    border: 0px;
+
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 19px;
+
+    color: #1a3448;
+}
+#w::placeholder{
+    position: absolute;
+    left: 23%;
+    top: 34.09%;
+    border-radius: 7px;
+
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 19px;
+
+    color: #1a3244bd;
+}
+#calendar{
+    position: absolute;
+    width: 329px;
+    height: 63px;
+    left: 90px;
+    top: 396px;
+
+    background: #FFFFFF;
+    border-radius: 7px;
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+}
+#guest{
+    position: absolute;
+    width: 329px;
+    height: 63px;
+    left: 90px;
+    top: 495px;
+    background: #FFFFFF;
+    border-radius: 7px;
+}
+#people{
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    
+    padding-left: 23%;
+
+    background: #FFFFFF;
+    border-radius: 7px;
+    border: 0px;
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 19px;
+
+    color: #1a3448;
+}
+#people::placeholder{
+    position: absolute;
+    left: 23%;
+    top: 30%;
+    
+
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 19px;
+
+    color: #1a3244bd;
+}
+#search{
+    position: absolute;
+    width: 125px;
+    height: 60px;
+    left: 190px;
+    top: 610px;
+    background: #FFEB85;
+    border-radius: 25px;
+
+    border: 0px;
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 43px;
+
+    color: #1A3244;
+}
+#block{
+    position: absolute;
+    width: 716px;
+    height: 213px;
+    left: 511px;
+    top: 254px;
+    background: #FFEB85;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+#roob{
+    cursor: pointer;
+    position: absolute;
+    width: 71px;
+    height: 73px;
+    left: 1142px;
+    top: 37px;
+
+    border-radius: 217px;
+    background: #c0c8f7;
+}
+
+
+#roop{
+    position: absolute;
+    left: 2.79%;
+    right: 62.43%;
+    top: 8.04%;
+    bottom: 8.54%;
+    background: #FFFFFF;
+    border-radius: 7px;
+}
+#name{
+    position: absolute;
+    width: 400px;
+    height: 45px;
+    left : 281px;
+    top: 2px;
+    border: none; 
+    background: #FFFFFF;
+    border-radius: 17px;  
+    
+    padding-left: 20px;
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 44px;
+}
+
+#lowname{
+    position: absolute;
+    width: 400px;
+    height: 123px;
+    left: 281px;
+    top: 60px;
+    border: none;
+    background: #FFFFFF;
+    border-radius: 15px;
+    padding-left: 20px;
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 29px;
+    
+    
+}
+
+#lowerblock{
+    position: absolute;
+    width: 716px;
+    height: 212px;
+    left: 511px;
+    top: 521px;
+    background: #FFEB85;
+    border-radius: 15px;
+}
+.blue:hover {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    cursor: pointer;
+}
+.blue:active {
+    filter: grayscale(70%)brightness(150%);
+}
+.yellow:hover {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    cursor: pointer;
+}
+
+.yellow:active {
+    filter: grayscale(50%)brightness(105%);
+}
+
+#tumnang{
+    position: absolute;
+    width: 400px;
+    height: 123px;
+    left: 830px;
+    top: 346px;
+    border: none;
+    background: #FFFFFF;
+    border-radius: 15px;
+    padding-left: 20px;
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 29px;
+    
+}
+
+#raka{
+    position: absolute;
+    width: 400px;
+    height: 123px;
+    left: 1059px;
+    top: 45px;
+    border: none;
+    background: none;
+    opacity: 0.2;
+    border-radius: 15px;
+    padding-left: 20px;
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 29px;
+    text-align: right;
+}
+#konPak{
+    position: absolute;
+    width: 400px;
+    height: 123px;
+    left: 830px;
+    top: 409px;
+    border: none;
+    border: none;
+    background: none;
+    border-radius: 15px;
+    padding-left: 20px;
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 29px;
+}
+
+#username{
+    position: absolute;
+    width: 547px;
+    height: 52px;
+    left: 574px;
+    top: 20px;
+
+font-family: 'Inria Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 37px;
+line-height: 45px;
+
+color: #FFFFFF;
+text-align: right;
+}
+
+#roob:hover{
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    cursor: pointer;
+}
+#hua:hover{
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    cursor: pointer;   
+}
+#home{
+    position: relative;
+    left: 230px;
+    top: 62px;
+    width: 38px;
+    height: 42px;
+}
+
+#bed{
+    position: relative;
+    top:-3px;
+    left:15px;
+    width: 52px;
+    height: 73px;
+}
+
+#calendar1{
+    position: relative;
+    width: 55px;
+    height: 60px;
+    left:-72px;
+    bottom: 395px;
+}
+
+#patitin{
+    position: relative;
+    width: 120px;
+    height: 43px;
+    left:-70px;
+    bottom: 419px;
+}
+input[type = "date"]{
+    background-color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 48px;
+    text-align: center;
+}
+
+input[type = "date"]:hover{
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    cursor: pointer;
+}
+
+#person{
+    position: relative;
+    width: 25px;
+    height: 34px;
+    left:27px;
+    top: 14px;
+}
+.textSearch {
+    position: absolute;
+    top: 300px;
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 33px;
+    line-height: 48px;
+}
+#sorry {
+    left: 530px;
+    color: rgba(255, 0, 0, 0.695);
+}
+#loading {
+    left: 830px;
+}

@@ -1,0 +1,677 @@
+@import url("https://storage.googleapis.com/travalokail-55abf.appspot.com/lg/lg_heart.png");
+
+#sifah {
+    /* Rectangle 1 */
+    position: absolute;
+    width: 1280px;
+    height: 148px;
+    left: 0px;
+    top: 0px;
+
+    background: #4399FF;
+}
+
+#hua {
+    cursor: pointer;
+    position: absolute;
+    width: 261.02px;
+    height: 60px;
+    left: 22px;
+    top: 24px;
+
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+
+    color: #FFFFFF;
+}
+
+#roob {
+    cursor: pointer;
+    position: absolute;
+    width: 71px;
+    height: 73px;
+    left: 1142px;
+    top: 37px;
+
+    border-radius: 217px;
+    background: #c0c8f7;
+}
+
+#yellow {
+    position: absolute;
+    width: 206px;
+    height: 1700px;
+    left: 0px;
+    top: 148px;
+
+    background: #FFEB85;
+}
+
+#price {
+    position: absolute;
+    width: 155px;
+    height: 53px;
+    left: 22px;
+    top: 188px;
+
+    background: #4399FF;
+    border-radius: 10px;
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    /* identical to box height */
+
+
+    color: #FFFFFF;
+    border: 0px;
+}
+
+#facility {
+    position: absolute;
+    width: 155px;
+    height: 53px;
+    left: 22px;
+    top: 273px;
+
+    background: #4399FF;
+    border-radius: 10px;
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    /* identical to box height */
+    border: 0px;
+    color: #FFFFFF;
+}
+
+#review {
+    position: absolute;
+    width: 155px;
+    height: 53px;
+    left: 22px;
+    top: 358px;
+    background: #4399FF;
+    border-radius: 10px;
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    /* identical to box height */
+    border: 0px;
+    color: #FFFFFF;
+}
+
+#glass {
+    position: relative;
+    width: 55px;
+    height: 54px;
+    left: 72px;
+    top: 1000px;
+    background: #4399FF;
+    border-radius: 10px;
+    border: 0px;
+}
+
+#reserve {
+    position: absolute;
+    top: 15px;
+    width: 139px;
+    right: 0px;
+    height: 52px;
+    background: #FFEB85;
+    border-radius: 20px;
+
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    /* identical to box height */
+    border: 0px;
+
+    color: #1A3244;
+}
+
+#hotel {
+    /* Hotel */
+    position: relative;
+    width: 860px;
+    height: 23px;
+    display: inline-block;
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 29px;
+
+    color: #1A3244;
+    border: 0px;
+}
+
+.blue:hover {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    cursor: pointer;
+}
+
+.blue:active {
+    filter: grayscale(70%)brightness(150%);
+}
+
+.yellow:hover {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    cursor: pointer;
+}
+
+.yellow:active {
+    filter: grayscale(50%)brightness(105%);
+}
+
+#picyai {
+    position: absolute;
+    width: 960px;
+    height: 350px;
+    left: 260px;
+    top: 260px;
+
+    background: #FFEB85;
+}
+
+#piceic {
+    position: absolute;
+    width: 960px;
+    height: 100px;
+    left: 260px;
+    top: 618px;
+
+    background: #FFEB85;
+}
+
+#username {
+    position: absolute;
+    width: 547px;
+    height: 52px;
+    left: 574px;
+    top: 20px;
+
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 37px;
+    line-height: 45px;
+
+    color: #FFFFFF;
+    text-align: right;
+}
+
+#roob {
+    cursor: pointer;
+    position: absolute;
+    width: 71px;
+    height: 73px;
+    left: 1142px;
+    top: 37px;
+
+    border-radius: 217px;
+    background: #c0c8f7;
+}
+
+#regis {
+    /* Component 2 */
+    position: absolute;
+    width: 151px;
+    height: 55px;
+    left: 886px;
+    top: 38px;
+
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+
+    color: #1A3244;
+    border: 0px;
+    background: #FFEB85;
+    border-radius: 20px;
+}
+
+#signin {
+    /* Component 3 */
+    position: absolute;
+    width: 151px;
+    height: 55px;
+    left: 1067px;
+    top: 38px;
+
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+
+    color: #1A3244;
+    border: 0px;
+
+    background: #FFEB85;
+    border-radius: 20px;
+}
+
+#roob:hover {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    cursor: pointer;
+}
+
+#hua:hover {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    cursor: pointer;
+}
+
+#home1 {
+    position: relative;
+    left: 230px;
+    top: 62px;
+    width: 38px;
+    height: 42px;
+}
+
+#glassess {
+    display: inline-block;
+    position: relative;
+    width: 28px;
+    height: 29px;
+    left: 77px;
+    top: 448px;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:600&display=swap');
+
+.heart-btn {
+    position: absolute;
+    display: inline-block;
+    transform: translate(-50%, -50%);
+    top: 40px;
+}
+
+.content {
+    display: flex;
+    border: none;
+    cursor: pointer;
+}
+
+.content.heart-active {
+    border-color: none;
+    background: none;
+}
+
+.heart {
+    position: absolute;
+    background: url("https://storage.googleapis.com/travalokail-55abf.appspot.com/lg/lg_heart.png") no-repeat;
+    background-position: left;
+    background-size: 2900%;
+    height: 120px;
+    width: 120px;
+    transform: translate(-50%, -50%);
+}
+
+.heart.heart-active {
+    animation: animate .8s steps(28) 1;
+    background-position: right;
+}
+
+@keyframes animate {
+    0% {
+        background-position: left;
+    }
+
+    100% {
+        background-position: right;
+    }
+}
+
+/* .star{
+    position: relative;
+    width: 40px;
+    height:40px;
+    top: 150px;
+    left: 350px;
+} */
+.htpic1 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    margin-top: 26px;
+    border-radius: 10px;
+}
+
+.rating {
+    position: relative;
+    display: inline-block;
+    height: 30px;
+    font-size: 30px;
+    width: 180px;
+}
+
+.checked {
+    color: #eecb1d;
+
+}
+
+#address {
+    position: relative;
+    width: 100%;
+}
+
+#facility1 {
+    position: relative;
+    width: 600px;
+}
+
+#number_of_customer {
+    position: relative;
+    width: 600px;
+    margin-top: 30px;
+}
+
+#price1 {
+    position: relative;
+    top: 450px;
+    left: -400px;
+    width: 600px;
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 29px;
+}
+
+#landlord {
+    position: relative;
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 29px;
+}
+
+#phone {
+    position: relative;
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 29px;
+}
+
+#email {
+    position: relative;
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 29px;
+}
+
+#details {
+    position: relative;
+    top: 280px;
+    width: 600px;
+}
+
+.htpic2 {
+    display: block;
+    margin-left: 15px;
+    margin-right: auto;
+    width: 148px;
+    margin-top: 3px;
+    border-radius: 10px;
+}
+
+.htpic3 {
+    display: block;
+    margin-left: 200px;
+    margin-right: auto;
+    width: 148px;
+    margin-top: -93px;
+    border-radius: 10px;
+}
+
+#bgall {
+    position: relative;
+    background-color: black;
+    opacity: 0.3;
+    width: 100%;
+    height: 1850px;
+
+}
+
+#all2 {
+    background-color: #FFEB85;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 800px;
+    height: 330px;
+    border-radius: 10px;
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 29px;
+    color: #1A3244;
+}
+
+#textall1 {
+    position: relative;
+    left: 30px;
+    margin-top:30px;
+    display: inline-block;
+}
+#textall2 {
+    position: absolute;
+    left: 210px;
+    top: 60px;
+    display: inline-block;
+}
+#textall3 {
+    position: absolute;
+    left: 178px;
+    top: 117px;
+    display: inline-block;
+}
+#linee{
+    position: absolute;
+    width: 749px;
+    height: 2px;
+    background-color: #D9D9D9;
+    left: 20px;
+    top: 210px;
+}
+#textall4 {
+    position: absolute;
+    left: 180px;
+    top: 195px;
+    display: inline-block;
+}
+.bgWhiteAll {
+    position: absolute;
+    background-color: white;
+    height: 95%;
+    width: 97%;
+    border-radius: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#addNumberHere,#number_of_night {
+    position: absolute; 
+    height: 40px;
+    width: 60px;
+    left: 260px;
+    top: 28px;
+    background-color: rgb(226, 226, 226);
+    border: none;
+    text-align: center;
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 29px;
+    color: #1A3244;
+}
+#number_of_night {
+    top: 80px;
+    width: 56.5px;
+}
+
+#ratingText {
+    position: relative;
+    display: inline-block;
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 29px;
+    height: max-content;
+    margin: auto;
+}
+
+#information {
+
+    position: absolute;
+    width: 1030px;
+    height: auto;
+    top: 180px;
+    left: 90px;
+}
+
+#roopyai {
+    background-color: rgb(243, 240, 240);
+    margin-top: 20px;
+    height: 350px;
+}
+
+#rooprek {
+    margin-top: 20px;
+    background-color: rgb(243, 240, 240);
+    height: 100px;
+}
+
+#detailText {
+    margin-top: 50px;
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 25px;
+}
+
+#detailText p {
+    margin: 15px;
+}
+
+table,
+th,
+td {
+    background-color: rgb(243, 240, 240);
+    border: solid white;
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 29px;
+    border-radius: 10px;
+    padding: 5px;
+    text-align: center;
+}
+
+th {
+    padding-bottom: 30px;
+}
+
+#calendar1{
+    position: absolute;
+    width: 55px;
+    height: 60px;
+    left:400px;
+    top: 132px;
+    filter:  grayscale(100%);
+}
+#patitin{
+    position: absolute;
+    width: 120px;
+    height: 43px;
+    left:260px;
+    top: 140px;
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 29px;
+    color: #1A3244;
+    border: none;
+    background-color: rgb(226, 226, 226);
+}
+#confirmall,#cancelall {
+    position: absolute;
+    height: 45px;
+    width: 100px;
+    top: 260px;
+    right: 10px;
+    background: #4399FF;
+    border-radius: 10px;
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    /* identical to box height */
+    border: 0px;
+    color: #FFFFFF;   
+}
+#cancelall {
+    right: 120px;
+    background-color: red;
+}
+#all input[type="button"]:hover{
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); 
+    cursor: pointer;
+}
+
+#fahunder {
+    background: #4399FF;
+    padding: 20px;
+}
+#imageCorrect {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    filter: brightness(110%);
+    height: 150px;
+}
+#backall, #contractall {
+    position: relative;
+    top: 50px;
+    height: 45px;
+    width: 200px;
+    margin-top: 50px;
+    padding: 0px 20px 0px 20px; 
+    background: #4399FF;
+    border-radius: 10px;
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    /* identical to box height */
+    border: 0px;
+    color: #FFFFFF;   
+}
