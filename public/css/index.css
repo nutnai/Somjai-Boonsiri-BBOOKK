@@ -1,3 +1,11 @@
+
+@media only screen and (max-width: 1920px) and (min-width: 1920px){
+    body{
+        position: relative;
+        left: 17%;
+    }
+}
+
 #sifah {
     /* Rectangle 1 */
     position: absolute;
@@ -94,12 +102,6 @@
 
     color: #FFFFFF;
 }
-
-
-
-
-
-
 
 #whereareyougoing {
     position: absolute;

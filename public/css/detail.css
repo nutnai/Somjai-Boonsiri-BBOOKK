@@ -1,5 +1,11 @@
 @import url("https://storage.googleapis.com/travalokail-55abf.appspot.com/lg/lg_heart.png");
 
+@media only screen and (max-width: 1920px) and (min-width: 1920px){
+    body{
+        position: relative;
+        left: 17%;
+    }
+}
 #sifah {
     /* Rectangle 1 */
     position: absolute;
