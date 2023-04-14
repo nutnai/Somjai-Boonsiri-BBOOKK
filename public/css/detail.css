@@ -14,7 +14,7 @@
     left: 0px;
     top: 0px;
 
-    background: #4399FF;
+    background: #2a9d8f;
 }
 
 #hua {
@@ -63,7 +63,7 @@
     left: 22px;
     top: 188px;
 
-    background: #4399FF;
+    background: #2a9d8f;
     border-radius: 10px;
     font-family: 'Inria Sans';
     font-style: normal;
@@ -84,7 +84,7 @@
     left: 22px;
     top: 273px;
 
-    background: #4399FF;
+    background: #2a9d8f;
     border-radius: 10px;
     font-family: 'Inria Sans';
     font-style: normal;
@@ -102,7 +102,7 @@
     height: 53px;
     left: 22px;
     top: 358px;
-    background: #4399FF;
+    background: #2a9d8f;
     border-radius: 10px;
     font-family: 'Inria Sans';
     font-style: normal;
@@ -120,7 +120,7 @@
     height: 54px;
     left: 72px;
     top: 1000px;
-    background: #4399FF;
+    background: #2a9d8f;
     border-radius: 10px;
     border: 0px;
 }
@@ -632,7 +632,7 @@ th {
     width: 100px;
     top: 260px;
     right: 10px;
-    background: #4399FF;
+    background: #2a9d8f;
     border-radius: 10px;
     font-family: 'Inria Sans';
     font-style: normal;
@@ -653,7 +653,7 @@ th {
 }
 
 #fahunder {
-    background: #4399FF;
+    background: #2a9d8f;
     padding: 20px;
 }
 #imageCorrect {
@@ -670,7 +670,7 @@ th {
     width: 200px;
     margin-top: 50px;
     padding: 0px 20px 0px 20px; 
-    background: #4399FF;
+    background: #2a9d8f;
     border-radius: 10px;
     font-family: 'Inria Sans';
     font-style: normal;

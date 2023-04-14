@@ -1,4 +1,5 @@
 
+
 @media only screen and (max-width: 1920px) and (min-width: 1920px){
     body{
         position: relative;
@@ -60,9 +61,9 @@
     /* Rectangle 10 */
     position: absolute;
     width: 1201px;
-    height: 113px;
-    left: 40px;
-    top: 303px;
+    height: 500px;
+    left: 42px;
+    top: 380px;
 
     background: #FFEB85;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -204,26 +205,34 @@
 }
 
 #pum {
-    position: absolute;
-    width: 200px;
-    height: 80px;
-    left: 545px;
-    top: 502px;
-    background: #4399FF;
+    position: relative;
+    width: 160px;
+    height: 50px;
+    left: 10px;
+    top: 880px;
+    background: #2a9d8f;
     border-radius: 35px;
-    position: absolute;
-
+    
 
     font-family: 'Inria Sans';
     font-style: normal;
-    font-weight: 700;
-    font-size: 45px;
-    line-height: 77px;
+    font-weight: 650;
+    font-size: 30px;
+    line-height: 60px;
     /* identical to box height */
     border: 0px;
+    padding-left: 10px;
+    padding-bottom: 60px;
 
     color: #FFFFFF;
 }
+
+#krobpum{
+    position: relative;
+    margin-left: 30px;
+}
+
+
 
 #roob:hover {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
@@ -246,6 +255,10 @@
 
 .yellow:active {
     filter: grayscale(50%)brightness(105%);
+}
+#pum:hover {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    cursor: pointer;
 }
 
 #username {

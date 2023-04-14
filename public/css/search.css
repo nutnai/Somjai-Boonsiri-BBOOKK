@@ -4,15 +4,85 @@
         left: 17%;
     }
 }
+*{
+    margin: 0;
+}
+
+#boxandtext1{
+    display: flex;
+    justify-content: space-between;
+}
+#boxandtext{
+    display: flex;
+    
+}
+
+#search1{
+    text-align: center;
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 1000;
+    font-size: 40px;
+    line-height: 43px;
+    border: none;
+    color: #1A3244;
+}
+#dropbox{
+    margin-top: 50px;
+    margin-left: 20px;
+}
+#textbox{
+    margin-left: 60px;
+    border-radius: 25px;
+    border: none;
+}#textbox1{
+    margin-left: 60px;
+    border-radius: 25px;
+    border: none;
+}
+#searchbutton{
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+
+    color: #1A3244;
+    background-color: #3ac9b8;
+    border-radius: 10%;
+    margin-left: 380px;
+}
+
+#box{
+    display: grid;
+    justify-content: left;
+}
+#box1{
+    width: 200px;
+    height: 50px;
+    border-radius: 30px;
+    border: #c0c8f7;
+    
+    
+}
+#to{
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    margin-left: 55px;
+}
+
 #sifah{
     /* Rectangle 1 */
-    position: absolute;
+    position: relative;
     width: 1280px;
-    height: 148px;
+    height: 1000px;
     left: 0px;
     top: 0px;
 
-    background: #4399FF;
+    background: #2a9d8f;
 }
 #hua{
     position: absolute;
@@ -49,6 +119,13 @@
     background: #FFEB85;
     border-radius: 20px;
 }
+
+#groupsifah2{
+    position: absolute;
+    top: -70px;
+}
+
+
 #signin{
     /* Component 3 */
     position: absolute;
@@ -70,13 +147,13 @@
     border-radius: 20px;
 }
 #sifah2{
-    position: absolute;
-    width: 389px;
-    height: 460px;
-    left: 60px;
+    position: relative;
+    width: 1200px;
+    height: 700px;
+    left: 38px;
     top: 254px;
 
-    background: #4399FF;
+    background: #FFEB85;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 15px;
 }
@@ -195,7 +272,7 @@
     height: 60px;
     left: 190px;
     top: 610px;
-    background: #FFEB85;
+    background: #2a9d8f;
     border-radius: 25px;
 
     border: 0px;
@@ -208,11 +285,11 @@
     color: #1A3244;
 }
 #block{
-    position: absolute;
+    position: relative;
     width: 716px;
     height: 213px;
-    left: 511px;
-    top: 254px;
+    left: 300px;
+    top: 400px;
     background: #FFEB85;
     border-radius: 15px;
     cursor: pointer;
@@ -220,7 +297,7 @@
 
 #roob{
     cursor: pointer;
-    position: absolute;
+    position: relative;
     width: 71px;
     height: 73px;
     left: 1142px;
@@ -238,7 +315,7 @@
     top: 8.04%;
     bottom: 8.54%;
     background: #FFFFFF;
-    border-radius: 7px;
+    border-radius: 15px;
 }
 #name{
     position: absolute;
@@ -259,11 +336,11 @@
 }
 
 #lowname{
-    position: absolute;
+    position: relative;
     width: 400px;
-    height: 123px;
+    height: 174px;
     left: 281px;
-    top: 60px;
+    top: 20px;
     border: none;
     background: #FFFFFF;
     border-radius: 15px;
@@ -277,7 +354,7 @@
     
 }
 
-#lowerblock{
+/* #lowerblock{
     position: absolute;
     width: 716px;
     height: 212px;
@@ -285,7 +362,7 @@
     top: 521px;
     background: #FFEB85;
     border-radius: 15px;
-}
+} */
 .blue:hover {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     cursor: pointer;
@@ -301,15 +378,23 @@
 .yellow:active {
     filter: grayscale(50%)brightness(105%);
 }
+#searchbutton:hover{
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    cursor: pointer;
+}
 
+
+#asd{
+    margin-top: -140px;
+}
 #tumnang{
-    position: absolute;
-    width: 400px;
-    height: 123px;
-    left: 830px;
-    top: 346px;
+    position: relative;
+    width: 330px;
+    height: 30px;
+    left: 320px;
+    top: 0px;
     border: none;
-    background: #FFFFFF;
+    background: white;
     border-radius: 15px;
     padding-left: 20px;
     font-family: 'Inria Sans';
@@ -321,14 +406,13 @@
 }
 
 #raka{
-    position: absolute;
-    width: 400px;
-    height: 123px;
-    left: 1059px;
-    top: 45px;
+    position: relative;
+    width: 330px;
+    height: 30px;
+    left: 320px;
+    top:30px;
     border: none;
-    background: none;
-    opacity: 0.2;
+    background: white;
     border-radius: 15px;
     padding-left: 20px;
     font-family: 'Inria Sans';
@@ -336,17 +420,15 @@
     font-weight: 700;
     font-size: 16px;
     line-height: 29px;
-    text-align: right;
 }
 #konPak{
-    position: absolute;
-    width: 400px;
-    height: 123px;
-    left: 830px;
-    top: 409px;
+    position: relative;
+    width: 330px;
+    height: 30px;
+    left: 320px;
+    top: 55px;
     border: none;
-    border: none;
-    background: none;
+    background: white;
     border-radius: 15px;
     padding-left: 20px;
     font-family: 'Inria Sans';
@@ -383,8 +465,8 @@ text-align: right;
 }
 #home{
     position: relative;
-    left: 230px;
-    top: 62px;
+    left: 200px;
+    top: 25px;
     width: 38px;
     height: 42px;
 }
