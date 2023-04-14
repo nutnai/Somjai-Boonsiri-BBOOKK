@@ -1,0 +1,190 @@
+#sifah{
+    /* Rectangle 1 */
+    position: absolute;
+    width: 1280px;
+    height: 148px;
+    left: 0px;
+    top: 0px;
+
+    background: #4399FF;
+}
+#hua{
+    cursor: pointer;
+    position: absolute;
+    width: 261.02px;
+    height: 60px;
+    left: 22px;
+    top: 24px;
+
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+
+    color: #FFFFFF;
+}
+#sifah2{
+    position: absolute;
+    width: 549px;
+    height: 530px;
+    left: 365px;
+    top: 195px;
+
+    background: #E7F2FF;
+    border-radius: 10px;
+}
+#huasignin{
+    position: absolute;
+    width: 400px;
+    height: 54px;
+    left: 436px;
+    top: 235px;
+
+    background: #FFEB85;
+    border-radius: 10px;
+}
+#huasigninjing{
+    display: flex;
+    justify-content: center;
+    cursor: context-menu;
+    
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 10px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    
+    color: #000000;
+}
+
+#saimail{
+    position: absolute;
+    width:323px;
+    height: 56px;
+    left: 478px;
+    top: 329px;
+
+
+    /* background: #ffffff; */
+    border-radius: 10px;
+}
+#saijing{
+    width: 299px;
+    height: 56px;
+    border: none;
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    
+    padding-left: 7.43%;
+    color: #1A3244;
+    background: #ffffff;
+    border-radius: 10px;    
+}
+#saijing::placeholder{
+    color: #1a3244a0;
+}
+#saipass{
+    position: absolute;
+    /* width: 323px; */
+    height: 56px;
+    left: 478px;
+    top: 425px;
+
+    /* background: #ffffff; */
+    border-radius: 10px;
+}
+#saipassjing{
+    width: 299px;
+    height: 56px;
+    border: none;
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    
+    padding-left: 7.43%;
+    color: #1A3244;
+    background: #ffffff;
+    border-radius: 10px;
+}
+
+
+#saipassjing::placeholder{
+    color: #1a3244a0;
+}
+
+#login{
+    position: absolute;
+    width: 120px;
+    height: 52px;
+    left: 583px;
+    top: 527px;
+    background: #4399FF;
+    border-radius: 15px;
+
+    border: none;
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+
+    color: #FFFFFF;
+}
+#signingoogle{
+    position: absolute;
+    width: 322px;
+    height: 56px;
+    left: 545px;
+    top: 620px;
+    left: 478px;
+
+    border-radius: 35px;
+    color: #4399FF;
+    background: #ffffff;
+    border-radius: 10px;
+
+
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 40px;
+    /* identical to box height */
+    border: 0px;
+
+}
+input[type="button"]:hover {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    cursor: pointer;
+}
+
+input[type="button"]:active {
+    filter: grayscale(70%)brightness(150%);
+}
+#hua:hover{
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    cursor: pointer;   
+}
+#home{
+    position: relative;
+    left: 230px;
+    top: 62px;
+    width: 38px;
+    height: 42px;
+}
+#person{
+    position: relative;
+    width: 33px;
+    height: 44px;
+    top: 327px;
+    left: 413px;
+}
