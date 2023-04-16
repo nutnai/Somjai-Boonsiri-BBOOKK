@@ -1,0 +1,751 @@
+@media only screen and (min-width: 300px) and (max-width: 350px) {
+    /* 500*/
+    body{
+        position: relative;
+        left: 3.5%;
+        zoom: 22%;
+    }
+    }
+
+@media only screen and (min-width: 350px) and (max-width: 510px) {
+    /* 400*/
+    body{
+        position: relative;
+        left: 4.3%;
+        zoom: 27%;
+    }
+    }
+
+@media only screen and (min-width: 510px) and (max-width: 610px) {
+    /* 300*/
+    body{
+        position: relative;
+        left: 5.5%;
+        zoom: 35%;
+    }
+    }
+
+
+
+@media only screen and (min-width: 610px) and (max-width: 760px) {
+    /* 250*/
+    body{
+        position: relative;
+        left: 5.5%;
+        zoom: 42%;
+    }
+    }
+
+
+@media only screen and (min-width: 760px) and (max-width: 870px) {
+    /* 200*/
+    body{
+        position: relative;
+        left: 6%;
+        zoom: 52%;
+    }
+    }
+
+@media only screen and (min-width: 870px) and (max-width: 1020px) {
+    /* 175*/
+    body{
+        position: relative;
+        left: 6.5%;
+        zoom: 59%;
+    }
+    }
+
+
+@media only screen and (min-width: 1020px) and (max-width: 1220px) {
+    /* 150*/
+    body{
+        position: relative;
+        left: 5.8%;
+        zoom: 70%;
+    }
+    }
+
+
+@media only screen and (min-width: 1220px) and (max-width: 1390px) {
+    /* 125*/
+    body{
+        position: relative;
+        left: 6%;
+        /* zoom: 81%; */
+        zoom: 83%;
+    }
+    }
+     
+    @media only screen and (min-width: 1390px) and (max-width: 1440px) {
+    /*110*/
+    body{
+        position: relative;
+        left: 7%;
+        zoom: 93%;
+    
+    }
+    }
+    
+    @media only screen and (min-width: 1440px) and (max-width: 1600px) {
+    /* @-ms-viewport { width: 1024px; } */
+    /* 100% */
+    body{
+        position: relative;
+        left: 8%;
+        
+    }
+    }
+    @media only screen and (min-width: 1600px) and (max-width: 1800px) {
+        /* 90% */
+        body{
+            position: relative;
+            left: 8%;
+            zoom: 110%;
+        }
+        }
+    
+    @media only screen and (min-width: 1800px) and (max-width: 2000px) {
+    /*  80% */
+    body{
+        position: relative;
+        left: 9%;
+        zoom: 123%;
+
+    }
+    }
+
+    @media only screen and (min-width: 2000px) and (max-width: 2200px) {
+        /* 75% */
+        body{
+            position: relative;
+            left: 9%;
+            zoom: 130%;
+    
+        }
+        
+    }
+    @media only screen and (min-width: 2200px) and (max-width: 2400px) {
+        /* 67% */
+        body{
+            position: relative;
+            left: 9.3%;
+            zoom: 145%;
+    
+        }
+    }
+    @media only screen and (min-width: 2400px) and (max-width: 3100px) {
+        /* 50% */
+        body{
+            position: relative;
+            left: 10%;
+            zoom: 190%;
+    
+        }
+    }
+    @media only screen and (min-width: 3100px) and (max-width: 4700px) {
+        /* 33% */
+        body{
+            position: relative;
+            left: 10.2%;
+            zoom: 280%;
+    
+        }
+    }
+    @media only screen and (min-width: 4700px){
+        /* 25% */
+        body{
+            position: relative;
+            left: 11%;
+            zoom: 370%;
+    
+        }
+    }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#sifah{
+    /* Rectangle 1 */
+    position: absolute;
+    width: 1280px;
+    height: 148px;
+    left: 0px;
+    top: 0px;
+
+    background: #2a9d8f;
+}
+#hua{
+    position: absolute;
+    width: 261.02px;
+    height: 60px;
+    left: 22px;
+    top: 64px;
+    cursor: pointer;
+
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+
+    color: #FFFFFF;
+}
+#mid{
+    border-radius: 50%;
+    position: absolute;
+    width: 277px;
+    height: 265px;
+    left: 22px;
+    top: 170px;
+
+    background: #BFDDFF;
+
+}
+#yellowbox{
+    position: absolute;
+    width: 845px;
+    height: 680px;
+    left: 356px;
+    top: 248px;
+
+
+    background: #FFEB85;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+}
+#bluebox{
+    position: absolute;
+    width: 301px;
+    height: 82px;
+    left: 356px;
+    top: 185px;
+
+    background: #2a9d8f;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;}
+#whitebox{
+    position: absolute;
+    width: 801px;
+    height: 637px;
+    left: 377px;
+    top: 272px;
+
+    background: #FFFFFF;
+    border-radius: 10px;}
+#but1{
+    position: absolute;
+    width: 107px;
+    height: 45px;
+    left: 1011px;
+    top: 819px;
+    padding: 0;
+    border: none;
+    background: none;
+    background: #2a9d8f;
+    border-radius: 10px;
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+
+    color: #FFFFFF;
+
+}
+#but2{
+    position: absolute;
+    width: 107px;
+    height: 45px;
+    left: 1011px;
+    top: 819px;
+    padding: 0;
+    border: none;
+    background: none;
+    background: #2a9d8f;
+    border-radius: 10px;
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+
+    color: #FFFFFF;
+
+}
+#but3{
+    position: absolute;
+    width: 107px;
+    height: 45px;
+    left: 880px;
+    top: 819px;
+    padding: 0;
+    border: none;
+    background: none;
+    background: red;
+    border-radius: 10px;
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+
+    color: #FFFFFF;
+
+}
+#linee1{
+    position: absolute;
+    width: 749px;
+    height: 0px;
+    left: 396px;
+    top: 770px;
+
+    border: 2px solid #D9D9D9;
+    transform: rotate(-0.15deg);
+}
+#linee2{
+    position: absolute;
+    width: 749px;
+    height: 0px;
+    left: 396px;
+    top: 640px;
+
+    border: 2px solid #D9D9D9;
+    transform: rotate(-0.15deg);}
+#linee3{
+    position: absolute;
+    width: 749px;
+    height: 0px;
+    left: 396px;
+    top: 517px;
+
+    border: 2px solid #D9D9D9;
+    transform: rotate(-0.15deg);
+}
+#linee4{
+    position: absolute;
+    width: 749px;
+    height: 0px;
+    left: 398px;
+    top: 402px;
+
+    border: 2px solid #D9D9D9;
+    transform: rotate(-0.15deg);
+}
+#personal{
+    position: absolute;
+    width: 381px;
+    height: 55px;
+    left: 390px;
+    top: 208px;
+
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+
+    color: #FFFFFF;}
+#delete{
+
+    position: absolute;
+    width: 161px;
+    height: 49px;
+    left: 827px;
+    top: 1052px;
+
+    padding: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+
+    background: #2a9d8f;
+    border-radius: 10px;
+    position: absolute;
+    width: 161px;
+    height: 49px;
+
+    left: 838px;
+    top: 980px;
+
+
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: #FFFFFF;
+
+
+}
+#logout{
+    position: absolute;
+    width: 161px;
+    height: 49px;
+    left: 997px;
+    top: 1052px;
+
+
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    padding: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+
+    background: #2a9d8f;
+    border-radius: 10px;
+    width: 161px;
+    height: 49px;
+    left: 1041px;
+    top: 980px;
+
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: #FFFEFE;
+
+}
+.reset{
+    position: absolute;
+
+    width: 209px;
+    height: 29px;
+    left: 1003px;
+    top: 1065px;
+
+
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    cursor: pointer;
+
+    color: #828282;}
+#na{
+    position: absolute;
+    width: 580px;
+    height: 38px;
+    left: 418px;
+    top: 357px;
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    border: none;
+
+    color: #1a3244;
+
+}
+#email{
+
+    position: absolute;
+    width: 580px;
+    height: 38px;
+    left: 422px;
+    top: 472px;
+    border: none;
+
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+
+    color: #1a3244;
+
+}
+#Phonnumber{
+    position: absolute;
+    width: 580px;
+    height: 38px;
+    left: 422px;
+    top: 595px;
+    border: none;
+
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+
+    color: #1a3244;
+
+}
+#Adrress{
+    position: absolute;
+    width: 580px;
+    height: 38px;
+    left: 422px;
+    top: 725px;
+    border: none;
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+
+    color: #1a3244;
+}
+
+#blankk{
+    position: absolute;
+    width: 161px;
+    height: 49px;
+    left: 997px;
+    top: 1100px;
+}
+
+#whiteblock{
+    position: absolute;
+    width: 799px;
+    height: 423px;
+    left: 371px;
+    top: 431px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    visibility: hidden;
+}
+.popup.asky{
+    position: absolute;
+    width: 453px;
+    height: 162px;
+    left: 705px;
+    top: 573px;
+
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    visibility: hidden;
+
+
+    color: #000000;
+}
+.popup.asky::after{
+    position: absolute;
+    width: 453px;
+    height: 162px;
+    left: 705px;
+    top: 573px;
+
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    visibility: visible;
+
+}
+.popup .noo{
+
+    position: absolute;
+    width: 168px;
+    height: 59px;
+    left: 548px;
+    top: 720px;
+    background: #2a9d8f;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    visibility: hidden;
+
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+
+    color: #FFFFFF;
+}
+.popup .noo::after{
+
+    position: absolute;
+    width: 168px;
+    height: 59px;
+    left: 548px;
+    top: 704px;
+    background: #2a9d8f;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    visibility: visible;
+
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+
+    color: #FFFFFF;
+}
+.popup .yess{
+    position: absolute;
+    width: 168px;
+    height: 59px;
+    left: 808px;
+    top: 720px;
+    background: #D9D9D9;
+    border-radius: 10px;
+    border:none;
+    cursor: pointer;
+    visibility: hidden;
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    /* identical to box height */
+
+
+    color: #FFFFFF;
+
+}
+
+
+/* Popup container */
+
+/* The actual popup (appears on top) */
+.popup .popuptext {
+
+    position: absolute;
+    width: 799px;
+    height: 423px;
+    left: 371px;
+    top: 560px;
+
+    background: #f5f4f4;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    visibility: hidden
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+    position: absolute;
+    width: 799px;
+    height: 423px;
+    left: 705px;
+    top: 560px;
+    background: #b6b6b6;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    visibility: visible;
+}
+.popup .asky {
+    visibility: hidden;
+    content: "";
+    position: absolute;
+    width: 453px;
+    height: 162px;
+    left: 705px;
+    top: 610px;
+
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+
+    color: #000000;
+}
+
+/* Popup arrow */
+.popup .asky::after {
+    content: "";
+    position: absolute;
+    width: 453px;
+    height: 162px;
+    left: 705px;
+    top: 610px;
+
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+
+    color: #000000;
+
+    border-color: #555 transparent transparent transparent;
+}
+
+
+
+
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+}
+input[type="button"]:hover {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    cursor: pointer;
+}
+
+input[type="button"]:active {
+    filter: grayscale(70%)brightness(150%);
+}
+
+#hua:hover{
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    cursor: pointer;   
+}
+#home{
+    position: relative;
+    left: 194px;
+    top: 62px;
+    width: 38px;
+    height: 42px;
+}
+#adminy{
+    position: absolute;
+    width: 222px;
+    height: 65px;
+    left: 47px;
+    top: 480px;
+    
+    background: #2a9d8f;
+    border-radius: 10px;
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 29px;
+    line-height: 38px;
+    border-radius: 10px;
+    border:none;
+    cursor: pointer;
+    color: #FFFFFF;
+
+
+}

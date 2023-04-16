@@ -16,7 +16,7 @@
 
 <body>
   <div id="sifah">
-    <p id="hua" onclick="window.location.href='../index.html'">Travarokail</p>
+    <p id="hua" onclick="window.location.href='../index.html'">BbookK</p>
 
     <img id="home1" src="https://storage.googleapis.com/travalokail-55abf.appspot.com/lg/lg_home.png">
 
@@ -38,7 +38,7 @@
     <div class="heart-btn">
       <div class="content"><span class="heart"></span></div>
     </div>
-    <input type="button" value="Reserve" id="reserve" class="yellow"
+    <input type="button" value="borrow" id="reserve" class="yellow"
       onclick="document.getElementById('all').style.display = '';document.getElementById('reserveall').style.display = '';document.getElementById('booked').style.display = 'none'">
     <div class="rating">
       <span class="fa fa-star checked"></span>
@@ -72,14 +72,14 @@
     </div>
   </div>
 
-  <div id="all" style="display: none;">
+  <!-- <div id="all" style="display: none;">
     <div id="bgall"></div>
     <div id="all2">
       <div id="reserveall" class="bgWhiteAll" >
-        <p id="textall1">Want to book for
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;person(s)</p>
+        <p id="textall1">Want to borrow for
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;book(s)</p>
         <select id="addNumberHere" onchange="changeValueBook()"></select>
-        <p id="textall2">for &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;night(s)</p>
+        <p id="textall2">for &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;night(s)</p>
         <input type="text" id="number_of_night" placeholder=". . ." oninput="changeValueBook()">
         <img id="calendar1" src="https://storage.googleapis.com/travalokail-55abf.appspot.com/lg/lg_calendar1.png">
         <input type="date" id="patitin" onchange="changeValueBook()">
@@ -89,7 +89,19 @@
         <input type="button" value="Confirm" id="confirmall" onclick="clickBook(this)">
         <input type="button" value="Cancel" id="cancelall"
           onclick="document.getElementById('all').style.display = 'none'">
+      </div> -->
+
+      <div id="all" style="display: none">
+        <div id="bgall"></div>
+        <div id="all2">
+          <div id="booked" class="bgWhiteAll">
+            <p style="text-align: center;">Are you sure you want to borrow this book?</p>
+            <input type="button" value="Back" id="backall" onclick="document.getElementById('all').style.display='none';">
+            <input type="button" value="Confirm" id="confirmall" onclick="clickDelete()">
+          </div>
+        </div>
       </div>
+
       <div id="booked" class="bgWhiteAll" style="display: none;">
         <p style="text-align: center;">Successfully booked. Thank you for using the service.</p>
         <img id="imageCorrect" src="https://storage.googleapis.com/travalokail-55abf.appspot.com/lg/lg_correct.webp">
