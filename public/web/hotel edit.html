@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="../css/hoteledit.css">
   <link href='https://fonts.googleapis.com/css?family=Inria Sans' rel='stylesheet'>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hotel editor</title>
+  <title>Book editor</title>
   <script type="module" src="../src/hasTopRightAuth.js"></script>
   <script type="module" src="../src/hotel_edit.js"></script>
 </head>
@@ -15,20 +15,20 @@
 <body>
   <div id="sifah">
     <p id="hua" onclick="window.location.href='../index.html'" onclick="window.location.href='../index.html'">
-      Travarokail
+      BbookK
     </p>
 
     <img id="home" src="https://storage.googleapis.com/travalokail-55abf.appspot.com/lg/lg_home.png">
 
     </img>
-    <div id="auth1">
+    <div id="auth1"  style="display: none;">
 
       <div id="roob" onclick="clickProfile()">
       </div>
       <p id="username"> username</p>
 
     </div>
-    <div id="auth0" style="display: none;">
+    <div id="auth0">
       <input type="button" value="Register" id="regis" class="yellow"
         onclick="window.location.href='../register.html'" />
       <input type="button" value="Sign in" id="signin" class="yellow" onclick="window.location.href='../signin.html'" />
@@ -37,23 +37,44 @@
     <div id="information">
       <div id="yellowbox">
         <div id="whitebox">
-          <p class="head">Hotel name :</p>
-          <input type="text" class="info" placeholder="Hotel name . . .">
+          <p class="head">Book ID :</p>
+          <input type="text" class="info" placeholder="Book ID . . .">
           <div class="line"></div>
-          <p class="head">Email contact :</p>
-          <input type="text" class="info" placeholder="Email contact . . .">
+          <p class="head">Book Name :</p>
+          <input type="text" class="info" placeholder="Book Name . . .">
           <div class="line"></div>
-          <p class="head">Phone contact :</p>
-          <input type="text" class="info" placeholder="Phone contact . . .">
+          <p class="head">Book Chapter :</p>
+          <input type="text" class="info" placeholder="Book Chapter . . .">
           <div class="line"></div>
-          <p class="head">Address :</p>
-          <input type="text" class="info" placeholder="Address . . .">
+          <p class="head">Book Publisher ID :</p>
+          <input type="text" class="info" placeholder="Book Publisher ID . . .">
           <div class="line"></div>
-          <p class="head">Facility :</p>
-          <input type="text" class="info" placeholder="Facility . . .">
+          <p class="head">Book ISBN :</p>
+          <input type="text" class="info" placeholder="Book ISBN . . .">
           <div class="line"></div>
-
-          <p class="head">Rate price :</p>
+          <p class="head">Book Number Of Pages :</p>
+          <input type="text" class="info" placeholder="Book Number Of Pages . . .">
+          <div class="line"></div>
+          <p class="head">Book Wrtitten date :</p>
+          <input type="text" class="info" placeholder="Book Wrtitten date . . .">
+          <div class="line"></div>
+          <p class="head">Book Price :</p>
+          <input type="text" class="info" placeholder="Book Price . . .">
+          <div class="line"></div>
+          <p class="head">Book Edition :</p>
+          <input type="text" class="info" placeholder="Book Edition . . .">
+          <div class="line"></div>
+          <p class="head">Book Language :</p>
+          <input type="text" class="info" placeholder="Book Language . . .">
+          <div class="line"></div>
+          <p class="head">Book Summary :</p>
+          <input type="text" class="info" placeholder="Book Sunmmary . . .">
+          <div class="line"></div>
+          <p class="head">Book Status :</p>
+          <input type="text" class="info" placeholder="Book Status . . .">
+          <div class="line"></div>
+          
+          <!-- <p class="head">Rate price :</p>
           <input type="button" id="addRatePriceButton" value="+" onclick="zone('ratePriceZone','add')">
           <input type="button" id="removeRatePriceButton" value="-" onclick="zone('ratePriceZone','remove')">
           <div id="ratePriceZone">
@@ -63,7 +84,7 @@
               <input type="number" class="ratePriceZone" >
               <p class="ratePriceZoneText2">baht</p>
             </div>
-          </div>
+          </div> -->
           <div class="line"></div>
           <p class="head">Image :</p>
           <input type="file" id="image-upload" name="image-upload" accept="image/*" multiple>
@@ -134,16 +155,17 @@
     text-align: right;
     right: 30px;
     margin-top: 30px;
-    font-size: 24px;
+    font-size: 18px;
     border: none;
     background-color: rgb(218, 217, 217);
   }
 
   #whitebox .head {
     position: relative;
-    font-size: 30px;
+    font-size: 20px;
     padding-left: 30px;
     display: inline-block;
+    top: 10px;
   }
 
   #addRatePriceButton {

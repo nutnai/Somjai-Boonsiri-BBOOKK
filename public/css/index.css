@@ -1,9 +1,166 @@
-@media only screen and (max-width: 2500px) and (min-width: 1px){
+
+@media only screen and (min-width: 300px) and (max-width: 350px) {
+    /* 500*/
     body{
         position: relative;
-        left: 12%;
+        left: 3.5%;
+        zoom: 22%;
     }
-}
+    }
+
+@media only screen and (min-width: 350px) and (max-width: 510px) {
+    /* 400*/
+    body{
+        position: relative;
+        left: 4.3%;
+        zoom: 27%;
+    }
+    }
+
+@media only screen and (min-width: 510px) and (max-width: 610px) {
+    /* 300*/
+    body{
+        position: relative;
+        left: 5.5%;
+        zoom: 35%;
+    }
+    }
+
+
+
+@media only screen and (min-width: 610px) and (max-width: 760px) {
+    /* 250*/
+    body{
+        position: relative;
+        left: 5.5%;
+        zoom: 42%;
+    }
+    }
+
+
+@media only screen and (min-width: 760px) and (max-width: 870px) {
+    /* 200*/
+    body{
+        position: relative;
+        left: 6%;
+        zoom: 52%;
+    }
+    }
+
+@media only screen and (min-width: 870px) and (max-width: 1020px) {
+    /* 175*/
+    body{
+        position: relative;
+        left: 6.5%;
+        zoom: 59%;
+    }
+    }
+
+
+@media only screen and (min-width: 1020px) and (max-width: 1220px) {
+    /* 150*/
+    body{
+        position: relative;
+        left: 5.8%;
+        zoom: 70%;
+    }
+    }
+
+
+@media only screen and (min-width: 1220px) and (max-width: 1390px) {
+    /* 125*/
+    body{
+        position: relative;
+        left: 6%;
+        /* zoom: 81%; */
+        zoom: 83%;
+    }
+    }
+     
+    @media only screen and (min-width: 1390px) and (max-width: 1440px) {
+    /*110*/
+    body{
+        position: relative;
+        left: 7%;
+        zoom: 93%;
+    
+    }
+    }
+    
+    @media only screen and (min-width: 1440px) and (max-width: 1600px) {
+    /* @-ms-viewport { width: 1024px; } */
+    /* 100% */
+    body{
+        position: relative;
+        left: 8%;
+        
+    }
+    }
+    @media only screen and (min-width: 1600px) and (max-width: 1800px) {
+        /* 90% */
+        body{
+            position: relative;
+            left: 8%;
+            zoom: 110%;
+        }
+        }
+    
+    @media only screen and (min-width: 1800px) and (max-width: 2000px) {
+    /*  80% */
+    body{
+        position: relative;
+        left: 9%;
+        zoom: 123%;
+
+    }
+    }
+
+    @media only screen and (min-width: 2000px) and (max-width: 2200px) {
+        /* 75% */
+        body{
+            position: relative;
+            left: 9%;
+            zoom: 130%;
+    
+        }
+        
+    }
+    @media only screen and (min-width: 2200px) and (max-width: 2400px) {
+        /* 67% */
+        body{
+            position: relative;
+            left: 9.3%;
+            zoom: 145%;
+    
+        }
+    }
+    @media only screen and (min-width: 2400px) and (max-width: 3100px) {
+        /* 50% */
+        body{
+            position: relative;
+            left: 10%;
+            zoom: 190%;
+    
+        }
+    }
+    @media only screen and (min-width: 3100px) and (max-width: 4700px) {
+        /* 33% */
+        body{
+            position: relative;
+            left: 10.2%;
+            zoom: 280%;
+    
+        }
+    }
+    @media only screen and (min-width: 4700px){
+        /* 25% */
+        body{
+            position: relative;
+            left: 11%;
+            zoom: 370%;
+    
+        }
+    }
 
 #sifah {
     /* Rectangle 1 */
@@ -206,8 +363,8 @@
     position: relative;
     width: 160px;
     height: 50px;
-    left: 10px;
-    top: 880px;
+    left: -150px;
+    top: 900px;
     background: #2a9d8f;
     border-radius: 35px;
     
@@ -295,7 +452,7 @@
 
 #home {
     position: relative;
-    left: 230px;
+    left: 194px;
     top: 62px;
     width: 38px;
     height: 42px;

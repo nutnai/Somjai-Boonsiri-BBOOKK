@@ -1,12 +1,175 @@
-@media only screen and (max-width: 1920px) and (min-width: 1920px){
+/* @media only screen and (max-width: 1920px) and (min-width: 1920px){
     body{
         position: relative;
         left: 17%;
     }
-}
+} */
 *{
     margin: 0;
 }
+
+@media only screen and (min-width: 300px) and (max-width: 350px) {
+    /* 500*/
+    body{
+        position: relative;
+        left: 3.5%;
+        zoom: 22%;
+    }
+    }
+
+@media only screen and (min-width: 350px) and (max-width: 510px) {
+    /* 400*/
+    body{
+        position: relative;
+        left: 4.3%;
+        zoom: 27%;
+    }
+    }
+
+@media only screen and (min-width: 510px) and (max-width: 610px) {
+    /* 300*/
+    body{
+        position: relative;
+        left: 5.5%;
+        zoom: 35%;
+    }
+    }
+
+
+
+@media only screen and (min-width: 610px) and (max-width: 760px) {
+    /* 250*/
+    body{
+        position: relative;
+        left: 5.5%;
+        zoom: 42%;
+    }
+    }
+
+
+@media only screen and (min-width: 760px) and (max-width: 870px) {
+    /* 200*/
+    body{
+        position: relative;
+        left: 6%;
+        zoom: 52%;
+    }
+    }
+
+@media only screen and (min-width: 870px) and (max-width: 1020px) {
+    /* 175*/
+    body{
+        position: relative;
+        left: 6.5%;
+        zoom: 59%;
+    }
+    }
+
+
+@media only screen and (min-width: 1020px) and (max-width: 1220px) {
+    /* 150*/
+    body{
+        position: relative;
+        left: 5.8%;
+        zoom: 70%;
+    }
+    }
+
+
+@media only screen and (min-width: 1220px) and (max-width: 1390px) {
+    /* 125*/
+    body{
+        position: relative;
+        left: 6%;
+        /* zoom: 81%; */
+        zoom: 83%;
+    }
+    }
+     
+    @media only screen and (min-width: 1390px) and (max-width: 1440px) {
+    /*110*/
+    body{
+        position: relative;
+        left: 7%;
+        zoom: 93%;
+    
+    }
+    }
+    
+    @media only screen and (min-width: 1440px) and (max-width: 1600px) {
+    /* @-ms-viewport { width: 1024px; } */
+    /* 100% */
+    body{
+        position: relative;
+        left: 8%;
+        
+    }
+    }
+    @media only screen and (min-width: 1600px) and (max-width: 1800px) {
+        /* 90% */
+        body{
+            position: relative;
+            left: 8%;
+            zoom: 110%;
+        }
+        }
+    
+    @media only screen and (min-width: 1800px) and (max-width: 2000px) {
+    /*  80% */
+    body{
+        position: relative;
+        left: 9%;
+        zoom: 123%;
+
+    }
+    }
+
+    @media only screen and (min-width: 2000px) and (max-width: 2200px) {
+        /* 75% */
+        body{
+            position: relative;
+            left: 9%;
+            zoom: 130%;
+    
+        }
+        
+    }
+    @media only screen and (min-width: 2200px) and (max-width: 2400px) {
+        /* 67% */
+        body{
+            position: relative;
+            left: 9.3%;
+            zoom: 145%;
+    
+        }
+    }
+    @media only screen and (min-width: 2400px) and (max-width: 3100px) {
+        /* 50% */
+        body{
+            position: relative;
+            left: 10%;
+            zoom: 190%;
+    
+        }
+    }
+    @media only screen and (min-width: 3100px) and (max-width: 4700px) {
+        /* 33% */
+        body{
+            position: relative;
+            left: 10.2%;
+            zoom: 280%;
+    
+        }
+    }
+    @media only screen and (min-width: 4700px){
+        /* 25% */
+        body{
+            position: relative;
+            left: 11%;
+            zoom: 370%;
+    
+        }
+    }
 
 #boxandtext1{
     display: flex;
@@ -29,15 +192,17 @@
 }
 #dropbox{
     margin-top: 50px;
-    margin-left: 20px;
+    margin-left: 40px;
 }
 #textbox{
-    margin-left: 60px;
-    border-radius: 25px;
+    margin-left: 20px;
+    border-radius: 7px;
+    padding: 0px 40px;
     border: none;
 }#textbox1{
-    margin-left: 60px;
-    border-radius: 25px;
+    margin-left: 20px;
+    border-radius: 7px;
+    padding: 0px 40px;
     border: none;
 }
 #searchbutton{
@@ -46,11 +211,14 @@
     font-weight: 600;
     font-size: 20px;
     line-height: 30px;
+    padding: 10px 20px;
+    border: 2px;
 
     color: #1A3244;
     background-color: #3ac9b8;
-    border-radius: 10%;
-    margin-left: 380px;
+    border-radius: 7px;
+    margin-left: 40px;
+    margin-top: 60px;
 }
 
 #box{
@@ -58,9 +226,9 @@
     justify-content: left;
 }
 #box1{
-    width: 200px;
+    width: 250px;
     height: 50px;
-    border-radius: 30px;
+    border-radius: 7px;
     border: #c0c8f7;
     
     
@@ -71,7 +239,7 @@
     font-weight: 600;
     font-size: 20px;
     line-height: 30px;
-    margin-left: 55px;
+    margin-left: 20px;
 }
 
 #sifah{
@@ -122,7 +290,9 @@
 
 #groupsifah2{
     position: absolute;
+    margin-top: 0px;
     top: -70px;
+    height:10px;
 }
 
 
@@ -266,7 +436,7 @@
 
     color: #1a3244bd;
 }
-#search{
+/* #search{
     position: absolute;
     width: 125px;
     height: 60px;
@@ -283,7 +453,7 @@
     line-height: 43px;
 
     color: #1A3244;
-}
+} */
 #block{
     position: relative;
     width: 716px;
@@ -301,7 +471,7 @@
     width: 71px;
     height: 73px;
     left: 1142px;
-    top: 37px;
+    top: -35px;
 
     border-radius: 217px;
     background: #c0c8f7;
@@ -465,7 +635,7 @@ text-align: right;
 }
 #home{
     position: relative;
-    left: 200px;
+    left: 194px;
     top: 25px;
     width: 38px;
     height: 42px;
