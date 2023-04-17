@@ -1,18 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
 <?php
-$host="sql.freedb.tech ";
-$username="freedb_bbookk";
-$password="mn#4V9j&27*B4h9 ";
-$dbname="test";
+$publisher_id = 1; //explode("?", $_SERVER["PHP_SELF"])[1];
 
-$db=mysqli_connect($host,$username,$password,$dbname);
-if(mysqli_connect_errno())
-    echo "can't connect".mysqli_connect_error();
-else
-    echo "connected!";
+$servername = "localhost";
+$username = "id20576360_learnjapannutnai";
+$password = "wn3V%=/uMYin&|o2";
+$dbname = "id20576360_bbookk";
 
-$query="select * from test";
-$result=mysqli_query($db,$query);
-foreach ($result as $row) {
-    print_r($row);
-}
+$sql = "select * from publisher where publisher_id = $publisher_id";
+$connect = mysqli_connect($servername, $username, $password, $dbname);
+$result = mysqli_query($connect, $sql);
+$row = mysqli_fetch_assoc($result);
+$text = $row["publisher_name"];
 ?>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p><?php echo $text; ?></p>
+</body>
+
+</html>
