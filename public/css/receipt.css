@@ -211,8 +211,14 @@
     height: 82px;
     left: 210px;
     top: 240px;
-    
+    text-align: center;
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 550;
+    font-size: 33px;
+    line-height: 60px;
     background: #2a9d8f;
+    color: #FFFFFF;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
 }
@@ -252,12 +258,12 @@
     color: #FFFFFF;
 
 }
-#personal{
-    position: absolute;
+/* #personal{
+    position: relative;
     width: 381px;
     height: 100px;
     left: 240px;
-    top: 228px;
+    top: 200px;
     
     font-family: 'Inria Sans';
     font-style: normal;
@@ -266,7 +272,7 @@
     line-height: 29px;
     
     color: #FFFFFF;
-}
+} */
 #delete{
     position: absolute;
     width: 200px;
@@ -612,11 +618,15 @@ text-align: right;
     padding-left: 100px;
     text-align: right;
     right: 50px;
-    margin-top: 33px;
+    margin-top: 27px;
+    width: 480px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    
 }
 #whitebox .head {
     position: relative;
-    font-size: 30px;
+    font-size: 27px;
     padding-left: 30px;
     display: inline-block;
 }
