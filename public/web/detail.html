@@ -21,51 +21,63 @@
     <img id="home1" src="https://storage.googleapis.com/travalokail-55abf.appspot.com/lg/lg_home.png">
 
     </img>
-    <div id="auth1">
+    <div id="auth1" style="display: none;">
       <div id="roob" onclick="clickProfile()">
       </div>
       <p id="username"> username</p>
     </div>
-    <div id="auth0" style="display: none;">
-      <input type="button" value="Register" id="regis" class="yellow"
-        onclick="window.location.href='../register.html'" />
+    <div id="auth0">
+      <!-- <input type="button" value="Register" id="regis" class="yellow"
+        onclick="window.location.href='../register.html'" /> -->
       <input type="button" value="Sign in" id="signin" class="yellow" onclick="window.location.href='../signin.html'" />
     </div>
   </div>
 
   <div id="information">
-    <p id="hotel"></p>
-    <div class="heart-btn">
-      <div class="content"><span class="heart"></span></div>
+    <!-- <p id="hotel"></p> -->
+    <div id="heartborrow">
+      <div class="heart-btn">
+        <div class="content"><span class="heart"></span></div>
+      </div>
+      <input type="button" value="borrow" id="reserve" class="yellow"
+        onclick="document.getElementById('all').style.display = '';document.getElementById('reserveall').style.display = '';document.getElementById('booked').style.display = 'none'">
+     
     </div>
-    <input type="button" value="borrow" id="reserve" class="yellow"
-      onclick="document.getElementById('all').style.display = '';document.getElementById('reserveall').style.display = '';document.getElementById('booked').style.display = 'none'">
-    <div class="rating">
+      <!-- <div class="rating">
       <span class="fa fa-star checked"></span>
       <span class="fa fa-star checked"></span>
       <span class="fa fa-star checked"></span>
       <span class="fa fa-star checked"></span>
       <span class="fa fa-star"></span>
-    </div>
-    <p id="ratingText">4.2</p>
+    </div> -->
+    <!-- <p id="ratingText">4.2</p> -->
     <div id="roopyai">
     </div>
     <div id="rooprek">
-
     </div>
     <div id="detailText">
-      <p id="address">Location : </p>
-      <p id="facility1">Facility : </p>
-      <table id="number_of_customer">
-        <tr>
-          <th>guest</th>
-          <th>price</th>
-        </tr>
-      </table>
-      <br><br><br>
+      <p> Status: </p>
+      <p> Book name           : </p>
+      <p> Book Chapter        :</p>
+
+      <p> Edition             :</p>
+      <p> Language            :</p>
+      <p> Genre               : </p>
+      
+      
+      <p> Author              :</p>
+      <p> Interpretor         :</p>
+
+      <p> Book ISBN           :</p>
+      <p> Year of Publication :</p>
+      <p> Number of pages     :</p>
+      <p> Price               :</p>
+      
+      <p> Summary             :</p>
+
       <div id="fahunder">
-        <p style="font-style:bold">Contact landlord : </p>
-        <p id="landlord">&nbsp;&nbsp;&nbsp;</p>
+        <p style="font-style:bold">Contact publisher : </p>
+        <!-- <p id="landlord">&nbsp;&nbsp;&nbsp;</p> -->
         <p id="phone">&nbsp;&nbsp;&nbsp;Phone : </p>
         <p id="email">&nbsp;&nbsp;&nbsp;Email : </p>
       </div>

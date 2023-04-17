@@ -1,11 +1,3 @@
-/* *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-
-} */
-
-
 @media only screen and (min-width: 300px) and (max-width: 350px) {
     /* 500*/
     body{
@@ -168,8 +160,26 @@
     
         }
     }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 
-#sifah{
+}
+
+#block{
+    position: relative;
+    width: 1200px;
+    height: 213px;
+    left: 40px;
+    top: 300px;
+    margin-top: 25px;
+    background: #FFEB85;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+#sifah {
     /* Rectangle 1 */
     position: absolute;
     width: 1280px;
@@ -179,12 +189,13 @@
 
     background: #2a9d8f;
 }
-#hua{
+
+#hua {
     position: absolute;
     width: 261.02px;
     height: 60px;
     left: 22px;
-    top: 24px;
+    top: 64px;
     cursor: pointer;
 
     font-family: 'Inria Sans';
@@ -196,44 +207,63 @@
     color: #FFFFFF;
 }
 
-#bluebox{
+#mid {
+    border-radius: 50%;
+    position: absolute;
+    width: 277px;
+    height: 265px;
+    left: 22px;
+    top: 170px;
+
+    background: #BFDDFF;
+
+}
+
+#bluebox {
     position: absolute;
     width: 301px;
     height: 82px;
-    left: 356px;
+    left: 0px;
     top: 185px;
-    
+
     background: #2a9d8f;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
 }
-#save{
+
+#but1 {
     position: absolute;
     width: 107px;
     height: 45px;
+    left: 1011px;
+    top: 819px;
     padding: 0;
     border: none;
     background: none;
-    background: #2a9d8f;
+    background: ##2a9d8f;
     border-radius: 10px;
     font-family: 'Inria Sans';
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
     line-height: 29px;
-    right: 30px;
-    bottom: 20px;
+
     color: #FFFFFF;
 
 }
-.line {
-    position: relative;
-    width: 94%;
-    left: 3%;
-    height: 2px;
-    background-color: rgb(226, 226, 226);
+
+#linee1 {
+    position: absolute;
+    width: 749px;
+    height: 0px;
+    left: 396px;
+    top: 770px;
+
+    border: 2px solid #D9D9D9;
+    transform: rotate(-0.15deg);
 }
-#edit1{
+
+#edit1 {
     position: absolute;
     width: 81px;
     height: 41px;
@@ -253,169 +283,63 @@
     color: #000000;
 
 }
-#edit2{
-    position: absolute;
-    width: 81px;
-    height: 41px;
-    left: 1035px;
-    top: 465px;
 
-    padding: 0;
-    border: none;
-    background: none;
-    background: #E7F2FF;
-    border-radius: 10px;
-    font-family: 'Inria Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 24px;
-
-    color: #000000;
-
-}
-#edit3{
-    position: absolute;
-    position: absolute;
-    width: 81px;
-    height: 41px;
-    left: 1035px;
-    top: 590px;
-
-    padding: 0;
-    border: none;
-    background: none;
-    background: #E7F2FF;
-    border-radius: 10px;
-    font-family: 'Inria Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 24px;
-
-    color: #000000;
-
-}
-#edit4{
-    position: absolute;
-    position: absolute;
-    width: 81px;
-    height: 41px;
-    left: 1035px;
-    top: 719px;
-    padding: 0;
-    border: none;
-    background: none;
-    background: #E7F2FF;
-    border-radius: 10px;
-    font-family: 'Inria Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 24px;
-
-    color: #000000;
-
-}
-#edit5{
-    position: absolute;
-    position: absolute;
-    width: 81px;
-    height: 41px;
-    left: 1035px;
-    top: 850px;
-    padding: 0;
-    border: none;
-    background: none;
-    background: #E7F2FF;
-    border-radius: 10px;
-    font-family: 'Inria Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 24px;
-
-    color: #000000;
-
-}
-#edit6{
-    position: absolute;
-    position: absolute;
-    width: 81px;
-    height: 41px;
-    left: 1035px;
-    top: 979px;
-    padding: 0;
-    border: none;
-    background: none;
-    background: #E7F2FF;
-    border-radius: 10px;
-    font-family: 'Inria Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 24px;
-
-    color: #000000;
-
-}
-#edit7{
-    position: absolute;
-    position: absolute;
-    width: 81px;
-    height: 41px;
-    left: 1035px;
-    top: 1109px;
-    padding: 0;
-    border: none;
-    background: none;
-    background: #E7F2FF;
-    border-radius: 10px;
-    font-family: 'Inria Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 24px;
-
-    color: #000000;
-
-}
-#personal{
+#personal {
     position: absolute;
     width: 381px;
     height: 55px;
-    left: 390px;
-    top: 180px;
-    
-    font-family: 'Inria Sans';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 29px;
-    
-    color: #FFFFFF;
-}
-#delete{
-    position: absolute;
-    width: 200px;
-    height: 60px;
-    border: none;
-    background: none;
-    cursor: pointer;
-    top: 200px;
-    left: 855px;
-    background: red;
-    border-radius: 10px;
-    position: absolute;
+    left: 92px;
+    top: 208px;
 
     font-family: 'Inria Sans';
     font-style: normal;
     font-weight: 700;
-    font-size: 26px;
-    line-height: 24px;
+    font-size: 35px;
+    line-height: 29px;
+
     color: #FFFFFF;
 }
-#logout{
+
+#delete {
+
+    position: absolute;
+    width: 161px;
+    height: 49px;
+    left: 827px;
+    top: 1052px;
+
+    padding: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+
+    background: #BFDDFF;
+    border-radius: 10px;
+    position: absolute;
+    width: 161px;
+    height: 49px;
+
+    left: 838px;
+    top: 980px;
+
+
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: #FFFFFF;
+
+
+}
+
+#logout {
     position: absolute;
     width: 161px;
     height: 49px;
@@ -431,42 +355,44 @@
     border: none;
     background: none;
     cursor: pointer;
-    
 
-    background: #2a9d8f;
+    background: #BFDDFF;
     border-radius: 10px;
     width: 161px;
     height: 49px;
     left: 1041px;
-    top: 1366px;
-            
+    top: 980px;
+
     font-family: 'Inria Sans';
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
     line-height: 24px;
-    
+
     color: #FFFEFE;
-    
+
 }
-.reset{
+
+.reset {
     position: absolute;
-        
+
     width: 209px;
     height: 29px;
     left: 1003px;
     top: 1074px;
-    
-    
+
+
     font-family: 'Inria Sans';
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
     line-height: 24px;
     cursor: pointer;
-    
-    color: #D9D9D9;}
-#na{
+
+    color: #D9D9D9;
+}
+
+/* #na{
     position: absolute;
     width: 580px;
     height: 38px;
@@ -479,7 +405,7 @@
     font-size: 24px;
     line-height: 29px;
 
-    color: #1a3244;
+    color: #828282;
 
 }
 #email{
@@ -496,7 +422,7 @@
     font-size: 24px;
     line-height: 29px;
 
-    color: #1a3244;
+    color: #828282
 
 }
 #Phonnumber{
@@ -512,7 +438,7 @@
     font-size: 24px;
     line-height: 29px;
 
-    color: #1a3244;
+    color: #828282;
 
 }
 #Adrress{
@@ -528,69 +454,10 @@
     font-size: 24px;
     line-height: 29px;
     
-    color: #1a3244;
-}
-#Facility{
-    position: absolute;
-    width: 580px;
-    height: 38px;
-    left: 422px;
-    top: 855px;
-    border: none;
-    font-family: 'Inria Sans';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 24px;
-    line-height: 29px;
-    
-    color: #1a3244;
-}
-#people{
-    position: absolute;
-    width: 580px;
-    height: 38px;
-    left: 422px;
-    top: 985px;
-    border: none;
-    font-family: 'Inria Sans';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 24px;
-    line-height: 29px;
-    
-    color: #1a3244;
-}
-#price{
-    position: absolute;
-    width: 580px;
-    height: 38px;
-    left: 422px;
-    top: 1125px;
-    border: none;
-    font-family: 'Inria Sans';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 24px;
-    line-height: 29px;
-    
-    color: #1a3244;
-}
-#image{
-    position: absolute;
-    width: 580px;
-    height: 38px;
-    left: 422px;
-    top: 1260px;
-    border: none;
-    font-family: 'Inria Sans';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 24px;
-    line-height: 29px;
-    
-    color: #1a3244;
-}
-#blankk{
+    color:#828282 ;
+} */
+
+#blankk {
     position: absolute;
     width: 161px;
     height: 49px;
@@ -598,7 +465,7 @@
     top: 1100px;
 }
 
-#whiteblock{
+#whiteblock {
     position: absolute;
     width: 799px;
     height: 423px;
@@ -610,10 +477,293 @@
     border-radius: 10px;
     visibility: hidden;
 }
-#bady{
+
+#tumnang{
     position: relative;
-    left: -150px;
+    width: 330px;
+    height: 30px;
+    left: 350px;
+    bottom: 135px;
+    border: none;
+    background: white;
+    border-radius: 15px;
+    padding-left: 20px;
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 29px;
+    
 }
+
+#raka{
+    position: relative;
+    width: 330px;
+    height: 30px;
+    left: 350px;
+    bottom: 110px;
+    border: none;
+    background: white;
+    border-radius: 15px;
+    padding-left: 20px;
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 29px;
+}
+#konPak{
+    position: relative;
+    width: 330px;
+    height: 30px;
+    left: 350px;
+    bottom: 90px;
+    border: none;
+    background: white;
+    border-radius: 15px;
+    padding-left: 20px;
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 29px;
+}
+
+#lowname{
+    position: relative;
+    width: 800px;
+    height: 174px;
+    left: 340px;
+    top: 20px;
+    border: none;
+    background: #FFFFFF;
+    border-radius: 15px;
+    padding-left: 20px;
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 29px;   
+}
+
+.popup.asky {
+    position: absolute;
+    width: 453px;
+    height: 162px;
+    left: 705px;
+    top: 573px;
+
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    visibility: hidden;
+
+    color: #000000;
+}
+
+.popup.asky::after {
+    position: absolute;
+    width: 453px;
+    height: 162px;
+    left: 705px;
+    top: 573px;
+
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    visibility: visible;
+
+}
+
+.popup .noo {
+
+    position: absolute;
+    width: 168px;
+    height: 59px;
+    left: 548px;
+    top: 720px;
+    background: #2a9d8f;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    visibility: hidden;
+
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+
+    color: #FFFFFF;
+}
+
+.popup .noo::after {
+
+    position: absolute;
+    width: 168px;
+    height: 59px;
+    left: 548px;
+    top: 704px;
+    background: #2a9d8f;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    visibility: visible;
+
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+
+    color: #FFFFFF;
+}
+
+.popup .yess {
+    position: absolute;
+    width: 168px;
+    height: 59px;
+    left: 808px;
+    top: 720px;
+    background: #D9D9D9;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    visibility: hidden;
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    /* identical to box height */
+    color: #FFFFFF;
+
+}
+
+
+/* Popup container */
+
+/* The actual popup (appears on top) */
+.popup .popuptext {
+
+    position: absolute;
+    width: 799px;
+    height: 423px;
+    left: 371px;
+    top: 560px;
+
+    background: #f5f4f4;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    visibility: hidden
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+    position: absolute;
+    width: 799px;
+    height: 423px;
+    left: 705px;
+    top: 560px;
+    background: #b6b6b6;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    visibility: visible;
+}
+
+.popup .asky {
+    visibility: hidden;
+    content: "";
+    position: absolute;
+    width: 453px;
+    height: 162px;
+    left: 705px;
+    top: 610px;
+
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+
+    color: #000000;
+}
+
+/* Popup arrow */
+.popup .asky::after {
+    content: "";
+    position: absolute;
+    width: 453px;
+    height: 162px;
+    left: 705px;
+    top: 610px;
+
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+
+    color: #000000;
+
+    border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+/* #adminy{
+    position: absolute;
+    width: 222px;
+    height: 65px;
+    left: 47px;
+    top: 480px;
+    
+    background: #4399FF;
+    border-radius: 10px;
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 29px;
+    line-height: 38px;
+    border-radius: 10px;
+    border:none;
+    cursor: pointer;
+    color: #FFFFFF;
+
+
+} */
+
 input[type="button"]:hover {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     cursor: pointer;
@@ -622,62 +772,19 @@ input[type="button"]:hover {
 input[type="button"]:active {
     filter: grayscale(70%)brightness(150%);
 }
-#hua:hover{
+
+#hua:hover {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    cursor: pointer;   
+    cursor: pointer;
 }
-#home{
+
+#home {
     position: relative;
     left: 194px;
     top: 62px;
     width: 38px;
     height: 42px;
 }
-#person{
-    position: relative;
-    width: 25px;
-    height: 34px;
-    left:27px;
-    top: 14px;
-}
-#username{
-    position: absolute;
-    width: 547px;
-    height: 52px;
-    left: 574px;
-    top: 20px;
-
-font-family: 'Inria Sans';
-font-style: normal;
-font-weight: 400;
-font-size: 37px;
-line-height: 45px;
-
-color: #FFFFFF;
-text-align: right;
-}
-
-#roob{
-    cursor: pointer;
-    position: absolute;
-    width: 71px;
-    height: 73px;
-    left: 1142px;
-    top: 37px;
-
-    border-radius: 217px;
-    background: #c0c8f7;
-}
-
-#roob:hover{
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    cursor: pointer;
-}
-#hua:hover{
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    cursor: pointer;   
-}
-
 #regis{
     /* Component 2 */
     position: absolute;
@@ -697,6 +804,7 @@ text-align: right;
     background: #FFEB85;
     border-radius: 20px;
 }
+
 #signin{
     /* Component 3 */
     position: absolute;
@@ -714,96 +822,49 @@ text-align: right;
     color: #1A3244;
     border: 0px;
 
+
     background: #FFEB85;
     border-radius: 20px;
 }
-.blue:hover {
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    cursor: pointer;
-}
-.blue:active {
-    filter: grayscale(70%)brightness(150%);
-}
-.yellow:hover {
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    cursor: pointer;
-}
-
-.yellow:active {
-    filter: grayscale(50%)brightness(105%);
-}
-#image-upload {
-    position: relative;
-    right: 0px;
-    font-family: 'Inria Sans';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 29px;
-
-    color: #1A3244;
-}
-#all input[type="button"]:hover{
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); 
-    cursor: pointer;
-}
-#bgall {
-    position: relative;
-    background-color: black;
-    opacity: 0.3;
-    width: 100%;
-    height: 1850px;
-
-}
-#all2 {
-    background-color: #FFEB85;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 800px;
-    height: 330px;
-    border-radius: 10px;
-    font-family: 'Inria Sans';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 29px;
-    color: #1A3244;
-}
-.bgWhiteAll {
+#username{
     position: absolute;
-    background-color: white;
-    height: 95%;
-    width: 97%;
-    border-radius: 10px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    width: 547px;
+    height: 52px;
+    left: 574px;
+    top: 55px;
+
+font-family: 'Inria Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 37px;
+line-height: 45px;
+
+color: #FFFFFF;
+text-align: right;
 }
-.backall, .confirmall {
-    position: relative;
-    
-    top: 50px;
-    left: 24%;
-    height: 45px;
-    width: 200px;
-    margin-top: 50px;
-    padding: 0px 20px 0px 20px; 
-    background: #2a9d8f;
-    border-radius: 10px;
-    font-family: 'Inria Sans';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 29px;
-    /* identical to box height */
-    border: 0px;
-    color: #FFFFFF;   
+
+#roop{
+    position: absolute;
+    width: 270px;
+    left: 2.79%;
+    right: 62.43%;
+    top: 8.04%;
+    bottom: 8.54%;
+    background: #FFFFFF;
+    border-radius: 15px;
 }
-.confirmall{
-    background-color: red;
+#roob{
+    cursor: pointer;
+    position: absolute;
+    width: 71px;
+    height: 73px;
+    left: 1142px;
+    top: 37px;
+
+    border-radius: 217px;
+    background: #c0c8f7;
 }
-#finish2 {
-    background: #2a9d8f;
+#roob:hover{
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    cursor: pointer;
 }

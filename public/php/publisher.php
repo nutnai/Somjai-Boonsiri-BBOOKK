@@ -1,17 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+<?php
+    $publisher_id = 1; //explode("?", $_SERVER["PHP_SELF"])[1];
 
+    $servername = "localhost";
+    $username = "id20576360_learnjapannutnai";
+    $password = "wn3V%=/uMYin&|o2";
+    $dbname = "id20576360_bbookk";
+
+    $sql = "select * from publisher where publisher_id = $publisher_id";
+    $connect = mysqli_connect($servername, $username, $password, $dbname);
+    $result = mysqli_query($connect, $sql);
+    $row = mysqli_fetch_assoc($result);
+    $publisher_id = $row["publisher_id"];
+    $publisher_name = $row["publisher_name"];
+    $publisher_phone = $row["publisher_phone"];
+    $publisher_address = $row["publisher_address"];
+    $publisher_email = $row["publisher_email"];
+?>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/hotel admin.css">
+    <link rel="stylesheet" href="../css/publisher.css">
     <link href='https://fonts.googleapis.com/css?family=Inria Sans' rel='stylesheet'>
-    <script type="module" src="../src/hotel_admin.js"></script>
-    <title>Book's Admin</title>
+    <script type="module" src="../src/publisher.js"></script>
+    <title>Publisher</title>
 </head>
 
 <body style="background-color: white;">
+
     <div id="sifah">
         <p id="hua" onclick="window.location.href='../index.html'">BbookK</p>
 
@@ -33,11 +51,11 @@
         <div id="linee4"></div>
         <div id="linee5"></div>
     </div>
-    <input id="id"type="text" placeholder="ID..." readonly class="edit">
-    <input id="na"type="text" placeholder="name..." readonly class="edit">
-    <input id="Phonnumber"type="text" placeholder="Phone number..." readonly class="edit">
-    <input id="Adrress"type="text" placeholder="address..." readonly class="edit">
-    <input id="email"type="text" placeholder="email..." readonly class="edit">
+    <input id="id"type="text" placeholder="ID..." readonly class="edit" value="<?php echo $publisher_id; ?>">
+    <input id="na"type="text" placeholder="name..." readonly class="edit" value="<?php echo $publisher_name; ?>">
+    <input id="Phonnumber"type="text" placeholder="Phone number..." readonly class="edit" value="<?php echo $publisher_phone; ?>">
+    <input id="Adrress"type="text" placeholder="address..." readonly class="edit" value="<?php echo $publisher_address; ?>">
+    <input id="email"type="text" placeholder="email..." readonly class="edit" value="<?php echo $publisher_email; ?>">
 
     <p id="personal">Book details</p>
     <input id="delete" type="button" value="Delete accout" onclick="myFunction()" style="display: none;">

@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/profile.css">
+    <link rel="stylesheet" href="../css/publisher.css">
     <link href='https://fonts.googleapis.com/css?family=Inria Sans' rel='stylesheet'>
-    <script type="module" src="../src/profile.js"></script>
-    <title>Profile</title>
+    <script type="module" src="../src/publisher.js"></script>
+    <title>Publisher</title>
 </head>
 
 <body style="background-color: white;">
@@ -43,25 +43,16 @@
             <p class="head">ID :</p>
             <p class="info"><input type="text" name="" id="textbox"></p>
             <div class="line"></div>
-            <p class="head">First Name :</p>
-            <p class="info"><input type="text" name="" id="textbox"></p>
-            <div class="line"></div>
-            <p class="head">Last Name :</p>
+            <p class="head">Name :</p>
             <p class="info"><input type="text" name="" id="textbox"></p>
             <div class="line"></div>
             <p class="head">Address :</p>
             <p class="info"><input type="text" name="" id="textbox"></p>
             <div class="line"></div>
-            <p class="head">Birthday :</p>
-            <p class="info"><input type="text" name="" id="textbox"></p>
-            <div class="line"></div>
-            <p class="head">Register Date :</p>
-            <p class="info"><input type="text" name="" id="textbox"></p>
-            <div class="line"></div>
             <p class="head">Phone :</p>
             <p class="info"><input type="text" name="" id="textbox"></p>
             <div class="line"></div>
-            <p class="head">Email:</p>
+            <p class="head">Email :</p>
             <p class="info"><input type="text" name="" id="textbox"></p>
             <div class="line"></div>
             <input id="but1" type="button" value="Edit" onclick="clickEdit('edit')"  >
@@ -72,9 +63,9 @@
         </div>
     </div>
 
-    <p id="personal">Personal details</p>
+    <p id="personal">Publisher's details</p>
     <input id="delete" type="button" value="Delete accout" onclick="myFunction()" style="display: none;">
-    <input id="llogout" type="button" value="Log Out" onclick="signOut()">
+    <input id="logout" type="button" value="Log Out" onclick="signOut()">
     <p class="reset" style="display: none;">Reset password ?</p>
     <p id="blankk"> </p>
     <div class="popup" id="all">
@@ -85,8 +76,8 @@
     </div>
     <div class="admin">
 
-        <button type="button" id="adminy" onclick="window.location.href='./hotel edit.html'">History</button>
-        <!-- <button type="button" id="editHotel" onclick="window.location.href='./hotelList.html'">Edit Book</button> -->
+        <button type="button" id="adminy" onclick="window.location.href='./book_edit.html'">Add Book</button>
+        <button type="button" id="editHotel" onclick="window.location.href='./publisher_book.html'">Book List</button>
     </div>
 
     <script>

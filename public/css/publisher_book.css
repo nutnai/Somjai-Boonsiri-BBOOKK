@@ -1,4 +1,3 @@
-
 @media only screen and (min-width: 300px) and (max-width: 350px) {
     /* 500*/
     body{
@@ -161,14 +160,26 @@
     
         }
     }
-
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 
 }
-#sifah{
+
+#block{
+    position: relative;
+    width: 1200px;
+    height: 213px;
+    left: 40px;
+    top: 300px;
+    margin-top: 25px;
+    background: #FFEB85;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+#sifah {
     /* Rectangle 1 */
     position: absolute;
     width: 1280px;
@@ -178,7 +189,8 @@
 
     background: #2a9d8f;
 }
-#hua{
+
+#hua {
     position: absolute;
     width: 261.02px;
     height: 60px;
@@ -194,7 +206,8 @@
 
     color: #FFFFFF;
 }
-#mid{
+
+#mid {
     border-radius: 50%;
     position: absolute;
     width: 277px;
@@ -205,48 +218,29 @@
     background: #BFDDFF;
 
 }
-#yellowbox{
-    position: absolute;
-    width: 845px;
-    height: 800px;
-    left: 356px;
-    top: 248px;
 
-
-    background: #FFEB85;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 15px;
-}
-#bluebox{
+#bluebox {
     position: absolute;
     width: 301px;
     height: 82px;
-    left: 356px;
+    left: 0px;
     top: 185px;
-    
+
     background: #2a9d8f;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
 }
-#whitebox{
-    position: absolute;
-    width: 801px;
-    height: 750px;
-    left: 377px;
-    top: 272px;
-    
-    background: #FFFFFF;
-    border-radius: 10px;}
-/* #but1{
+
+#but1 {
     position: absolute;
     width: 107px;
     height: 45px;
     left: 1011px;
-    top: 928px;
+    top: 819px;
     padding: 0;
     border: none;
     background: none;
-    background: #2a9d8f;
+    background: ##2a9d8f;
     border-radius: 10px;
     font-family: 'Inria Sans';
     font-style: normal;
@@ -256,153 +250,69 @@
 
     color: #FFFFFF;
 
-} */
+}
 
-
-
-
-#linee1{
+#linee1 {
     position: absolute;
     width: 749px;
     height: 0px;
     left: 396px;
     top: 770px;
-    
-    border: 2px solid #D9D9D9;
-    transform: rotate(-0.15deg);
-}
-#linee2{
-    position: absolute;
-    width: 749px;
-    height: 0px;
-    left: 396px;
-    top: 640px;
-    
-    border: 2px solid #D9D9D9;
-    transform: rotate(-0.15deg);
-}
-#linee3{
-    position: absolute;
-    width: 749px;
-    height: 0px;
-    left: 396px;
-    top: 517px;
-    
-    border: 2px solid #D9D9D9;
-    transform: rotate(-0.15deg);
-}
-#linee4{
-    position: absolute;
-    width: 749px;
-    height: 0px;
-    left: 398px;
-    top: 402px;
-    
+
     border: 2px solid #D9D9D9;
     transform: rotate(-0.15deg);
 }
 
-#linee5{
+#edit1 {
     position: absolute;
-    width: 749px;
-    height: 0px;
-    left: 398px;
-    top: 880px;
-    
-    border: 2px solid #D9D9D9;
-    transform: rotate(-0.15deg);
-}
-
-
-#but1{
-    position: absolute;
-    width: 107px;
-    height: 45px;
-    left: 1011px;
-    top: 920px;
+    width: 81px;
+    height: 41px;
+    left: 1035px;
+    top: 351px;
     padding: 0;
     border: none;
     background: none;
-    background: #2a9d8f;
+    background: #E7F2FF;
     border-radius: 10px;
     font-family: 'Inria Sans';
     font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 29px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
 
-    color: #FFFFFF;
-
-}
-#but2{
-    position: absolute;
-    width: 107px;
-    height: 45px;
-    left: 1011px;
-    top: 819px;
-    padding: 0;
-    border: none;
-    background: none;
-    background: #2a9d8f;
-    border-radius: 10px;
-    font-family: 'Inria Sans';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 29px;
-
-    color: #FFFFFF;
-
-}
-#but3{
-    position: absolute;
-    width: 107px;
-    height: 45px;
-    left: 880px;
-    top: 819px;
-    padding: 0;
-    border: none;
-    background: none;
-    background: red;
-    border-radius: 10px;
-    font-family: 'Inria Sans';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 29px;
-
-    color: #FFFFFF;
+    color: #000000;
 
 }
 
-#personal{
+#personal {
     position: absolute;
     width: 381px;
     height: 55px;
-    left: 390px;
+    left: 77px;
     top: 208px;
-    
+
     font-family: 'Inria Sans';
     font-style: normal;
     font-weight: 700;
-    font-size: 24px;
+    font-size: 35px;
     line-height: 29px;
-    
+
     color: #FFFFFF;
 }
-#delete{
-    
+
+#delete {
+
     position: absolute;
     width: 161px;
     height: 49px;
     left: 827px;
     top: 1052px;
-    
+
     padding: 0;
     border: none;
     background: none;
     cursor: pointer;
-    
+
     left: 0%;
     right: 0%;
     top: 0%;
@@ -413,10 +323,10 @@
     position: absolute;
     width: 161px;
     height: 49px;
-        
+
     left: 838px;
     top: 980px;
-    
+
 
     font-family: 'Inria Sans';
     font-style: normal;
@@ -428,11 +338,13 @@
 
 
 }
-#logout{
+
+#logout {
     position: absolute;
     width: 161px;
     height: 49px;
     left: 997px;
+    top: 1052px;
 
 
     left: 0%;
@@ -443,41 +355,44 @@
     border: none;
     background: none;
     cursor: pointer;
-    
-    background: #2a9d8f;
+
+    background: #BFDDFF;
     border-radius: 10px;
     width: 161px;
     height: 49px;
     left: 1041px;
-    top: 2000px;
-            
+    top: 980px;
+
     font-family: 'Inria Sans';
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
     line-height: 24px;
-    
+
     color: #FFFEFE;
-    
+
 }
-.reset{
+
+.reset {
     position: absolute;
-        
+
     width: 209px;
     height: 29px;
     left: 1003px;
     top: 1074px;
-    
-    
+
+
     font-family: 'Inria Sans';
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
     line-height: 24px;
     cursor: pointer;
-    
-    color: #D9D9D9;}
-#id{
+
+    color: #D9D9D9;
+}
+
+/* #na{
     position: absolute;
     width: 580px;
     height: 38px;
@@ -490,10 +405,10 @@
     font-size: 24px;
     line-height: 29px;
 
-    color: #1a3244;
+    color: #828282;
 
 }
-#na{
+#email{
 
     position: absolute;
     width: 580px;
@@ -507,7 +422,7 @@
     font-size: 24px;
     line-height: 29px;
 
-    color: #1a3244;
+    color: #828282
 
 }
 #Phonnumber{
@@ -523,7 +438,7 @@
     font-size: 24px;
     line-height: 29px;
 
-    color: #1a3244;
+    color: #828282;
 
 }
 #Adrress{
@@ -539,28 +454,10 @@
     font-size: 24px;
     line-height: 29px;
     
-    color: #1a3244;
-}
+    color:#828282 ;
+} */
 
-#email{
-
-    position: absolute;
-    width: 580px;
-    height: 38px;
-    left: 422px;
-    top: 830px;
-    border: none;
-    font-family: 'Inria Sans';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 24px;
-    line-height: 29px;
-
-    color: #1a3244;
-
-}
-
-#blankk{
+#blankk {
     position: absolute;
     width: 161px;
     height: 49px;
@@ -568,7 +465,7 @@
     top: 1100px;
 }
 
-#whiteblock{
+#whiteblock {
     position: absolute;
     width: 799px;
     height: 423px;
@@ -580,7 +477,76 @@
     border-radius: 10px;
     visibility: hidden;
 }
-.popup.asky{
+
+#tumnang{
+    position: relative;
+    width: 330px;
+    height: 30px;
+    left: 350px;
+    bottom: 135px;
+    border: none;
+    background: white;
+    border-radius: 15px;
+    padding-left: 20px;
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 29px;
+    
+}
+
+#raka{
+    position: relative;
+    width: 330px;
+    height: 30px;
+    left: 350px;
+    bottom: 110px;
+    border: none;
+    background: white;
+    border-radius: 15px;
+    padding-left: 20px;
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 29px;
+}
+#konPak{
+    position: relative;
+    width: 330px;
+    height: 30px;
+    left: 350px;
+    bottom: 90px;
+    border: none;
+    background: white;
+    border-radius: 15px;
+    padding-left: 20px;
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 29px;
+}
+
+#lowname{
+    position: relative;
+    width: 800px;
+    height: 174px;
+    left: 340px;
+    top: 20px;
+    border: none;
+    background: #FFFFFF;
+    border-radius: 15px;
+    padding-left: 20px;
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 29px;   
+}
+
+.popup.asky {
     position: absolute;
     width: 453px;
     height: 162px;
@@ -596,7 +562,8 @@
 
     color: #000000;
 }
-.popup.asky::after{
+
+.popup.asky::after {
     position: absolute;
     width: 453px;
     height: 162px;
@@ -611,8 +578,9 @@
     visibility: visible;
 
 }
-.popup .noo{
-    
+
+.popup .noo {
+
     position: absolute;
     width: 168px;
     height: 59px;
@@ -632,8 +600,9 @@
 
     color: #FFFFFF;
 }
-.popup .noo::after{
-    
+
+.popup .noo::after {
+
     position: absolute;
     width: 168px;
     height: 59px;
@@ -644,16 +613,17 @@
     border: none;
     cursor: pointer;
     visibility: visible;
-    
+
     font-family: 'Inria Sans';
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
     line-height: 29px;
-    
+
     color: #FFFFFF;
-    }
-.popup .yess{
+}
+
+.popup .yess {
     position: absolute;
     width: 168px;
     height: 59px;
@@ -661,7 +631,7 @@
     top: 720px;
     background: #D9D9D9;
     border-radius: 10px;
-    border:none;
+    border: none;
     cursor: pointer;
     visibility: hidden;
     font-family: 'Inria Sans';
@@ -679,7 +649,7 @@
 
 /* The actual popup (appears on top) */
 .popup .popuptext {
-    
+
     position: absolute;
     width: 799px;
     height: 423px;
@@ -691,7 +661,7 @@
     border-radius: 10px;
     visibility: hidden
 }
-  
+
 /* Popup arrow */
 .popup .popuptext::after {
     position: absolute;
@@ -704,6 +674,7 @@
     border-radius: 10px;
     visibility: visible;
 }
+
 .popup .asky {
     visibility: hidden;
     content: "";
@@ -712,7 +683,7 @@
     height: 162px;
     left: 705px;
     top: 610px;
-  
+
     font-family: 'Inria Sans';
     font-style: normal;
     font-weight: 700;
@@ -721,7 +692,7 @@
 
     color: #000000;
 }
-  
+
 /* Popup arrow */
 .popup .asky::after {
     content: "";
@@ -751,24 +722,34 @@
 
 /* Add animation (fade in the popup) */
 @-webkit-keyframes fadeIn {
-    from {opacity: 0;}
-    to {opacity: 1;}
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 @keyframes fadeIn {
-    from {opacity: 0;}
-    to {opacity:1 ;}
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 
-#adminy{
+/* #adminy{
     position: absolute;
     width: 222px;
     height: 65px;
     left: 47px;
     top: 480px;
     
-    background: #2a9d8f;
+    background: #4399FF;
     border-radius: 10px;
     font-family: 'Inria Sans';
     font-style: normal;
@@ -781,7 +762,7 @@
     color: #FFFFFF;
 
 
-}
+} */
 
 input[type="button"]:hover {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
@@ -792,33 +773,98 @@ input[type="button"]:active {
     filter: grayscale(70%)brightness(150%);
 }
 
-#hua:hover{
+#hua:hover {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    cursor: pointer;   
+    cursor: pointer;
 }
-#home{
+
+#home {
     position: relative;
     left: 194px;
     top: 62px;
     width: 38px;
     height: 42px;
 }
-#editHotel {
+#regis{
+    /* Component 2 */
     position: absolute;
-    width: 222px;
-    height: 65px;
-    left: 47px;
-    top: 570px;
+    width: 151px;
+    height: 55px;
+    left: 886px;
+    top: 38px;
     
-    background: #2a9d8f;
-    border-radius: 10px;
     font-family: 'Inria Sans';
     font-style: normal;
     font-weight: 700;
-    font-size: 29px;
-    line-height: 38px;
-    border-radius: 10px;
-    border:none;
+    font-size: 24px;
+    line-height: 29px;
+
+    color: #1A3244;
+    border: 0px;
+    background: #FFEB85;
+    border-radius: 20px;
+}
+
+#signin{
+    /* Component 3 */
+    position: absolute;
+    width: 151px;
+    height: 55px;
+    left: 1067px;
+    top: 38px;
+
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+
+    color: #1A3244;
+    border: 0px;
+
+
+    background: #FFEB85;
+    border-radius: 20px;
+}
+#username{
+    position: absolute;
+    width: 547px;
+    height: 52px;
+    left: 574px;
+    top: 55px;
+
+font-family: 'Inria Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 37px;
+line-height: 45px;
+
+color: #FFFFFF;
+text-align: right;
+}
+
+#roop{
+    position: absolute;
+    width: 270px;
+    left: 2.79%;
+    right: 62.43%;
+    top: 8.04%;
+    bottom: 8.54%;
+    background: #FFFFFF;
+    border-radius: 15px;
+}
+#roob{
     cursor: pointer;
-    color: #FFFFFF;
+    position: absolute;
+    width: 71px;
+    height: 73px;
+    left: 1142px;
+    top: 37px;
+
+    border-radius: 217px;
+    background: #c0c8f7;
+}
+#roob:hover{
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    cursor: pointer;
 }

@@ -4,12 +4,12 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <link rel="stylesheet" href="../css/hoteledit.css">
+  <link rel="stylesheet" href="../css/book_edit.css">
   <link href='https://fonts.googleapis.com/css?family=Inria Sans' rel='stylesheet'>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Book editor</title>
+  <title>New Book</title>
   <script type="module" src="../src/hasTopRightAuth.js"></script>
-  <script type="module" src="../src/hotel_edit.js"></script>
+  <script type="module" src="../src/book_edit.js"></script>
 </head>
 
 <body>
@@ -86,8 +86,10 @@
             </div>
           </div> -->
           <div class="line"></div>
-          <p class="head">Image :</p>
+          <div class="headd">
+            <p class="head">Image :</p>
           <input type="file" id="image-upload" name="image-upload" accept="image/*" multiple>
+          </div>
           <input id="save"type="button" value="save" onclick="save()">
         </div>
       </div>
@@ -124,7 +126,7 @@
     width: 845px;
     height: max-content;
     left: 210px;
-    top: 300px;
+    top: 200px;
 
     background: #FFEB85;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -165,7 +167,7 @@
     font-size: 20px;
     padding-left: 30px;
     display: inline-block;
-    top: 10px;
+    top: 1px;
   }
 
   #addRatePriceButton {

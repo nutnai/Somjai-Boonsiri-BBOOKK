@@ -171,6 +171,11 @@
         }
     }
 
+#krobpum{
+    position: relative;
+    margin-top: -90px;
+}
+
 #boxandtext1{
     display: flex;
     justify-content: space-between;
@@ -181,31 +186,60 @@
 }
 
 #search1{
+    position: relative;
     text-align: center;
+    top: -60px;
+    left: 0px;
     font-family: 'Inria Sans';
     font-style: normal;
-    font-weight: 1000;
+    font-weight: 600;
     font-size: 40px;
     line-height: 43px;
-    border: none;
-    color: #1A3244;
+    width: 200px;
+    padding: 10px 20px;
+    border: 2px; 
+    border-radius: 12px; 
+    color: #ffffff;  
+    background-color: #2a9d8f;
+    
 }
 #dropbox{
+    padding-top: 60px;
+    padding-bottom: 60px;
     margin-top: 50px;
-    margin-left: 40px;
+    margin-left: 33px;
 }
 #textbox{
-    margin-left: 20px;
+    width: 233px;    
+    margin-left: 15px;
+    padding: 0px 10px;
+    border-width: 2.587897987908098px;
     border-radius: 7px;
-    padding: 0px 40px;
-    border: none;
+    border-color: #2a9d8f;
+
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 100;
+    font-size: 20px;
+    line-height: 29px;
+
 }#textbox1{
-    margin-left: 20px;
+    width: 233px;
+    margin-left: 15px;
+    padding: 0px 10px;
+    border-width: 2.587897987908098px;
     border-radius: 7px;
-    padding: 0px 40px;
-    border: none;
+    border-color: #2a9d8f;
+
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 100;
+    font-size: 20px;
+    line-height: 29px;
 }
 #searchbutton{
+    margin-left: 900px;
+    width: 120px;
     font-family: 'Inria Sans';
     font-style: normal;
     font-weight: 600;
@@ -214,24 +248,40 @@
     padding: 10px 20px;
     border: 2px;
 
-    color: #1A3244;
-    background-color: #3ac9b8;
-    border-radius: 7px;
-    margin-left: 40px;
-    margin-top: 60px;
+    color: #ffffff;
+    background-color: #2a9d8f;
+    border-radius: 12px;
+    
 }
 
 #box{
     display: grid;
     justify-content: left;
+    margin-top: -130px;
+    width: 1110px;
+    padding-left: 20px;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    border: 2px;
+    background-color: #ffffff;
+    border-radius: 7px;
+
 }
 #box1{
+    padding-left: 10px;
+    margin-left: 1px;
     width: 250px;
     height: 50px;
+    box-sizing: 50px;
+    border-width: 2.587897987908098px;
     border-radius: 7px;
-    border: #c0c8f7;
+    border-color: #2a9d8f;
     
-    
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 100;
+    font-size: 20px;
+    line-height: 29px;
 }
 #to{
     font-family: 'Inria Sans';
@@ -239,14 +289,15 @@
     font-weight: 600;
     font-size: 20px;
     line-height: 30px;
-    margin-left: 20px;
+    margin-top: 10px;
+    margin-left: 2px;
 }
 
 #sifah{
     /* Rectangle 1 */
     position: relative;
     width: 1280px;
-    height: 1000px;
+    height: 148px;
     left: 0px;
     top: 0px;
 
@@ -319,10 +370,11 @@
 #sifah2{
     position: relative;
     width: 1200px;
-    height: 700px;
+    /* height: 800px; */
     left: 38px;
-    top: 254px;
+    top: 240px;
 
+    margin-top: 100px;
     background: #FFEB85;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 15px;
@@ -456,10 +508,11 @@
 } */
 #block{
     position: relative;
-    width: 716px;
+    width: 1200px;
     height: 213px;
-    left: 300px;
-    top: 400px;
+    left: 40px;
+    top: 280px;
+    margin-top: 25px;
     background: #FFEB85;
     border-radius: 15px;
     cursor: pointer;
@@ -480,6 +533,7 @@
 
 #roop{
     position: absolute;
+    width: 270px;
     left: 2.79%;
     right: 62.43%;
     top: 8.04%;
@@ -507,9 +561,9 @@
 
 #lowname{
     position: relative;
-    width: 400px;
+    width: 800px;
     height: 174px;
-    left: 281px;
+    left: 340px;
     top: 20px;
     border: none;
     background: #FFFFFF;
@@ -520,8 +574,7 @@
     font-weight: 700;
     font-size: 16px;
     line-height: 29px;
-    
-    
+   
 }
 
 /* #lowerblock{
@@ -561,7 +614,7 @@
     position: relative;
     width: 330px;
     height: 30px;
-    left: 320px;
+    left: 350px;
     top: 0px;
     border: none;
     background: white;
@@ -579,7 +632,7 @@
     position: relative;
     width: 330px;
     height: 30px;
-    left: 320px;
+    left: 350px;
     top:30px;
     border: none;
     background: white;
@@ -595,7 +648,7 @@
     position: relative;
     width: 330px;
     height: 30px;
-    left: 320px;
+    left: 350px;
     top: 55px;
     border: none;
     background: white;
