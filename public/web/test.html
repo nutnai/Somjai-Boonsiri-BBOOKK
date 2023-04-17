@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>web</title>
+        <link rel="stylesheet" href="../css/test.css">
+        <link href='https://fonts.googleapis.com/css?family=Inria Sans' rel='stylesheet'>
+        <script type="module" src="../src/test.js"></script>
+        <script type="module" src="../src/firestoreAPI.js"></script>
+        <script type="module" src="../src/auth.js"></script>
+        <script type="module" src="../src/hasTopRightAuth.js"></script>
+    </head>
+    <body>
+        <input type="button" value="Google sign in" id="sign" onclick="signin();">
+        <input type="button" value="Google sign out" id="sign" onclick="signout();">
+        <input type="button" value="Get auth" id="sign" onclick="getauth();">
+        <input type="button" value="go test2" id="sign" onclick="window.location.href='./test2.html';">
+
+        <form action="">
+            <input type="text" name="username" id="user" placeholder="username...">
+            <input type="password" name="password" id="pass" placeholder="password...">
+            <input type="submit" name="" id="">
+        </form>
+        <input type="file" id="image-upload" name="image-upload" accept="image/*" multiple>
+        <input type="button" value="confirm" onclick="clickImage()">
+    </body> 
+</html>
