@@ -29,7 +29,6 @@
 </head>
 
 <body style="background-color: white;">
-
     <div id="sifah">
         <p id="hua" onclick="window.location.href='../index.html'">BbookK</p>
 
@@ -39,25 +38,49 @@
     </div>
     <div id="mid"></div>
     <div id="bluebox"></div>
-    <div id="yellowbox"></div>
-    <div id="whitebox"></div>
-    <input id="but1" type="button" value="Edit" onclick="clickEdit('edit')">
-    <input id="but2" type="button" value="Save" onclick="clickEdit('save')" style="display: none;">
-    <input id="but3" type="button" value="Cancel" onclick="clickEdit('cancel')" style="display: none;">
-    <div class="line1">
+    <!-- <div id="yellowbox"></div>
+    <div id="whitebox"></div> -->
+    
+    <!-- <div class="line1">
         <div id="linee1"></div>
         <div id="linee2"></div>
         <div id="linee3"></div>
         <div id="linee4"></div>
         <div id="linee5"></div>
+    </div> -->
+    <!-- <input id="id"type="text" placeholder="ID..." readonly class="edit">
+    <input id="na"type="text" placeholder="name..." readonly class="edit">
+    <input id="Phonnumber"type="text" placeholder="Phone number..." readonly class="edit">
+    <input id="Adrress"type="text" placeholder="address..." readonly class="edit">
+    <input id="email"type="text" placeholder="email..." readonly class="edit"> -->
+        
+    <div id="information">
+        <div id="yellowbox">
+          <div id="whitebox">
+            <p class="head">ID :</p>
+            <p class="info">loading . . .</p>
+            <div class="line"></div>
+            <p class="head">Name :</p>
+            <p class="info">loading . . .</p>
+            <div class="line"></div>
+            <p class="head">Address :</p>
+            <p class="info">loading . . .</p>
+            <div class="line"></div>
+            <p class="head">Phone :</p>
+            <p class="info">loading . . .</p>
+            <div class="line"></div>
+            <p class="head">Email :</p>
+            <p class="info">loading . . .</p>
+            <div class="line"></div>
+            <input id="but1" type="button" value="Edit" onclick="clickEdit('edit')"  >
+            <input id="but2" type="button" value="Save" onclick="clickEdit('save')" style="display: none;">
+            <input id="but3" type="button" value="Cancel" onclick="clickEdit('cancel')" style="display: none;">
+          </div>
+          
+        </div>
     </div>
-    <input id="id"type="text" placeholder="ID..." readonly class="edit" value="<?php echo $publisher_id; ?>">
-    <input id="na"type="text" placeholder="name..." readonly class="edit" value="<?php echo $publisher_name; ?>">
-    <input id="Phonnumber"type="text" placeholder="Phone number..." readonly class="edit" value="<?php echo $publisher_phone; ?>">
-    <input id="Adrress"type="text" placeholder="address..." readonly class="edit" value="<?php echo $publisher_address; ?>">
-    <input id="email"type="text" placeholder="email..." readonly class="edit" value="<?php echo $publisher_email; ?>">
 
-    <p id="personal">Book details</p>
+    <p id="personal">Publisher's details</p>
     <input id="delete" type="button" value="Delete accout" onclick="myFunction()" style="display: none;">
     <input id="logout" type="button" value="Log Out" onclick="signOut()">
     <p class="reset" style="display: none;">Reset password ?</p>

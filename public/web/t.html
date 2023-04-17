@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    const isbn = '  ';
+    const apiUrl = `https://www.googleapis.com/books/v1/volumes?q=isbn:${isbn}`; 
+
+    fetch(apiUrl)
+        .then(response => response.json())
+        .then(data => {
+            // Do something with the book data
+            console.log(data);
+            console.log(apiUrl);
+            document.getElementById('text').innerHTML = data;
+        })
+        .catch(error => {
+            console.error(error);
+        });
+
+
+</script>
+
+<body>
+    <p id="text"></p>
+</body>
+
+</html>
