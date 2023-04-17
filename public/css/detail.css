@@ -233,7 +233,7 @@
     border: 0px;
 }
 
-#facility {
+#facility{
     position: absolute;
     width: 155px;
     height: 53px;
@@ -784,6 +784,7 @@ th {
     border: none;
     background-color: rgb(226, 226, 226);
 }
+
 /* #confirmall,#cancelall {
     position: absolute;
     height: 45px;
