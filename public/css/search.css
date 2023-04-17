@@ -188,17 +188,17 @@
 #search1{
     position: relative;
     text-align: center;
-    top: -50px;
+    top: -60px;
     left: 0px;
     font-family: 'Inria Sans';
     font-style: normal;
-    font-weight: 1000;
-    font-size: 30px;
+    font-weight: 600;
+    font-size: 40px;
     line-height: 43px;
     width: 200px;
     padding: 10px 20px;
     border: 2px; 
-    border-radius: 7px; 
+    border-radius: 12px; 
     color: #ffffff;  
     background-color: #2a9d8f;
     
@@ -207,22 +207,35 @@
     padding-top: 60px;
     padding-bottom: 60px;
     margin-top: 50px;
-    margin-left: 40px;
+    margin-left: 33px;
 }
 #textbox{
     width: 233px;    
-    margin-left: 20px;
+    margin-left: 15px;
     padding: 0px 10px;
     border-width: 2.587897987908098px;
     border-radius: 7px;
     border-color: #2a9d8f;
+
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 100;
+    font-size: 20px;
+    line-height: 29px;
+
 }#textbox1{
     width: 233px;
-    margin-left: 20px;
+    margin-left: 15px;
     padding: 0px 10px;
     border-width: 2.587897987908098px;
     border-radius: 7px;
     border-color: #2a9d8f;
+
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 100;
+    font-size: 20px;
+    line-height: 29px;
 }
 #searchbutton{
     margin-left: 900px;
@@ -235,9 +248,9 @@
     padding: 10px 20px;
     border: 2px;
 
-    color: #1A3244;
-    background-color: #3ac9b8;
-    border-radius: 7px;
+    color: #ffffff;
+    background-color: #2a9d8f;
+    border-radius: 12px;
     
 }
 
@@ -256,6 +269,7 @@
 }
 #box1{
     padding-left: 10px;
+    margin-left: 1px;
     width: 250px;
     height: 50px;
     box-sizing: 50px;
@@ -263,7 +277,11 @@
     border-radius: 7px;
     border-color: #2a9d8f;
     
-    
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 100;
+    font-size: 20px;
+    line-height: 29px;
 }
 #to{
     font-family: 'Inria Sans';
@@ -354,7 +372,7 @@
     width: 1200px;
     /* height: 800px; */
     left: 38px;
-    top: 280px;
+    top: 240px;
 
     margin-top: 100px;
     background: #FFEB85;
@@ -493,7 +511,8 @@
     width: 1200px;
     height: 213px;
     left: 40px;
-    top: 400px;
+    top: 280px;
+    margin-top: 25px;
     background: #FFEB85;
     border-radius: 15px;
     cursor: pointer;
@@ -555,8 +574,7 @@
     font-weight: 700;
     font-size: 16px;
     line-height: 29px;
-    
-    
+   
 }
 
 /* #lowerblock{

@@ -252,6 +252,22 @@
     padding-left: 30px;
     display: inline-block;
 }
+#textbox{
+    width: 400px;
+    height: 30px;    
+    
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 100;
+    font-size: 20px;
+    line-height: 29px;
+
+    margin-left: 20px;
+    padding: 0px 10px;
+    border-width: 1px;
+    border-radius: 8px;
+    border-color: #949897;  
+}
 
 #whitebox .info {
     position: absolute;

@@ -167,6 +167,18 @@
 
 }
 
+#block{
+    position: relative;
+    width: 1200px;
+    height: 213px;
+    left: 40px;
+    top: 300px;
+    margin-top: 25px;
+    background: #FFEB85;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
 #sifah {
     /* Rectangle 1 */
     position: absolute;
@@ -211,7 +223,7 @@
     position: absolute;
     width: 301px;
     height: 82px;
-    left: 356px;
+    left: 0px;
     top: 185px;
 
     background: #2a9d8f;
@@ -276,7 +288,7 @@
     position: absolute;
     width: 381px;
     height: 55px;
-    left: 450px;
+    left: 92px;
     top: 208px;
 
     font-family: 'Inria Sans';
@@ -464,6 +476,74 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
     visibility: hidden;
+}
+
+#tumnang{
+    position: relative;
+    width: 330px;
+    height: 30px;
+    left: 350px;
+    bottom: 135px;
+    border: none;
+    background: white;
+    border-radius: 15px;
+    padding-left: 20px;
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 29px;
+    
+}
+
+#raka{
+    position: relative;
+    width: 330px;
+    height: 30px;
+    left: 350px;
+    bottom: 110px;
+    border: none;
+    background: white;
+    border-radius: 15px;
+    padding-left: 20px;
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 29px;
+}
+#konPak{
+    position: relative;
+    width: 330px;
+    height: 30px;
+    left: 350px;
+    bottom: 90px;
+    border: none;
+    background: white;
+    border-radius: 15px;
+    padding-left: 20px;
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 29px;
+}
+
+#lowname{
+    position: relative;
+    width: 800px;
+    height: 174px;
+    left: 340px;
+    top: 20px;
+    border: none;
+    background: #FFFFFF;
+    border-radius: 15px;
+    padding-left: 20px;
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 29px;   
 }
 
 .popup.asky {
@@ -763,6 +843,16 @@ color: #FFFFFF;
 text-align: right;
 }
 
+#roop{
+    position: absolute;
+    width: 270px;
+    left: 2.79%;
+    right: 62.43%;
+    top: 8.04%;
+    bottom: 8.54%;
+    background: #FFFFFF;
+    border-radius: 15px;
+}
 #roob{
     cursor: pointer;
     position: absolute;
