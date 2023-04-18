@@ -58,19 +58,19 @@
         <div id="yellowbox">
           <div id="whitebox">
             <p class="head">ID :</p>
-            <p class="info">loading . . .</p>
+            <p class="info"><input type="text" name="" id="textbox" value="<?php echo $publisher_id ?>"></p>
             <div class="line"></div>
             <p class="head">Name :</p>
-            <p class="info">loading . . .</p>
+            <p class="info"><input type="text" name="" id="textbox" value="<?php echo $publisher_name ?>"></p>
             <div class="line"></div>
             <p class="head">Address :</p>
-            <p class="info">loading . . .</p>
+            <p class="info"><input type="text" name="" id="textbox" value="<?php echo $publisher_address ?>"></p>
             <div class="line"></div>
             <p class="head">Phone :</p>
-            <p class="info">loading . . .</p>
+            <p class="info"><input type="text" name="" id="textbox" value="<?php echo $publisher_phone ?>"></p>
             <div class="line"></div>
             <p class="head">Email :</p>
-            <p class="info">loading . . .</p>
+            <p class="info"><input type="text" name="" id="textbox" value="<?php echo $publisher_email ?>"></p>
             <div class="line"></div>
             <input id="but1" type="button" value="Edit" onclick="clickEdit('edit')"  >
             <input id="but2" type="button" value="Save" onclick="clickEdit('save')" style="display: none;">
@@ -93,8 +93,8 @@
     </div>
     <div class="admin">
 
-        <button type="button" id="adminy" onclick="window.location.href='./hotel edit.html'">Add Book</button>
-        <button type="button" id="editHotel" onclick="window.location.href='./hotelList.html'">Edit Book</button>
+        <button type="button" id="adminy" onclick="window.location.href='./book_edit.html'">Add Book</button>
+        <button type="button" id="editHotel" onclick="window.location.href='./publisher_book.html'">Book List</button>
     </div>
 
     <script>
