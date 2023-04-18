@@ -2,25 +2,39 @@
 <html lang="en">
 
 <?php
-    $borrowing_id = 1; //explode("?", $_SERVER["PHP_SELF"])[1];
+    $borrower_id = 1; //explode("?", $_SERVER["PHP_SELF"])[1];
 
     $servername = "localhost";
     $username = "id20576360_learnjapannutnai";
     $password = "wn3V%=/uMYin&|o2";
     $dbname = "id20576360_bbookk";
-
-    $sql = "select * from borrowing where borrowing_id = $borrowing_id";
     $connect = mysqli_connect($servername, $username, $password, $dbname);
-    $result = mysqli_query($connect, $sql);
-    $row = mysqli_fetch_assoc($result);
-    $borrowing_id = $row["borrowing_id"];
-    $borrowing_rent_date = $row["borrowing_rent_date"];
-    $borrowing_due_date = $row["borrowing_due_date"];
-    $borrowing_return_date = $row["borrowing_return_date"];
-    $borrowing_phone = $row["borrowing_phone"];
-    $borrowing_email = $row["borrowing_email"];
-?>
 
+    $sql = "select * from borrower where borrower_id = $borrower_id";
+    $result = mysqli_query($connect, $sql);
+    $row_borrower = mysqli_fetch_assoc($result);
+
+    $sql_borrowing = "select * from borrowing where borrower_id = $borrower_id";
+    $result_borrowing = mysqli_query($connect, $sql_borrowing);
+    $row_borrowing = mysqli_fetch_assoc($result_borrowing);
+
+    $borrowing_id = $row_borrowing["borrowing_id"];
+
+    $sql_reference = "select * from reference where borrowing_id = $borrowing_id";
+    $result_reference = mysqli_query($connect, $sql_reference);
+    $row_reference = mysqli_fetch_assoc($result_reference);
+
+    $book_id = $row_reference["book_id"];
+
+    $sql_book = "select * from book where book_id = $book_id";
+    $result_book = mysqli_query($connect, $sql_book);
+    $row_book = mysqli_fetch_assoc($result_book);
+
+
+    $book_name = $row_book["book_name"];
+    $borrowing_rent_date = $row_borrowing["borrowing_rent_date"];
+    $borrowing_return_date = $row_borrowing["borrowing_return_date"];
+?>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -40,8 +54,8 @@
             <p id="username"> username</p>
           </div>
           <div id="auth0" >
-            <input type="button" value="Register" id="regis" class="yellow"
-              onclick="window.location.href='../register.html'" />
+            <!-- <input type="button" value="Register" id="regis" class="yellow"
+              onclick="window.location.href='../register.html'" /> -->
             <input type="button" value="Sign in" id="signin" class="yellow" onclick="window.location.href='../signin.html'" />
           </div>
         <p id="hua" onclick="window.location.href='../index.html'">BbookK</p>
@@ -50,20 +64,38 @@
 
         </img>
     </div>
-    <div id="mid"></div>
-    <div id="bluebox"></div>
-    <div id="yellowbox">
-        <!-- <div id="whitebox">
-            <div id="inform" onclick="seeContract('123')" value="haha test" style="display: none;">
+    <!-- <div id="mid"></div> -->
+    <div id="bluebox">
+    </div>
+    <!-- <div id="yellowbox">
+
+        <div id="whitebox">
+            <div id="inform" onclick="seeContract('123')" value="haha test" >
                 <p>Samyan midtown hotel</p>
                 <p>2 person(s) / 1500 baht / 1 night</p>
                 <p>16 December 2565 -> 17 December 2565</p>
             </div>
-        </div> -->
-    </div>
+        </div>
+    
+    </div> -->
 
 
-    <p id="personal">Booked</p>
+    <p id="personal">History</p>
+
+    <div id="addBlock">
+        <div id="block" onclick="selectHotel(this)">
+          <div id="idHotel"></div>
+          <div id="roop"></div>
+          <!-- <p id="name">Book name</p> -->
+          <p id="lowname">
+          <div id="asd">
+            <p id="tumnang">book name :</p>
+            <p id="raka">rent date :</p>
+            <p id="konPak">return date :</p>
+          </div>
+          </p>
+        </div>
+      </div>
 
 
 </body>
