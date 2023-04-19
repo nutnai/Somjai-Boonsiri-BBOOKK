@@ -2,7 +2,7 @@ import {getauth, permission, authed} from "./auth.js"
 
 async function load() {
     if (authed()) {
-        var user_id = localStorage.getItem("user_id")
+        var user = JSON.parse(localStorage.getItem("user_detail"))
         console.log("I'm in!");
         if (document.getElementById("auth0") != null){
             document.getElementById("auth0").style.display = "none"
@@ -17,7 +17,7 @@ async function load() {
             img.style.height = "100%"
             img.style.borderRadius = "100%"
             document.getElementById("roob").appendChild(img)
-            document.getElementById("username").innerHTML = user.name
+            document.getElementById("username").innerHTML = user.firstname+" "+user.lastname
         }
     } else {
         console.log("Please sign in!")

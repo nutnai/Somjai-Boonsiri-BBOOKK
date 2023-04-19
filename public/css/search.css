@@ -176,14 +176,6 @@
     margin-top: -90px;
 }
 
-#boxandtext1{
-    display: flex;
-    justify-content: space-between;
-}
-#boxandtext{
-    display: flex;
-    
-}
 
 #search1{
     position: relative;
@@ -209,33 +201,19 @@
     margin-top: 50px;
     margin-left: 33px;
 }
-#textbox{
-    width: 233px;    
-    margin-left: 15px;
-    padding: 0px 10px;
+.textbox{
+    width: 226px;    
+    margin-right: 14px;
+    padding: 8.8px 10px;
     border-width: 2.587897987908098px;
     border-radius: 7px;
     border-color: #2a9d8f;
-
     font-family: 'Inria Sans';
     font-style: normal;
     font-weight: 100;
     font-size: 20px;
     line-height: 29px;
 
-}#textbox1{
-    width: 233px;
-    margin-left: 15px;
-    padding: 0px 10px;
-    border-width: 2.587897987908098px;
-    border-radius: 7px;
-    border-color: #2a9d8f;
-
-    font-family: 'Inria Sans';
-    font-style: normal;
-    font-weight: 100;
-    font-size: 20px;
-    line-height: 29px;
 }
 #searchbutton{
     margin-left: 900px;
@@ -267,9 +245,12 @@
     border-radius: 7px;
 
 }
-#box1{
+.boxandtext {
+    margin-bottom: 20px;
+}
+.box{
     padding-left: 10px;
-    margin-left: 1px;
+    margin-right: 14px;
     width: 250px;
     height: 50px;
     box-sizing: 50px;
@@ -284,13 +265,14 @@
     line-height: 29px;
 }
 #to{
+    display: inline;
+    width: fit-content;
     font-family: 'Inria Sans';
     font-style: normal;
     font-weight: 600;
     font-size: 20px;
     line-height: 30px;
-    margin-top: 10px;
-    margin-left: 2px;
+    margin-right: 14px;
 }
 
 #sifah{
