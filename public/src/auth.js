@@ -29,20 +29,23 @@ export function signin() {
     signInWithPopup(auth, provider)
         .then((result) => {
             console.log(result.user.uid);
+            var fullname = result.user.displayName.split(" ");
+            console.log(fullname[0]+" "+fullname[fullname.length - 1]);
             get_user(result.user.uid).then((user) => {
                 if (user !== undefined) {
-                    console.log("welcome back, " + user.name);
+                    console.log("welcome back, " + user.firstname + " " + user.lastname);
                     localStorage.setItem("isAuth", "yes");
-                    localStorage.setItem("user_id", user.id);
+                    localStorage.setItem("user_detail",JSON.stringify({id:user.id, firstname:fullname[0], lastname:fullname[fullname.length - 1], image:user.image}))
                 } else {
                     console.log("First time? welcome, " + result.user.displayName);
-                    add_user(result.user.uid, 0, result.user.photoURL).then((result) => {
+                    add_user(result.user.uid, fullname[0], fullname[fullname.length - 1] , result.user.photoURL, 0).then((result) => {
                         localStorage.setItem("isAuth", "yes");
+                    localStorage.setItem("user_detail",JSON.stringify({id:result.user.uid, firstname:fullname[0], lastname:fullname[fullname.length - 1], image:user.image}))
                     })
-                    localStorage.setItem("user_id", result.user.uid)
                 }
             })
         }).catch((error) => {
+            console.log(error);
         });
 }
 window.signin = signin;
@@ -55,7 +58,7 @@ export function signout() {
         signOut(auth).then(() => {
             console.log("see you later");
             localStorage.removeItem("isAuth");
-            localStorage.removeItem("user_id");
+            localStorage.removeItem("user_detail");
         }).catch((error) => {
 
         });
@@ -103,5 +106,5 @@ export async function permission(activity) {
 }
 
 export function authed() {
-    return localStorage.getItem("isAuth") && localStorage.getItem("user_id")
+    return localStorage.getItem("isAuth") && localStorage.getItem("user_detail")
 }

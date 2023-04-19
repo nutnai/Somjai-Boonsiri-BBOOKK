@@ -32,18 +32,22 @@ export async function get_user(id_user) {
 // get_user("UsAaanGHf6fFWRXk9n17arcykZt1").   then((result)=>{console.log(result);})
 ////////////////////////////////////////config
 //user
-export async function add_user(id_user, type, image) {
+export async function add_user(id_user, firstname, lastname, image,  type) {
 
     if (id_user != null) {
         await setDoc(doc(db, "user_list", id_user), {
-            type: type,
+            firstname: firstname,
+            lastname: lastname,
             image: image,
+            type: type
         });
         console.log("create new user!");
     } else {
         await addDoc(collection(db, "user_list"), {
-            type: type,
-            image: image
+            firstname: firstname,
+            lastname: lastname,
+            image: image,
+            type: type
         });
     }
 }
