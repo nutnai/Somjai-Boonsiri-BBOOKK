@@ -2,7 +2,7 @@
 <html lang="en">
 
 <?php
-    $borrower_id = 1; //explode("?", $_SERVER["PHP_SELF"])[1];
+    $borrower_id = 6434484923; //explode("?", $_SERVER["PHP_SELF"])[1];
 
     $servername = "localhost";
     $username = "id20576360_learnjapannutnai";
@@ -54,9 +54,7 @@
             <p id="username"> username</p>
           </div>
           <div id="auth0" >
-            <!-- <input type="button" value="Register" id="regis" class="yellow"
-              onclick="window.location.href='../register.html'" /> -->
-            <input type="button" value="Sign in" id="signin" class="yellow" onclick="window.location.href='../signin.html'" />
+            <input type="button" value="Sign in" id="signin" class="yellow" onclick="window.location.href='../signin.php'" />
           </div>
         <p id="hua" onclick="window.location.href='../index.html'">BbookK</p>
 
@@ -67,19 +65,7 @@
     <!-- <div id="mid"></div> -->
     <div id="bluebox">
     </div>
-    <!-- <div id="yellowbox">
-
-        <div id="whitebox">
-            <div id="inform" onclick="seeContract('123')" value="haha test" >
-                <p>Samyan midtown hotel</p>
-                <p>2 person(s) / 1500 baht / 1 night</p>
-                <p>16 December 2565 -> 17 December 2565</p>
-            </div>
-        </div>
     
-    </div> -->
-
-
     <p id="personal">History</p>
 
     <div id="addBlock">
@@ -89,9 +75,9 @@
           <!-- <p id="name">Book name</p> -->
           <p id="lowname">
           <div id="asd">
-            <p id="tumnang">book name :</p>
-            <p id="raka">rent date :</p>
-            <p id="konPak">return date :</p>
+            <p id="tumnang">book name : <?php echo $book_name; ?></p>
+            <p id="raka">rent date : <?php echo $borrowing_rent_date; ?></p>
+            <p id="konPak">return date : <?php echo $borrowing_return_date; ?></p>
           </div>
           </p>
         </div>

@@ -35,7 +35,7 @@
 
   <div id="information">
     <!-- <p id="hotel"></p> -->
-      <!-- <div class="rating">
+    <!-- <div class="rating">
       <span class="fa fa-star checked"></span>
       <span class="fa fa-star checked"></span>
       <span class="fa fa-star checked"></span>
@@ -49,37 +49,45 @@
     </div>
     <div id="detailText">
       <div id="sikaw">
-      <p> Status &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : </p>
-      <p> Book name &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : </p>
-      <p> Book Chapter &nbsp;&nbsp;&nbsp;&nbsp;:</p>
-      <p> Edition &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :</p>
-      <p> Language &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :</p>
-      <p> Genre &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : </p>
-      <p> Author &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :</p>
-      <p> Interpretor&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :</p>
-      <p> Book ISBN &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</p>
-      <p> Year &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :</p>
-      <p> Pages &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :</p>
-      <p> Price &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :</p>     
-      <p> Summary &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  :</p>
+        <p> Status
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : </p>
+        <p> Book name &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : </p>
+        <p> Book Chapter &nbsp;&nbsp;&nbsp;&nbsp;:</p>
+        <p> Edition &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :</p>
+        <p> Language &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :</p>
+        <p> Genre &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          : </p>
+        <p> Author &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :</p>
+        <p> Interpretor&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :</p>
+        <p> Book ISBN &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</p>
+        <p> Year
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          :</p>
+        <p> Pages
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :
+        </p>
+        <p> Price
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          :</p>
+        <p> Summary &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :</p>
       </div>
     </div>
     <div id="fahunder">
       <div id="sikaw22">
-      <p id="contact">&nbsp;&nbsp;&nbsp;Contact publisher : </p>
-      <p id="phone">&nbsp;&nbsp;&nbsp;Phone : </p>
-      <p id="email">&nbsp;&nbsp;&nbsp;Email : </p>
+        <p id="contact">&nbsp;&nbsp;&nbsp;Contact publisher : </p>
+        <p id="phone">&nbsp;&nbsp;&nbsp;Phone : </p>
+        <p id="email">&nbsp;&nbsp;&nbsp;Email : </p>
       </div>
-  </div>
-  </div>
-  <div id="heartborrow">
-    <div class="heart-btn">
-      <div class="content"><span class="heart"></span></div>
     </div>
-    <input type="button" value="borrow" id="reserve" class="yellow"
-      onclick="document.getElementById('all').style.display = '';document.getElementById('reserveall').style.display = '';document.getElementById('booked').style.display = 'none'">
-      
+    <div id="heartborrow">
+      <div class="heart-btn">
+        <div class="content"><span class="heart"></span></div>
+      </div>
+      <input type="button" value="borrow" id="reserve" class="yellow"
+        onclick="document.getElementById('all').style.display = '';document.getElementById('reserveall').style.display = '';document.getElementById('booked').style.display = 'none'">
+    </div>
   </div>
+
 
 
 
@@ -102,24 +110,24 @@
           onclick="document.getElementById('all').style.display = 'none'">
       </div> -->
 
-      <div id="all" style="display: none">
-        <div id="bgall"></div>
-        <div id="all2">
-          <div id="booked" class="bgWhiteAll">
-            <p style="text-align: center;">Are you sure you want to borrow this book?</p>
-            <input type="button" value="Back" id="backall" onclick="document.getElementById('all').style.display='none';">
-            <input type="button" value="Confirm" id="confirmall" onclick="clickDelete()">
-          </div>
-        </div>
-      </div>
-
-      <div id="booked" class="bgWhiteAll" style="display: none;">
-        <p style="text-align: center;">Successfully booked. Thank you for using the service.</p>
-        <img id="imageCorrect" src="https://storage.googleapis.com/travalokail-55abf.appspot.com/lg/lg_correct.webp">
+  <div id="all" style="display: none">
+    <div id="bgall"></div>
+    <div id="all2">
+      <div id="booked" class="bgWhiteAll">
+        <p style="text-align: center;">Are you sure you want to borrow this book?</p>
         <input type="button" value="Back" id="backall" onclick="document.getElementById('all').style.display='none';">
-        <input type="button" value="See contract" id="contractall" onclick="clickContract()">
+        <input type="button" value="Confirm" id="confirmall" onclick="clickDelete()">
       </div>
     </div>
+  </div>
+
+  <div id="booked" class="bgWhiteAll" style="display: none;">
+    <p style="text-align: center;">Successfully booked. Thank you for using the service.</p>
+    <img id="imageCorrect" src="https://storage.googleapis.com/travalokail-55abf.appspot.com/lg/lg_correct.webp">
+    <input type="button" value="Back" id="backall" onclick="document.getElementById('all').style.display='none';">
+    <input type="button" value="See contract" id="contractall" onclick="clickContract()">
+  </div>
+  </div>
   </div>
   <script>
     $(document).ready(function () {

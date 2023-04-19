@@ -478,7 +478,7 @@
     visibility: hidden;
 }
 
-#tumnang{
+#bookna{
     position: relative;
     width: 330px;
     height: 30px;
@@ -496,7 +496,7 @@
     
 }
 
-#raka{
+#bookch{
     position: relative;
     width: 330px;
     height: 30px;
@@ -512,7 +512,7 @@
     font-size: 16px;
     line-height: 29px;
 }
-#konPak{
+#bookau{
     position: relative;
     width: 330px;
     height: 30px;

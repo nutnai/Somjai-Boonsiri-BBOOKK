@@ -89,9 +89,7 @@
         <input class="yess" type="button" value="Yes" id="yes">
     </div>
     <div class="admin">
-
-        <button type="button" id="adminy" onclick="window.location.href='./hotel edit.html'">History</button>
-        <!-- <button type="button" id="editHotel" onclick="window.location.href='./hotelList.html'">Edit Book</button> -->
+        <button type="button" id="adminy" onclick="window.location.href='./history.php'">History</button>
     </div>
 
     <script>
