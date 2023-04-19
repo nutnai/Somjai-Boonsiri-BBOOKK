@@ -93,8 +93,8 @@
     </div>
     <div class="admin">
 
-        <button type="button" id="adminy" onclick="window.location.href='./book_edit.html'">Add Book</button>
-        <button type="button" id="editHotel" onclick="window.location.href='./publisher_book.html'">Book List</button>
+        <button type="button" id="adminy" onclick="window.location.href='./book_edit.php'">Add Book</button>
+        <button type="button" id="editHotel" onclick="window.location.href='./publisher_book.php'">Book List</button>
     </div>
 
     <script>

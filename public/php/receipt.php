@@ -70,7 +70,7 @@
     <div id="auth0" style="display: none;">
       <!-- <input type="button" value="Register" id="regis" class="yellow"
         onclick="window.location.href='../register.html'" /> -->
-      <input type="button" value="Sign in" id="signin" class="yellow" onclick="window.location.href='../signin.html'" />
+      <input type="button" value="Sign in" id="signin" class="yellow" onclick="window.location.href='../signin.php'" />
     </div>
     </div>
   </div>
