@@ -33,11 +33,10 @@ var bigbox = document.getElementById("boxadd")
 var range = document.createRange();
 
 async function check_number_dropbox(node, value) {
+    var node_id = node.id.charAt(node.id.length - 1);
     //new node
-    var newbox2 = range.createContextualFragment('<select class="box" id="box2" onchange="select_dropbox2(this.parentNode, this.value)"><option value="เท่ากับ">เท่ากับ</option><option value="มากกว่า">มากกว่า</option><option value="น้อยกว่า">น้อยกว่า</option><option value="ช่วง">ช่วง</option></select>')
-    var newtextbox1 = range.createContextualFragment('<input type="text" class="textbox" id="textbox1">')
-    var newtextbox2 = range.createContextualFragment('<input type="text" class="textbox" id="textbox2">')
-    var newto = range.createContextualFragment('<p id="to">to</p>')
+    var newbox2 = range.createContextualFragment('<select name="dropbox2'+node_id+'" class="box" id="box2" onchange="select_dropbox2(this.parentNode, this.value)"><option value="เท่ากับ">เท่ากับ</option><option value="มากกว่า">มากกว่า</option><option value="น้อยกว่า">น้อยกว่า</option><option value="ช่วง">ช่วง</option></select>')
+    var newtextbox1 = range.createContextualFragment('<input type="text" name="textbox1'+node_id+'" class="textbox" id="textbox1" required>')
 
     //element
     var number_children = bigbox.children.length
@@ -64,9 +63,9 @@ window.check_number_dropbox = check_number_dropbox;
 
 async function select_dropbox2(node, value) {
     //new node
-    var newtextbox1 = range.createContextualFragment('<input type="text" class="textbox" id="textbox1">')
-    var newtextbox2 = range.createContextualFragment('<input type="text" class="textbox" id="textbox2">')
-    var newto = range.createContextualFragment('<p id="to">to</p>')
+    var newtextbox1 = range.createContextualFragment('<input type="text" name="textbox1'+node_id+'" class="textbox" id="textbox1" required>')
+    var newtextbox2 = range.createContextualFragment('<input type="text" name="textbox2'+node_id+'" class="textbox" id="textbox2" required>')
+    var newto = range.createContextualFragment('<p name="to'+node_id+'" id="to">to</p>')
 
     //element
     var textbox1 = node.querySelector("#textbox1")
@@ -94,7 +93,13 @@ function maximum_dropbox() {
     var count = bigbox.childElementCount
     var last_dropbox = count!=0?bigbox.lastElementChild.querySelector("#box1").value:1
     if (count < 4 && last_dropbox != "none") {
-        bigbox.appendChild(range.createContextualFragment('<div class="boxandtext"><select class="box" id="box1" onchange="check_number_dropbox(this.parentNode, this.value)"><option value="none">none</option><option value="ชื่อหนังสือ">ชื่อหนังสือ</option><option value="ชื่อตอน">ชื่อตอน</option><option value="ชื่อผู้แต่ง">ชื่อผู้แต่ง</option><option value="ชื่อผู้แปล">ชื่อผู้แปล</option><option value="ชื่อสำนักพิมพ์">ชื่อสำนักพิมพ์</option><option value="ISBN">ISBN</option><option value="ครั้งที่พิมพ์">ครั้งที่พิมพ์</option><option value="ปีที่พิมพ์">ปีที่พิมพ์</option><option value="ราคา">ราคา</option></select></div>'))
+        for(var number = 1; number <= 4 ; number++) {
+            if (!bigbox.querySelector("#_"+number)) {
+                bigbox.appendChild(range.createContextualFragment('<div class="boxandtext" id="_'+number+'"><select name="dropbox1'+number+'" class="box" id="box1" onchange="check_number_dropbox(this.parentNode, this.value)"><option value="none">none</option><option value="ชื่อหนังสือ">ชื่อหนังสือ</option><option value="ชื่อตอน">ชื่อตอน</option><option value="ชื่อผู้แต่ง">ชื่อผู้แต่ง</option><option value="ชื่อผู้แปล">ชื่อผู้แปล</option><option value="ชื่อสำนักพิมพ์">ชื่อสำนักพิมพ์</option><option value="ISBN">ISBN</option><option value="ครั้งที่พิมพ์">ครั้งที่พิมพ์</option><option value="ปีที่พิมพ์">ปีที่พิมพ์</option><option value="ราคา">ราคา</option></select></div>'))
+                break;
+            }
+        }
+        
     }
 }
 maximum_dropbox()

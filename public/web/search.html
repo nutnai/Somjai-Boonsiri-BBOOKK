@@ -35,9 +35,33 @@
                     <form action="" id="box">
                         <div id="boxadd">
 
-                        </div>
-                        <input type="submit" name="" id="searchbutton" value="Search">
+                            <div class="boxandtext"><select class="box" id="box1"
+                                    onchange="check_number_dropbox(this.parentNode, this.value)"
+                                    control-id="ControlID-6">
+                                    <option value="none">none</option>
+                                    <option value="ชื่อหนังสือ">ชื่อหนังสือ</option>
+                                    <option value="ชื่อตอน">ชื่อตอน</option>
+                                    <option value="ชื่อผู้แต่ง">ชื่อผู้แต่ง</option>
+                                    <option value="ชื่อผู้แปล">ชื่อผู้แปล</option>
+                                    <option value="ชื่อสำนักพิมพ์">ชื่อสำนักพิมพ์</option>
+                                    <option value="ISBN">ISBN</option>
+                                    <option value="ครั้งที่พิมพ์">ครั้งที่พิมพ์</option>
+                                    <option value="ปีที่พิมพ์">ปีที่พิมพ์</option>
+                                    <option value="ราคา">ราคา</option>
+                                </select><select class="box" id="box2"
+                                    onchange="select_dropbox2(this.parentNode, this.value)" control-id="ControlID-16">
+                                    <option value="เท่ากับ">เท่ากับ</option>
+                                    <option value="มากกว่า">มากกว่า</option>
+                                    <option value="น้อยกว่า">น้อยกว่า</option>
+                                    <option value="ช่วง">ช่วง</option>
+                                </select><input type="text" class="textbox" id="textbox1" control-id="ControlID-18">
+                                <p id="to">to</p><input type="text" class="textbox" id="textbox2"
+                                    control-id="ControlID-19">
+                            </div>
 
+                        </div>
+                        <input type="hidden" name="postboxadd" id="postboxadd" value="">
+                        <input type="submit" name="" id="searchbutton" value="Search">
                     </form>
                 </div>
             </div>
