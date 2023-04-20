@@ -7,13 +7,14 @@ $servername = "localhost";
 $username = "id20576360_learnjapannutnai";
 $password = "wn3V%=/uMYin&|o2";
 $dbname = "id20576360_bbookk";
+$connect = mysqli_connect($servername, $username, $password, $dbname);
 
 $sql = "select * from publisher where publisher_id = $publisher_id";
-$connect = mysqli_connect($servername, $username, $password, $dbname);
 $result = mysqli_query($connect, $sql);
 $row = mysqli_fetch_assoc($result);
 $text = $row["publisher_name"];
 ?>
+
 
 <head>
     <meta charset="UTF-8">
