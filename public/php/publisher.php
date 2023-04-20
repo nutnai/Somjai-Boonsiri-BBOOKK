@@ -8,8 +8,9 @@
     $password = "wn3V%=/uMYin&|o2";
     $dbname = "id20576360_bbookk";
 
-    $sql = "select * from publisher where publisher_id = $publisher_id";
     $connect = mysqli_connect($servername, $username, $password, $dbname);
+
+    $sql = "select * from publisher where publisher_id = $publisher_id";
     $result = mysqli_query($connect, $sql);
     $row = mysqli_fetch_assoc($result);
     $publisher_id = $row["publisher_id"];
@@ -93,7 +94,7 @@
     </div>
     <div class="admin">
 
-        <button type="button" id="adminy" onclick="window.location.href='./book_edit.php'">Add Book</button>
+        <button type="button" id="adminy" onclick="window.location.href='./book_add.php'">Add Book</button>
         <button type="button" id="editHotel" onclick="window.location.href='./publisher_book.php'">Book List</button>
     </div>
 

@@ -48,6 +48,13 @@
     }
     $interpreter_id = md5($interpreter_fname . time());
     // Insert into interpreter table
+    $sql_interpreter = "INSERT INTO interpreter (interpreter_id, interpreter_firstname, interpreter_lastname) 
+    VALUES ('$interpreter_id','$interpreter_fname', '$interpreter_lname')";
+
+    if (!(mysqli_query($connect, $sql_interpreter))) {
+        $cerror++;
+        echo "Error inserting interpreter : " . mysqli_error($connect);
+    } 
     
     $sql_book_translated = "INSERT INTO book_translated (book_id, interpreter_id) 
     VALUES ('$book_id','$interpreter_id')";
