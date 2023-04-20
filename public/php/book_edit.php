@@ -34,12 +34,12 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <link rel="stylesheet" href="../css/edit.css">
+  <link rel="stylesheet" href="../css/book_edit.css">
   <link href='https://fonts.googleapis.com/css?family=Inria Sans' rel='stylesheet'>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>edit book</title>
   <script type="module" src="../src/hasTopRightAuth.js"></script>
-  <script type="module" src="../src/edit.js"></script>
+  <script type="module" src="../src/book_edit.js"></script>
 </head>
 
 <body>
@@ -68,7 +68,7 @@
       <div id="yellowbox">
         <div id="whitebox">
           <p class="head">Book Name :</p>
-          <input type="text" class="info" placeholder="Book Name . . ." value="<?php echo $book_name ?>"></p>
+          <input class="info" placeholder="Book Name . . ." value="<?php echo $book_name ?>"></p>
           <div class="line"></div>
           <p class="head">Book Chapter :</p>
           <input type="text" class="info" placeholder="Book Chapter . . ." value="<?php echo $book_chapter ?>"></p>
@@ -92,7 +92,12 @@
           <input type="text" class="info" placeholder="Book Language . . ." value="<?php echo $book_language ?>"></p>
           <div class="line"></div>
           <p class="head">Book Summary :</p>
-          <input type="text" class="info" placeholder="Book Sunmmary . . ." value="<?php echo $book_summary ?>"></p>
+          <textarea id="myTextarea" class="infoo" placeholder="Book Summary . . ."><?php echo $book_summary ?></textarea>
+          <!-- <textarea type="text" id="myTextarea" class="info" placeholder="Book Sunmmary . . ." value="<?php echo $book_summary ?>"></textarea></p> -->
+          <script>
+            var myTextarea = document.getElementById("myTextarea");
+            myTextarea.value = "<?php echo $book_summary ?>";
+          </script>
           <div class="line"></div>
           <p class="head">Author firstname :</p>
           <input type="text" class="info" placeholder="Author firstname . . ." value="<?php echo $author_fname ?>"></p>
@@ -106,18 +111,6 @@
           <p class="head">Interpeter lastname :</p>
           <input type="text" class="info" placeholder="Interpreter lastname . . ." value="<?php echo $interpeter_lname ?>"></p>
           <div class="line"></div>
-          
-          <!-- <p class="head">Rate price :</p>
-          <input type="button" id="addRatePriceButton" value="+" onclick="zone('ratePriceZone','add')">
-          <input type="button" id="removeRatePriceButton" value="-" onclick="zone('ratePriceZone','remove')">
-          <div id="ratePriceZone">
-            <div>
-              <input type="number" class="ratePriceZone"  style="width: 50px;">
-              <p class="ratePriceZoneText1">person(s)</p>
-              <input type="number" class="ratePriceZone" >
-              <p class="ratePriceZoneText2">baht</p>
-            </div>
-          </div> -->
           <div class="line"></div>
           <div class="headd">
             <p class="head">Image :</p>
@@ -179,20 +172,110 @@
     line-height: 29px;
     color: #1a3244;
     margin: 3%;
-
+    word-wrap: break-word;
   }
 
-  #whitebox .info {
+  #whitebox .info { 
+    word-wrap: visible ;
+    resize: auto;
+    overflow-wrap: break-word;
+    text-indent: -180px;
     width: 500px;
     position: absolute;
     right: 0px;
     display: inline-block;
-    text-align: right;
+    text-align: right ;
     right: 30px;
     margin-top: 30px;
     font-size: 18px;
     border: none;
     background-color: rgb(218, 217, 217);
+  }
+
+  #whitebox.infoo{
+        /* writing-mode: horizontal-tb !important;
+    font-style: ;
+    font-variant-ligatures: ;
+    font-variant-caps: ;
+    font-variant-numeric: ;
+    font-variant-east-asian: ;
+    font-variant-alternates: ;
+    font-weight: ;
+    font-stretch: ;
+    font-size: ;
+    font-family: 'Inria Sans';
+    text-rendering: auto;
+    color: fieldtext;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: right;
+    appearance: auto;
+    -webkit-rtl-ordering: logical;
+    resize: auto;
+    cursor: text;
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+    background-color: field;
+    column-count: initial !important;
+    margin: 0em;
+    border-width: 1px;
+    border-style: solid;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
+    padding: 20px; */
+    writing-mode: horizontal-tb !important;
+font-style: normal;
+font-variant-ligatures: none;
+font-variant-caps: normal;
+font-variant-numeric: normal;
+font-variant-east-asian: normal;
+font-variant-alternates: normal;
+font-weight: normal;
+font-stretch: normal;
+font-size: initial;
+font-family: 'Inria Sans';
+text-rendering: auto;
+color: fieldtext;
+letter-spacing: normal;
+word-spacing: normal;
+line-height: normal;
+text-transform: none;
+text-indent: -180px;
+text-shadow: none;
+display: inline-block;
+text-align: right;
+appearance: auto;
+-webkit-rtl-ordering: logical;
+resize: auto;
+cursor: text;
+white-space: pre-wrap;
+overflow-wrap: break-word;
+background-color: field;
+column-count: initial !important;
+margin: 0em;
+border-width: 1px;
+/* border-style: solid;
+border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+border-image: initial; */
+padding: 20px;
+word-wrap: visible;
+resize: auto;
+overflow-wrap: break-word;
+width: 500px;
+position: absolute;
+right: 30px;
+display: inline-block;
+text-align: right;
+margin-top: 30px;
+font-size: 18px;
+border: none;
+background-color: rgb(218, 217, 217);
+
   }
 
   #whitebox .head {

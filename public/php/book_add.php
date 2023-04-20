@@ -81,10 +81,11 @@
             <p class="head">Image :</p>
           <input type="file" id="image-upload" name="image-upload" accept="image/*" multiple>
           </div>
-          <input id="save" type="submit" value="add">
         </form>
         </div>
+        <input id="save" type="submit" value="add">
       </div>
+      
     </div>
   </div>
   <input type="button" id="delete" value="delete hotel" style="display: none;" onclick="document.getElementById('all').style.display='';document.getElementById('booked').style.display=''";>
@@ -142,10 +143,11 @@
   }
 
   #whitebox .info {
+    word-wrap: break-word;
+    word-break: break-word;
     width: 500px;
     position: absolute;
     right: 0px;
-    display: inline-block;
     text-align: right;
     right: 30px;
     margin-top: 30px;

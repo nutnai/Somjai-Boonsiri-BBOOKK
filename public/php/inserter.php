@@ -105,11 +105,11 @@
         $publisher_phone = $_POST['publisher_phone'];
         $publisher_email = $_POST['publisher_email'];
         
-        $sql_borrower = "UPDATE publish SET publisher_name = '$publisher_name',publisher_address = '$publisher_address',publisher_phone = '$publisher_phone',publisher_email='$publisher_email'";
+        $sql_borrower = "UPDATE publisher SET publisher_name = '$publisher_name',publisher_address = '$publisher_address',publisher_phone = '$publisher_phone',publisher_email='$publisher_email' WHERE publisher_id = $publisher_id ";
 
         if (!(mysqli_query($connect, $sql_borrower))) {
             $cerror++;
-            echo "Error updating publish : " . mysqli_error($connect);
+            echo "Error updating publisher : " . mysqli_error($connect);
         } 
         if($cerror==0){
             echo "update successful";
