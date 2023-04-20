@@ -44,36 +44,38 @@
        
     <div id="information">
         <div id="yellowbox">
+        <form method="post" action="./inserter.php">
           <div id="whitebox">
+            <input type="hidden" name="type" value="profile">
             <p class="head">ID :</p>
-            <p class="info"><input type="text" name="" id="textbox"  value ="<?php echo $borrower_id ?>"></p>
+            <p class="info"><input type="text" id="borrower_id" name="borrower_id" required readonly class="textbox"  value ="<?php echo $borrower_id ?>"></p>
             <div class="line"></div>
             <p class="head">First Name :</p>
-            <p class="info"><input type="text" name="" id="textbox" value="<?php echo $borrower_fname ?>"></p>
+            <p class="info"><input type="text" id="borrower_fname" name="borrower_fname" required readonly class="textbox" value="<?php echo $borrower_fname ?>"></p>
             <div class="line"></div>
             <p class="head">Last Name :</p>
-            <p class="info"><input type="text" name="" id="textbox" value="<?php echo $borrower_lname ?>"></p>
+            <p class="info"><input type="text" id="borrower_lname" name="borrower_lname" required readonly class="textbox" value="<?php echo $borrower_lname ?>"></p>
             <div class="line"></div>
             <p class="head">Address :</p>
-            <p class="info"><input type="text" name="" id="textbox" value="<?php echo $borrower_address ?>"></p>
+            <p class="info"><input type="text" id="borrower_address" name="borrower_address" required readonly class="textbox" value="<?php echo $borrower_address ?>"></p>
             <div class="line"></div>
             <p class="head">Birthday :</p>
-            <p class="info"><input type="text" name="" id="textbox" value="<?php echo $borrower_birthday ?>"></p>
+            <p class="info"><input type="text" id="borrower_birthday" name="borrower_birthday" required readonly class="textbox" value="<?php echo $borrower_birthday ?>"></p>
             <div class="line"></div>
             <p class="head">Register Date :</p>
-            <p class="info"><input type="text" name="" id="textbox" value="<?php echo $borrower_register_date ?>"></p>
+            <p class="info"><input type="text" id="borrower_register_date" name="borrower_register_date" required readonly class="textbox" value="<?php echo $borrower_register_date ?>"></p>
             <div class="line"></div>
             <p class="head">Phone :</p>
-            <p class="info"><input type="text" name="" id="textbox" value="<?php echo $borrower_phone ?>"></p>
+            <p class="info"><input type="text" id="borrower_phone" name="borrower_phone" required readonly class="textbox" value="<?php echo $borrower_phone ?>"></p>
             <div class="line"></div>
             <p class="head">Email:</p>
-            <p class="info"><input type="text" name="" id="textbox" value="<?php echo $borrower_email ?>"></p>
+            <p class="info"><input type="text" id="borrower_email" name="borrower_email" required readonly class="textbox" value="<?php echo $borrower_email ?>"></p>
             <div class="line"></div>
             <input id="but1" type="button" value="Edit" onclick="clickEdit('edit')"  >
-            <input id="but2" type="button" value="Save" onclick="clickEdit('save')" style="display: none;">
+            <input id="but2" type="submit" value="Save" onclick="clickEdit('save')" style="display: none;">
             <input id="but3" type="button" value="Cancel" onclick="clickEdit('cancel')" style="display: none;">
           </div>
-          
+        </form>  
         </div>
     </div>
 

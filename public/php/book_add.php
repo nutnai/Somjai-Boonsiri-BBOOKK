@@ -36,6 +36,7 @@
       <div id="yellowbox">
         <div id="whitebox">
         <form method="post" action="./inserter.php">
+          <input type="hidden" name="type" value="add">
           <p class="head">Book Name :</p>
           <input type="text" id="book_name" name="book_name" require class="info" placeholder="Book Name . . .">
           <div class="line"></div>
@@ -80,7 +81,7 @@
             <p class="head">Image :</p>
           <input type="file" id="image-upload" name="image-upload" accept="image/*" multiple>
           </div>
-          <input id="save" type="submit" value="save">
+          <input id="save" type="submit" value="add">
         </form>
         </div>
       </div>
