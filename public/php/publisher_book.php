@@ -10,7 +10,14 @@ $password = "wn3V%=/uMYin&|o2";
 $dbname = "id20576360_bbookk";
 $connect = mysqli_connect($servername, $username, $password, $dbname);
 
-$sql_book = "select * from book where publisher_id = $publisher_id";
+// $sql_book = "select * from book where publisher_id = $publisher_id";
+// $result_book = mysqli_query($connect, $sql_book);
+$sql_book = "SELECT b.*, GROUP_CONCAT(CONCAT(a.author_firstname, ' ', a.author_lastname) SEPARATOR ', ') as author_name
+             FROM book b
+             LEFT JOIN book_written bw ON b.book_id = bw.book_id
+             LEFT JOIN author a ON bw.author_id = a.author_id
+             WHERE b.publisher_id = $publisher_id
+             GROUP BY b.book_id";
 $result_book = mysqli_query($connect, $sql_book);
 
 ?>
@@ -45,53 +52,20 @@ $result_book = mysqli_query($connect, $sql_book);
     <!-- <div id="mid"></div> -->
     <div id="bluebox">
     </div>
-    <!-- <div id="yellowbox">
-
-        <div id="whitebox">
-            <div id="inform" onclick="seeContract('123')" value="haha test" >
-                <p>Samyan midtown hotel</p>
-                <p>2 person(s) / 1500 baht / 1 night</p>
-                <p>16 December 2565 -> 17 December 2565</p>
-            </div>
-        </div>
-    
-    </div> -->
-
 
     <p id="personal">Book List</p>
 
     <div id="addBlock">
-        <?php
+    <?php
         while ($row_book = mysqli_fetch_assoc($result_book)) {
             $book_id = $row_book["book_id"];
             $book_name = $row_book["book_name"];
             $book_chapter = $row_book["book_chapter"];
-            $sql_3 = "select * from book_written where book_id = $book_id";
-            $result_3 = mysqli_query($connect, $sql_3);
-        
-            $author_name = "";
-            while ( $row_book_written = mysqli_fetch_assoc($result_3)) {
-                $author_id = $row_book_written["author_id"];
-
-                $sql_4 = "select * from author where author_id = $author_id";
-                $result_4 = mysqli_query($connect, $sql_4);
-                $row_author = mysqli_fetch_assoc($result_4);
-
-                $author_fname = $row_author["author_firstname"];
-                $author_lname = $row_author["author_lastname"];
-                $author_almost_name = $author_fname . " " . $author_lname;
-                if (empty($author_name)) {
-                    $author_name = $author_almost_name;
-                    
-                } else {
-                    $author_name = $author_name . ", " . $author_almost_name;
-                }
-            }
+            $author_name = $row_book["author_name"];
 
             echo '<div id="block" onclick="selectHotel(this)">
             <div id="idHotel"></div>
             <div id="roop"></div>
-            <!-- <p id="name">Book name</p> -->
             <p id="lowname">
             <div id="asd">
                 <p id="bookna">book name : ' . $book_name . '</p>

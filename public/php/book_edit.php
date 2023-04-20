@@ -49,7 +49,7 @@
           <input type="number" id="book_npage" name="book_npage" require class="info" placeholder="Book Number Of Pages . . .">
           <div class="line"></div>
           <p class="head">Book Year :</p>
-          <input type="date" id="book_yaer" name="book_year" require class="info" placeholder="Book Wrtitten date . . .">
+          <input type="text" id="book_yaer" name="book_year" require class="info" placeholder="Book Wrtitten date . . .">
           <div class="line"></div>
           <p class="head">Book Price :</p>
           <input type="number" id="book_price" name="book_price" class="info" placeholder="Book Price . . .">
