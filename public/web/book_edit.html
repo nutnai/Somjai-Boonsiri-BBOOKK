@@ -38,7 +38,7 @@
       <div id="yellowbox">
         <div id="whitebox">
           <p class="head">Book Name :</p>
-          <input type="text" class="info" placeholder="Book Name . . .">
+          <input type="text" class="info" placeholder="Book Name . . . ">
           <div class="line"></div>
           <p class="head">Book Chapter :</p>
           <input type="text" class="info" placeholder="Book Chapter . . .">
@@ -62,7 +62,7 @@
           <input type="text" class="info" placeholder="Book Language . . .">
           <div class="line"></div>
           <p class="head">Book Summary :</p>
-          <input type="text" class="info" placeholder="Book Sunmmary . . .">
+          <textarea placeholder="Book summary..." onkeypress="auto_grow(this);" onkeyup="auto_grow(this);"></textarea>
           <div class="line"></div>
           <p class="head">Author firstname :</p>
           <input type="text" class="info" placeholder="Author firstname . . .">
@@ -76,18 +76,6 @@
           <p class="head">Interpeter lastname :</p>
           <input type="text" class="info" placeholder="Interpeter lastname . . .">
           <div class="line"></div>
-          
-          <!-- <p class="head">Rate price :</p>
-          <input type="button" id="addRatePriceButton" value="+" onclick="zone('ratePriceZone','add')">
-          <input type="button" id="removeRatePriceButton" value="-" onclick="zone('ratePriceZone','remove')">
-          <div id="ratePriceZone">
-            <div>
-              <input type="number" class="ratePriceZone"  style="width: 50px;">
-              <p class="ratePriceZoneText1">person(s)</p>
-              <input type="number" class="ratePriceZone" >
-              <p class="ratePriceZoneText2">baht</p>
-            </div>
-          </div> -->
           <div class="line"></div>
           <div class="headd">
             <p class="head">Image :</p>
@@ -120,6 +108,16 @@
       </div>
     </div>
   </div>
+  <script type="text/javascript">
+      function auto_grow(element){
+        element.style.height = "5px";
+        element.style.height = (element.scrollHeight)+"px";
+      }
+   
+  </script>
+
+
+
 </body>
 
 </html>

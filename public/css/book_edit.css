@@ -208,10 +208,11 @@
     border-radius: 10px;
 }
 #save{
-    position: absolute;
+    position: relative;
     width: 107px;
     height: 45px;
-    top: 937px;
+    top: -58px;
+    left:660px;
     padding: 0;
     border: none;
     background: none;
@@ -227,6 +228,34 @@
     color: #FFFFFF;
 
 }
+#whitebox textarea{
+    text-align: right;
+    width: 410px;
+    height:30px;
+    outline: none;
+    resize: none;
+    padding: 2px 50px;
+    border-radius: 5px;
+    overflow: hidden;
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 19px;
+    line-height: 29px;
+    max-height:430px ;
+    margin-top: 20px;
+    margin-left: 80px;
+    background-color: rgb(218, 217, 217);
+}
+textarea:is(focus, :valid){
+    border-color: #FFFFFF ;
+    border-width: 2px;
+    padding:14px;
+}
+textarea::-webkit-scrollbar{
+    width: 0px;
+}
+
 .line {
     position: relative;
     width: 94%;
