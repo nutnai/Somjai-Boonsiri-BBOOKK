@@ -4,12 +4,12 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <link rel="stylesheet" href="../css/edit.css">
+  <link rel="stylesheet" href="../css/book_edit.css">
   <link href='https://fonts.googleapis.com/css?family=Inria Sans' rel='stylesheet'>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>New Book</title>
   <script type="module" src="../src/hasTopRightAuth.js"></script>
-  <script type="module" src="../src/edit.js"></script>
+  <script type="module" src="../src/book_edit.js"></script>
 </head>
 
 <body>
@@ -76,23 +76,12 @@
           <p class="head">Interpeter lastname :</p>
           <input type="text" class="info" placeholder="Interpreter lastname . . .">
           <div class="line"></div>
-          
-          <!-- <p class="head">Rate price :</p>
-          <input type="button" id="addRatePriceButton" value="+" onclick="zone('ratePriceZone','add')">
-          <input type="button" id="removeRatePriceButton" value="-" onclick="zone('ratePriceZone','remove')">
-          <div id="ratePriceZone">
-            <div>
-              <input type="number" class="ratePriceZone"  style="width: 50px;">
-              <p class="ratePriceZoneText1">person(s)</p>
-              <input type="number" class="ratePriceZone" >
-              <p class="ratePriceZoneText2">baht</p>
-            </div>
-          </div> -->
           <div class="line"></div>
           <div class="headd">
             <p class="head">Image :</p>
           <input type="file" id="image-upload" name="image-upload" accept="image/*" multiple>
           </div>
+          <!-- <input id="save"type="button" value="save" onclick="save()"> -->
           <input id="save"type="button" value="save" onclick="save()">
         </div>
       </div>
@@ -153,10 +142,12 @@
   }
 
   #whitebox .info {
+    word-wrap: break-word;
+    word-break: break-word;
     width: 500px;
     position: absolute;
     right: 0px;
-    display: inline-block;
+    /* display: inline-block; */
     text-align: right;
     right: 30px;
     margin-top: 30px;

@@ -208,11 +208,13 @@
     border-radius: 10px;
 }
 #save{
-    position: absolute;
+    position: relative;
     width: 107px;
     height: 45px;
-    top: 937px;
-    padding: 0;
+    margin-top: 0;
+    top: -55px;
+    left: 650px;
+    
     border: none;
     background: none;
     background: #2a9d8f;
