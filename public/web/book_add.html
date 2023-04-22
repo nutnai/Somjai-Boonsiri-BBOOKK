@@ -4,12 +4,12 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <link rel="stylesheet" href="../css/book_edit.css">
+  <link rel="stylesheet" href="../css/book_add.css">
   <link href='https://fonts.googleapis.com/css?family=Inria Sans' rel='stylesheet'>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>New Book</title>
   <script type="module" src="../src/hasTopRightAuth.js"></script>
-  <script type="module" src="../src/book_edit.js"></script>
+  <script type="module" src="../src/book_add.js"></script>
 </head>
 
 <body>
@@ -38,7 +38,7 @@
       <div id="yellowbox">
         <div id="whitebox">
           <p class="head">Book Name :</p>
-          <input type="text" class="info" placeholder="Book Name . . . ">
+          <input type="text" class="info" placeholder="Book Name . . .">
           <div class="line"></div>
           <p class="head">Book Chapter :</p>
           <input type="text" class="info" placeholder="Book Chapter . . .">
@@ -62,7 +62,7 @@
           <input type="text" class="info" placeholder="Book Language . . .">
           <div class="line"></div>
           <p class="head">Book Summary :</p>
-          <textarea placeholder="Book summary..." onkeypress="auto_grow(this);" onkeyup="auto_grow(this);"></textarea>
+          <input type="text" class="info" placeholder="Book Sunmmary . . .">
           <div class="line"></div>
           <p class="head">Author firstname :</p>
           <input type="text" class="info" placeholder="Author firstname . . .">
@@ -71,17 +71,28 @@
           <input type="text" class="info" placeholder="Author lastname . . .">
           <div class="line"></div>
           <p class="head">Interpeter firstname :</p>
-          <input type="text" class="info" placeholder="Interpreter firstname . . .">
+          <input type="text" class="info" placeholder="Interpeter firstname . . .">
           <div class="line"></div>
           <p class="head">Interpeter lastname :</p>
-          <input type="text" class="info" placeholder="Interpreter lastname . . .">
+          <input type="text" class="info" placeholder="Interpeter lastname . . .">
           <div class="line"></div>
+          
+          <!-- <p class="head">Rate price :</p>
+          <input type="button" id="addRatePriceButton" value="+" onclick="zone('ratePriceZone','add')">
+          <input type="button" id="removeRatePriceButton" value="-" onclick="zone('ratePriceZone','remove')">
+          <div id="ratePriceZone">
+            <div>
+              <input type="number" class="ratePriceZone"  style="width: 50px;">
+              <p class="ratePriceZoneText1">person(s)</p>
+              <input type="number" class="ratePriceZone" >
+              <p class="ratePriceZoneText2">baht</p>
+            </div>
+          </div> -->
           <div class="line"></div>
           <div class="headd">
             <p class="head">Image :</p>
           <input type="file" id="image-upload" name="image-upload" accept="image/*" multiple>
           </div>
-          <!-- <input id="save"type="button" value="save" onclick="save()"> -->
           <input id="save"type="button" value="save" onclick="save()">
         </div>
       </div>
@@ -109,16 +120,6 @@
       </div>
     </div>
   </div>
-  <script type="text/javascript">
-      function auto_grow(element){
-        element.style.height = "5px";
-        element.style.height = (element.scrollHeight)+"px";
-      }
-   
-  </script>
-
-
-
 </body>
 
 </html>
@@ -152,6 +153,7 @@
   }
 
   #whitebox .info {
+
     word-wrap: break-word;
     word-break: break-word;
     width: 500px;

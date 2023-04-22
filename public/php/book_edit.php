@@ -1,5 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+<?php
+    $book_id = 2; //explode("?", $_SERVER["PHP_SELF"])[1];
+
+    $servername = "localhost";
+    $username = "id20576360_learnjapannutnai";
+    $password = "wn3V%=/uMYin&|o2";
+    $dbname = "id20576360_bbookk";
+
+    $connect = mysqli_connect($servername, $username, $password, $dbname);
+
+    $sql ="SELECT book.*, author.author_firstname, interpreter.interpreter_firstname,author.author_lastname,interpreter.interpreter_lastname FROM book LEFT JOIN book_written ON book.book_id = book_written.book_id LEFT JOIN author ON book_written.author_id = author.author_id LEFT JOIN book_translated ON book.book_id = book_translated.book_id LEFT JOIN interpreter ON book_translated.interpreter_id = interpreter.interpreter_id where book.book_id = $book_id
+    ";
+    $result = mysqli_query($connect, $sql);
+    $row = mysqli_fetch_assoc($result);
+    $book_name = $row["book_name"];
+    $book_chapter = $row["book_chapter"];
+    $book_isbn = $row["book_isbn"];
+    $book_numberofpages = $row["book_number_of_pages"];
+    $book_writtendate = $row["book_year"];
+    $book_price = $row["book_price"];
+    $book_edition = $row["book_edition"];
+    $book_language = $row["book_language"];
+    $book_summary = $row["book_summary"];
+    $author_fname = $row["author_firstname"];
+    $author_lname = $row["author_lastname"];
+    $interpeter_fname = $row["interpreter_firstname"];
+    $interpeter_lname = $row["interpreter_lastname"];
+?>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
@@ -7,7 +37,7 @@
   <link rel="stylesheet" href="../css/book_edit.css">
   <link href='https://fonts.googleapis.com/css?family=Inria Sans' rel='stylesheet'>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>New Book</title>
+  <title>edit book</title>
   <script type="module" src="../src/hasTopRightAuth.js"></script>
   <script type="module" src="../src/book_edit.js"></script>
 </head>
@@ -38,50 +68,54 @@
       <div id="yellowbox">
         <div id="whitebox">
           <p class="head">Book Name :</p>
-          <input type="text" class="info" placeholder="Book Name . . . ">
+          <input class="info" placeholder="Book Name . . ." value="<?php echo $book_name ?>"></p>
           <div class="line"></div>
           <p class="head">Book Chapter :</p>
-          <input type="text" class="info" placeholder="Book Chapter . . .">
+          <input type="text" class="info" placeholder="Book Chapter . . ." value="<?php echo $book_chapter ?>"></p>
           <div class="line"></div>
           <p class="head">Book ISBN :</p>
-          <input type="text" class="info" placeholder="Book ISBN . . .">
+          <input type="text" class="info" placeholder="Book ISBN . . ." value="<?php echo $book_isbn ?>"></p>
           <div class="line"></div>
           <p class="head">Book Number Of Pages :</p>
-          <input type="text" class="info" placeholder="Book Number Of Pages . . .">
+          <input type="text" class="info" placeholder="Book Number Of Pages . . ." value="<?php echo $book_numberofpages ?>"></p>
           <div class="line"></div>
           <p class="head">Book Wrtitten date :</p>
-          <input type="text" class="info" placeholder="Book Wrtitten date . . .">
+          <input type="text" class="info" placeholder="Book Wrtitten date . . ." value="<?php echo $book_writtendate ?>"></p>
           <div class="line"></div>
           <p class="head">Book Price :</p>
-          <input type="text" class="info" placeholder="Book Price . . .">
+          <input type="text" class="info" placeholder="Book Price . . ." value="<?php echo $book_price ?>"></p>
           <div class="line"></div>
           <p class="head">Book Edition :</p>
-          <input type="text" class="info" placeholder="Book Edition . . .">
+          <input type="text" class="info" placeholder="Book Edition . . ." value="<?php echo $book_edition ?>"></p>
           <div class="line"></div>
           <p class="head">Book Language :</p>
-          <input type="text" class="info" placeholder="Book Language . . .">
+          <input type="text" class="info" placeholder="Book Language . . ." value="<?php echo $book_language ?>"></p>
           <div class="line"></div>
           <p class="head">Book Summary :</p>
-          <textarea placeholder="Book summary..." onkeypress="auto_grow(this);" onkeyup="auto_grow(this);"></textarea>
+          <textarea id="myTextarea" class="infoo" placeholder="Book Summary . . ."><?php echo $book_summary ?></textarea>
+          <!-- <textarea type="text" id="myTextarea" class="info" placeholder="Book Sunmmary . . ." value="<?php echo $book_summary ?>"></textarea></p> -->
+          <script>
+            var myTextarea = document.getElementById("myTextarea");
+            myTextarea.value = "<?php echo $book_summary ?>";
+          </script>
           <div class="line"></div>
           <p class="head">Author firstname :</p>
-          <input type="text" class="info" placeholder="Author firstname . . .">
+          <input type="text" class="info" placeholder="Author firstname . . ." value="<?php echo $author_fname ?>"></p>
           <div class="line"></div>
           <p class="head">Author lastname :</p>
-          <input type="text" class="info" placeholder="Author lastname . . .">
+          <input type="text" class="info" placeholder="Author lastname . . ." value="<?php echo $author_lname ?>"></p>
           <div class="line"></div>
           <p class="head">Interpeter firstname :</p>
-          <input type="text" class="info" placeholder="Interpreter firstname . . .">
+          <input type="text" class="info" placeholder="Interpreter firstname . . ." value="<?php echo $interpeter_fname ?>"></p>
           <div class="line"></div>
           <p class="head">Interpeter lastname :</p>
-          <input type="text" class="info" placeholder="Interpreter lastname . . .">
+          <input type="text" class="info" placeholder="Interpreter lastname . . ." value="<?php echo $interpeter_lname ?>"></p>
           <div class="line"></div>
           <div class="line"></div>
           <div class="headd">
             <p class="head">Image :</p>
           <input type="file" id="image-upload" name="image-upload" accept="image/*" multiple>
           </div>
-          <!-- <input id="save"type="button" value="save" onclick="save()"> -->
           <input id="save"type="button" value="save" onclick="save()">
         </div>
       </div>
@@ -109,16 +143,6 @@
       </div>
     </div>
   </div>
-  <script type="text/javascript">
-      function auto_grow(element){
-        element.style.height = "5px";
-        element.style.height = (element.scrollHeight)+"px";
-      }
-   
-  </script>
-
-
-
 </body>
 
 </html>
@@ -148,22 +172,110 @@
     line-height: 29px;
     color: #1a3244;
     margin: 3%;
-
+    word-wrap: break-word;
   }
 
-  #whitebox .info {
-    word-wrap: break-word;
-    word-break: break-word;
+  #whitebox .info { 
+    word-wrap: visible ;
+    resize: auto;
+    overflow-wrap: break-word;
+    text-indent: -180px;
     width: 500px;
     position: absolute;
     right: 0px;
-    /* display: inline-block; */
-    text-align: right;
+    display: inline-block;
+    text-align: right ;
     right: 30px;
     margin-top: 30px;
     font-size: 18px;
     border: none;
     background-color: rgb(218, 217, 217);
+  }
+
+  #whitebox.infoo{
+        /* writing-mode: horizontal-tb !important;
+    font-style: ;
+    font-variant-ligatures: ;
+    font-variant-caps: ;
+    font-variant-numeric: ;
+    font-variant-east-asian: ;
+    font-variant-alternates: ;
+    font-weight: ;
+    font-stretch: ;
+    font-size: ;
+    font-family: 'Inria Sans';
+    text-rendering: auto;
+    color: fieldtext;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: right;
+    appearance: auto;
+    -webkit-rtl-ordering: logical;
+    resize: auto;
+    cursor: text;
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+    background-color: field;
+    column-count: initial !important;
+    margin: 0em;
+    border-width: 1px;
+    border-style: solid;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
+    padding: 20px; */
+    writing-mode: horizontal-tb !important;
+font-style: normal;
+font-variant-ligatures: none;
+font-variant-caps: normal;
+font-variant-numeric: normal;
+font-variant-east-asian: normal;
+font-variant-alternates: normal;
+font-weight: normal;
+font-stretch: normal;
+font-size: initial;
+font-family: 'Inria Sans';
+text-rendering: auto;
+color: fieldtext;
+letter-spacing: normal;
+word-spacing: normal;
+line-height: normal;
+text-transform: none;
+text-indent: -180px;
+text-shadow: none;
+display: inline-block;
+text-align: right;
+appearance: auto;
+-webkit-rtl-ordering: logical;
+resize: auto;
+cursor: text;
+white-space: pre-wrap;
+overflow-wrap: break-word;
+background-color: field;
+column-count: initial !important;
+margin: 0em;
+border-width: 1px;
+/* border-style: solid;
+border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+border-image: initial; */
+padding: 20px;
+word-wrap: visible;
+resize: auto;
+overflow-wrap: break-word;
+width: 500px;
+position: absolute;
+right: 30px;
+display: inline-block;
+text-align: right;
+margin-top: 30px;
+font-size: 18px;
+border: none;
+background-color: rgb(218, 217, 217);
+
   }
 
   #whitebox .head {
@@ -220,3 +332,8 @@
     display: inline-block;
   }
 </style>
+
+
+</body>
+
+</html>

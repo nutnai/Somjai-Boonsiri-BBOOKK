@@ -8,8 +8,9 @@
     $password = "wn3V%=/uMYin&|o2";
     $dbname = "id20576360_bbookk";
 
-    $sql = "select * from publisher where publisher_id = $publisher_id";
     $connect = mysqli_connect($servername, $username, $password, $dbname);
+
+    $sql = "select * from publisher where publisher_id = $publisher_id";
     $result = mysqli_query($connect, $sql);
     $row = mysqli_fetch_assoc($result);
     $publisher_id = $row["publisher_id"];
@@ -57,26 +58,28 @@
     <div id="information">
         <div id="yellowbox">
           <div id="whitebox">
+          <form method="post" action="./inserter.php">
+            <input type="hidden" name="type" value="publisher">
             <p class="head">ID :</p>
-            <p class="info">loading . . .</p>
+            <p class="info"><input type="text" id="publisher_id" name="publisher_id" required readonly class="textbox" value="<?php echo $publisher_id ?>"></p>
             <div class="line"></div>
             <p class="head">Name :</p>
-            <p class="info">loading . . .</p>
+            <p class="info"><input type="text" id="publisher_name" name="publisher_name" required readonly class="textbox" value="<?php echo $publisher_name ?>"></p>
             <div class="line"></div>
             <p class="head">Address :</p>
-            <p class="info">loading . . .</p>
+            <p class="info"><input type="text" id="publisher_address" name="publisher_address" required readonly class="textbox" value="<?php echo $publisher_address ?>"></p>
             <div class="line"></div>
             <p class="head">Phone :</p>
-            <p class="info">loading . . .</p>
+            <p class="info"><input type="text" id="publisher_phone" name="publisher_phone" required readonly class="textbox" value="<?php echo $publisher_phone ?>"></p>
             <div class="line"></div>
             <p class="head">Email :</p>
-            <p class="info">loading . . .</p>
+            <p class="info"><input type="text" id="publisher_email" name="publisher_email" required readonly class="textbox" value="<?php echo $publisher_email ?>"></p>
             <div class="line"></div>
             <input id="but1" type="button" value="Edit" onclick="clickEdit('edit')"  >
-            <input id="but2" type="button" value="Save" onclick="clickEdit('save')" style="display: none;">
+            <input id="but2" type="submit" value="Save" onclick="clickEdit('save')" style="display: none;">
             <input id="but3" type="button" value="Cancel" onclick="clickEdit('cancel')" style="display: none;">
-          </div>
-          
+          </form>
+        </div>  
         </div>
     </div>
 
@@ -93,8 +96,8 @@
     </div>
     <div class="admin">
 
-        <button type="button" id="adminy" onclick="window.location.href='./hotel edit.html'">Add Book</button>
-        <button type="button" id="editHotel" onclick="window.location.href='./hotelList.html'">Edit Book</button>
+        <button type="button" id="adminy" onclick="window.location.href='./book_add.php'">Add Book</button>
+        <button type="button" id="editHotel" onclick="window.location.href='./publisher_book.php'">Book List</button>
     </div>
 
     <script>

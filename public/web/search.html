@@ -2,130 +2,74 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="../css/search.css" />
-  <link href="https://fonts.googleapis.com/css?family=Inria Sans" rel="stylesheet" />
-  <script type="module" src="../src/search.js"></script>
-  <script type="module" src="../src/firestoreAPI.js"></script>
-  <script type="module" src="../src/hasTopRightAuth.js"></script>
-  <title>Search</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/search.css" />
+    <link href="https://fonts.googleapis.com/css?family=Inria Sans" rel="stylesheet" />
+    <script type="module" src="../src/search.js"></script>
+    <script type="module" src="../src/firestoreAPI.js"></script>
+    <script type="module" src="../src/hasTopRightAuth.js"></script>
+    <title>Search</title>
 </head>
 
 <body style="background-color: white;">
-  <div id="all">
-    <div id="sifah">
-      <p id="hua" onclick="window.location.href='../index.html'">BbookK</p>
-      <img id="home" src="https://storage.googleapis.com/travalokail-55abf.appspot.com/lg/lg_home.png"></img>
-      <div id="auth1" style="display: none;">
-        <div id="roob" onclick="clickProfile()"></div>
-        <p id="username"> username</p>
-      </div>
-      <div id="auth0">
-        <!-- <input type="button" value="Admin" id="regis" class="yellow" onclick="window.location.href='./register.html'" /> -->
-        <input type="button" value="Log in" id="signin" class="yellow" onclick="window.location.href='./signin.html'" />
-      </div>
+    <div id="all">
+        <div id="sifah">
+            <p id="hua" onclick="window.location.href='../index.html'">BbookK</p>
+            <img id="home" src="https://storage.googleapis.com/travalokail-55abf.appspot.com/lg/lg_home.png"></img>
+            <div id="auth1" style="display: none;">
+                <div id="roob" onclick="clickProfile()"></div>
+                <p id="username"> username</p>
+            </div>
+            <div id="auth0">
+                <!-- <input type="button" value="Admin" id="regis" class="yellow" onclick="window.location.href='./register.html'" /> -->
+                <input type="button" value="Log in" id="signin" class="yellow"
+                    onclick="window.location.href='./signin.html'" />
+            </div>
+        </div>
+        <div id="groupsifah2">
+            <div id="sifah2">
+                <div id="search1">search</div>
+                <div id="dropbox">
+                    <form action="" id="box">
+                        <div id="boxadd">
+
+                            <div class="boxandtext"><select class="box" id="box1"
+                                    onchange="check_number_dropbox(this.parentNode, this.value)"
+                                    control-id="ControlID-6">
+                                    <option value="none">none</option>
+                                    <option value="ชื่อหนังสือ">ชื่อหนังสือ</option>
+                                    <option value="ชื่อตอน">ชื่อตอน</option>
+                                    <option value="ชื่อผู้แต่ง">ชื่อผู้แต่ง</option>
+                                    <option value="ชื่อผู้แปล">ชื่อผู้แปล</option>
+                                    <option value="ชื่อสำนักพิมพ์">ชื่อสำนักพิมพ์</option>
+                                    <option value="ISBN">ISBN</option>
+                                    <option value="ครั้งที่พิมพ์">ครั้งที่พิมพ์</option>
+                                    <option value="ปีที่พิมพ์">ปีที่พิมพ์</option>
+                                    <option value="ราคา">ราคา</option>
+                                </select><select class="box" id="box2"
+                                    onchange="select_dropbox2(this.parentNode, this.value)" control-id="ControlID-16">
+                                    <option value="เท่ากับ">เท่ากับ</option>
+                                    <option value="มากกว่า">มากกว่า</option>
+                                    <option value="น้อยกว่า">น้อยกว่า</option>
+                                    <option value="ช่วง">ช่วง</option>
+                                </select><input type="text" class="textbox" id="textbox1" control-id="ControlID-18">
+                                <p id="to">to</p><input type="text" class="textbox" id="textbox2"
+                                    control-id="ControlID-19">
+                            </div>
+
+                        </div>
+                        <input type="hidden" name="postboxadd" id="postboxadd" value="">
+                        <input type="submit" name="" id="searchbutton" value="Search">
+                    </form>
+                </div>
+            </div>
+
+        </div>
     </div>
-    <div id="groupsifah2">
-      <div id="sifah2">
-        <div id="search1">search</div>
 
-        <div id="dropbox">
-          <form action="" id="box">
-            <div id="boxandtext">
-              <select name="" id="box1">
-                <option value=""> please select</option>
-                <option value="1"> asdasdasd</option>
-              </select>
-              &nbsp;&nbsp;
-              <input type="text" name="" id="textbox">
-            </div>
-            <br><br><br><br>
-
-            <div id="boxandtext">
-              <select name="" id="box1">
-                <option value=""> please select</option>
-                <option value="1"> asdasdasd</option>
-              </select>
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              <select name="" id="box1">
-                <option value=""> please select</option>
-                <option value="1"> asdasdasd</option>
-
-              </select>
-            </div>
-
-            <br><br><br><br>
-            <div id="boxandtext1">
-              <select name="" id="box1">
-                <option value=""> please select</option>
-                <option value="1"> asdasdasd</option>
-              </select>
-
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              <select name="" id="box1">
-                <option value=""> please select</option>
-                <option value="1"> asdasdasd</option>
-              </select>
-
-              <input type="text" name="" id="textbox1">
-              &nbsp;&nbsp;
-              <div id="to"> to</div>
-              <input type="text" name="" id="textbox">
-            </div>
-
-            <br><br><br><br>
-            <div id="boxandtext">
-              <select name="" id="box1">
-                <option value=""> please select</option>
-                <option value="1"> asdasdasd</option>
-
-              </select>
-              &nbsp;&nbsp;
-              <input type="text" name="" id="textbox">
-            </div>
-
-            <br><br><br><br>
-            <input type="submit" name="" id="searchbutton" value="Search">
-          </form>
-        </div>
-      </div>
-
-      <div id="addBlock">
-        <div id="block" onclick="selectHotel(this)">
-          <div id="idHotel"></div>
-          <div id="roop"></div>
-          <!-- <p id="name">Book name</p> -->
-          <p id="lowname">
-          <div id="asd">
-            <p id="tumnang">book name</p>
-            <p id="raka">author</p>
-            <p id="konPak">translator</p>
-          </div>
-          </p>
-        </div>
-      </div>
-
-      <div id="addBlock">
-        <div id="block" onclick="selectHotel(this)">
-          <div id="idHotel"></div>
-          <div id="roop"></div>
-          <!-- <p id="name">Book name</p> -->
-          <p id="lowname">
-          <div id="asd">
-            <p id="tumnang">book name</p>
-            <p id="raka">author</p>
-            <p id="konPak">translator</p>
-          </div>
-          </p>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-  <p id="sorry" class="textSearch" style="display: none;">Sorry, we currently don't have hotels in this location.</p>
+    <p id="sorry" class="textSearch" style="display: none;">Sorry, we currently don't have hotels in this location.</p>
 
 </body>
 

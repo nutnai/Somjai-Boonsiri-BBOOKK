@@ -1,167 +1,190 @@
 @import url("https://storage.googleapis.com/travalokail-55abf.appspot.com/lg/lg_heart.png");
 
 @media only screen and (min-width: 300px) and (max-width: 350px) {
+
     /* 500*/
-    body{
+    body {
         position: relative;
         left: 3.5%;
         zoom: 22%;
     }
-    }
+}
 
 @media only screen and (min-width: 350px) and (max-width: 510px) {
+
     /* 400*/
-    body{
+    body {
         position: relative;
         left: 4.3%;
         zoom: 27%;
     }
-    }
+}
 
 @media only screen and (min-width: 510px) and (max-width: 610px) {
+
     /* 300*/
-    body{
+    body {
         position: relative;
         left: 5.5%;
         zoom: 35%;
     }
-    }
+}
 
 
 
 @media only screen and (min-width: 610px) and (max-width: 760px) {
+
     /* 250*/
-    body{
+    body {
         position: relative;
         left: 5.5%;
         zoom: 42%;
     }
-    }
+}
 
 
 @media only screen and (min-width: 760px) and (max-width: 870px) {
+
     /* 200*/
-    body{
+    body {
         position: relative;
         left: 6%;
         zoom: 52%;
     }
-    }
+}
 
 @media only screen and (min-width: 870px) and (max-width: 1020px) {
+
     /* 175*/
-    body{
+    body {
         position: relative;
         left: 6.5%;
         zoom: 59%;
     }
-    }
+}
 
 
 @media only screen and (min-width: 1020px) and (max-width: 1220px) {
+
     /* 150*/
-    body{
+    body {
         position: relative;
         left: 5.8%;
         zoom: 70%;
     }
-    }
+}
 
 
 @media only screen and (min-width: 1220px) and (max-width: 1390px) {
+
     /* 125*/
-    body{
+    body {
         position: relative;
         left: 6%;
         /* zoom: 81%; */
         zoom: 83%;
     }
-    }
-     
-    @media only screen and (min-width: 1390px) and (max-width: 1440px) {
+}
+
+@media only screen and (min-width: 1390px) and (max-width: 1440px) {
+
     /*110*/
-    body{
+    body {
         position: relative;
         left: 7%;
         zoom: 93%;
-    
+
     }
-    }
-    
-    @media only screen and (min-width: 1440px) and (max-width: 1600px) {
+}
+
+@media only screen and (min-width: 1440px) and (max-width: 1600px) {
+
     /* @-ms-viewport { width: 1024px; } */
     /* 100% */
-    body{
+    body {
         position: relative;
         left: 8%;
-        
+
     }
+}
+
+@media only screen and (min-width: 1600px) and (max-width: 1800px) {
+
+    /* 90% */
+    body {
+        position: relative;
+        left: 8%;
+        zoom: 110%;
     }
-    @media only screen and (min-width: 1600px) and (max-width: 1800px) {
-        /* 90% */
-        body{
-            position: relative;
-            left: 8%;
-            zoom: 110%;
-        }
-        }
-    
-    @media only screen and (min-width: 1800px) and (max-width: 2000px) {
+}
+
+@media only screen and (min-width: 1800px) and (max-width: 2000px) {
+
     /*  80% */
-    body{
+    body {
         position: relative;
         left: 9%;
         zoom: 123%;
 
     }
+}
+
+@media only screen and (min-width: 2000px) and (max-width: 2200px) {
+
+    /* 75% */
+    body {
+        position: relative;
+        left: 9%;
+        zoom: 130%;
+
     }
 
-    @media only screen and (min-width: 2000px) and (max-width: 2200px) {
-        /* 75% */
-        body{
-            position: relative;
-            left: 9%;
-            zoom: 130%;
-    
-        }
-        
+}
+
+@media only screen and (min-width: 2200px) and (max-width: 2400px) {
+
+    /* 67% */
+    body {
+        position: relative;
+        left: 9.3%;
+        zoom: 145%;
+
     }
-    @media only screen and (min-width: 2200px) and (max-width: 2400px) {
-        /* 67% */
-        body{
-            position: relative;
-            left: 9.3%;
-            zoom: 145%;
-    
-        }
+}
+
+@media only screen and (min-width: 2400px) and (max-width: 3100px) {
+
+    /* 50% */
+    body {
+        position: relative;
+        left: 10%;
+        zoom: 190%;
+
     }
-    @media only screen and (min-width: 2400px) and (max-width: 3100px) {
-        /* 50% */
-        body{
-            position: relative;
-            left: 10%;
-            zoom: 190%;
-    
-        }
+}
+
+@media only screen and (min-width: 3100px) and (max-width: 4700px) {
+
+    /* 33% */
+    body {
+        position: relative;
+        left: 10.2%;
+        zoom: 280%;
+
     }
-    @media only screen and (min-width: 3100px) and (max-width: 4700px) {
-        /* 33% */
-        body{
-            position: relative;
-            left: 10.2%;
-            zoom: 280%;
-    
-        }
+}
+
+@media only screen and (min-width: 4700px) {
+
+    /* 25% */
+    body {
+        position: relative;
+        left: 11%;
+        zoom: 370%;
+
     }
-    @media only screen and (min-width: 4700px){
-        /* 25% */
-        body{
-            position: relative;
-            left: 11%;
-            zoom: 370%;
-    
-        }
-    }
+}
+
 #sifah {
     /* Rectangle 1 */
     position: absolute;
@@ -233,7 +256,7 @@
     border: 0px;
 }
 
-#facility{
+#facility {
     position: absolute;
     width: 155px;
     height: 53px;
@@ -283,9 +306,9 @@
 
 #reserve {
     position: relative;
-    top: 505px;
+    top: 20px;
     width: 139px;
-    left: 950px;
+    left: 869px;
     height: 52px;
     background: #FFEB85;
     border-radius: 20px;
@@ -454,18 +477,24 @@
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat:600&display=swap');
 
-#heartborrow{
+#heartborrow {
     position: relative;
-    top: 1250px;
+}
+
+#sikaw p {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    text-indent: -180px;
+    padding-left: 190px;
 }
 
 
 .heart-btn {
     position: relative;
+    top: 10px;
     display: inline-block;
     transform: translate(-50%, -50%);
-    top: 498px;
-    left: 900px;
+    left: 840px;
 }
 
 
@@ -562,7 +591,7 @@
     line-height: 29px;
 }
 
-#contact{
+#contact {
     position: relative;
     font-family: 'Inria Sans';
     font-style: normal;
@@ -618,9 +647,10 @@
     position: relative;
     font-size: 27px;
     left: 30px;
-    margin-top:30px;
+    margin-top: 30px;
     display: inline-block;
 }
+
 #textall2 {
     position: absolute;
     font-size: 27px;
@@ -628,13 +658,15 @@
     top: 60px;
     display: inline-block;
 }
+
 #textall3 {
     position: absolute;
     left: 178px;
     top: 117px;
     display: inline-block;
 }
-#linee{
+
+#linee {
     position: absolute;
     width: 749px;
     height: 2px;
@@ -642,12 +674,14 @@
     left: 20px;
     top: 210px;
 }
+
 #textall4 {
     position: absolute;
     left: 180px;
     top: 195px;
     display: inline-block;
 }
+
 .bgWhiteAll {
     position: absolute;
     background-color: white;
@@ -658,8 +692,10 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
-#addNumberHere,#number_of_night {
-    position: absolute; 
+
+#addNumberHere,
+#number_of_night {
+    position: absolute;
     height: 40px;
     width: 60px;
     left: 260px;
@@ -674,6 +710,7 @@
     line-height: 29px;
     color: #1A3244;
 }
+
 #number_of_night {
     top: 80px;
     width: 56.5px;
@@ -727,13 +764,14 @@
     margin-bottom: 0px;
 }
 
-#detailText, p{
-    padding-top:5px;
+#detailText,
+p {
+    padding-top: 5px;
     padding-bottom: 8px;
     padding-left: 15px;
 }
 
-#sikaw{
+#sikaw {
     position: relative;
     background-color: #FFFFFF;
     margin-right: 20px;
@@ -760,19 +798,20 @@ th {
     padding-bottom: 30px;
 }
 
-#calendar1{
+#calendar1 {
     position: absolute;
     width: 55px;
     height: 60px;
-    left:400px;
+    left: 400px;
     top: 132px;
-    filter:  grayscale(100%);
+    filter: grayscale(100%);
 }
-#patitin{
+
+#patitin {
     position: absolute;
     width: 120px;
     height: 43px;
-    left:260px;
+    left: 260px;
     top: 140px;
     font-family: 'Inria Sans';
     font-style: normal;
@@ -797,8 +836,8 @@ th {
     font-weight: 700;
     font-size: 24px;
     line-height: 29px; */
-    /* identical to box height */
-    /* border: 0px;
+/* identical to box height */
+/* border: 0px;
     color: #FFFFFF;   
 } */
 /* #cancelall {
@@ -831,15 +870,17 @@ th {
     line-height: 29px;
     color: #1A3244;
 }
-#backall, #confirmall {
+
+#backall,
+#confirmall {
     position: relative;
-    
+
     top: 50px;
     left: 24%;
     height: 45px;
     width: 200px;
     margin-top: 50px;
-    padding: 0px 20px 0px 20px; 
+    padding: 0px 20px 0px 20px;
     background: #2a9d8f;
     border-radius: 10px;
     font-family: 'Inria Sans';
@@ -849,15 +890,16 @@ th {
     line-height: 29px;
     /* identical to box height */
     border: 0px;
-    color: #FFFFFF;   
+    color: #FFFFFF;
 }
-#confirmall{
+
+#confirmall {
     background-color: red;
 }
 
 
-#all input[type="button"]:hover{
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); 
+#all input[type="button"]:hover {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     cursor: pointer;
 }
 
@@ -870,13 +912,14 @@ th {
     margin-left: 17px;
 
 }
-#sikaw22{
+
+#sikaw22 {
     position: relative;
     background: #ffffff;
     border-radius: 19px;
 }
 
-#sikaw22 p{
+#sikaw22 p {
     margin-top: 4px;
     margin-bottom: 4px;
     padding: 15px;
@@ -909,6 +952,7 @@ th {
     font-size: 24px;
     line-height: 29px;
     /* identical to box height */
-    border: 0px;
-    /* color: #FFFFFF;   
-} */ */
+border: 0px;
+/* color: #FFFFFF;   
+} */
+*/

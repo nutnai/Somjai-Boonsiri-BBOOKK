@@ -253,7 +253,7 @@
     display: inline-block;
 }
 
-#textbox{
+.textbox{
     width: 400px;
     height: 30px;    
     

@@ -4,12 +4,12 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <link rel="stylesheet" href="../css/book_edit.css">
+  <link rel="stylesheet" href="../css/book_add.css">
   <link href='https://fonts.googleapis.com/css?family=Inria Sans' rel='stylesheet'>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>New Book</title>
   <script type="module" src="../src/hasTopRightAuth.js"></script>
-  <script type="module" src="../src/book_edit.js"></script>
+  <script type="module" src="../src/book_add.js"></script>
 </head>
 
 <body>
@@ -29,62 +29,63 @@
 
     </div>
     <div id="auth0">
-      <!-- <input type="button" value="Register" id="regis" class="yellow"
-        onclick="window.location.href='../register.html'" /> -->
-      <input type="button" value="Sign in" id="signin" class="yellow" onclick="window.location.href='../signin.html'" />
+      <input type="button" value="Sign in" id="signin" class="yellow" onclick="window.location.href='../signin.php'" />
     </div>
     <p id="personal">About Hotel</p>
     <div id="information">
       <div id="yellowbox">
         <div id="whitebox">
+        <form method="post" action="./inserter.php">
+          <input type="hidden" name="type" value="add">
           <p class="head">Book Name :</p>
-          <input type="text" class="info" placeholder="Book Name . . . ">
+          <input type="text" id="book_name" name="book_name" require class="info" placeholder="Book Name . . .">
           <div class="line"></div>
           <p class="head">Book Chapter :</p>
-          <input type="text" class="info" placeholder="Book Chapter . . .">
+          <input type="text" id="book_chapter" name="book_chapter" require class="info" placeholder="Book Chapter . . .">
           <div class="line"></div>
           <p class="head">Book ISBN :</p>
-          <input type="text" class="info" placeholder="Book ISBN . . .">
+          <input type="number" id="book_isbn" name="book_isbn" require class="info" placeholder="Book ISBN . . .">
           <div class="line"></div>
           <p class="head">Book Number Of Pages :</p>
-          <input type="text" class="info" placeholder="Book Number Of Pages . . .">
+          <input type="number" id="book_npage" name="book_npage" require class="info" placeholder="Book Number Of Pages . . .">
           <div class="line"></div>
-          <p class="head">Book Wrtitten date :</p>
-          <input type="text" class="info" placeholder="Book Wrtitten date . . .">
+          <p class="head">Book Year :</p>
+          <input type="text" id="book_yaer" name="book_year" require class="info" placeholder="Book Wrtitten date . . .">
           <div class="line"></div>
           <p class="head">Book Price :</p>
-          <input type="text" class="info" placeholder="Book Price . . .">
+          <input type="number" id="book_price" name="book_price" class="info" placeholder="Book Price . . .">
           <div class="line"></div>
           <p class="head">Book Edition :</p>
-          <input type="text" class="info" placeholder="Book Edition . . .">
+          <input type="number" id="book_edition" name="book_edition" require class="info" placeholder="Book Edition . . .">
           <div class="line"></div>
           <p class="head">Book Language :</p>
-          <input type="text" class="info" placeholder="Book Language . . .">
+          <input type="text" id="book_language" name="book_language" require class="info" placeholder="Book Language . . .">
           <div class="line"></div>
           <p class="head">Book Summary :</p>
-          <textarea placeholder="Book summary..." onkeypress="auto_grow(this);" onkeyup="auto_grow(this);"></textarea>
+          <input type="text" id="book_summary" name="book_summary" require class="info" placeholder="Book Sunmmary . . .">
           <div class="line"></div>
           <p class="head">Author firstname :</p>
-          <input type="text" class="info" placeholder="Author firstname . . .">
+          <input type="text" id="author_fname" name="author_fname" require class="info" placeholder="Author firstname . . .">
           <div class="line"></div>
           <p class="head">Author lastname :</p>
-          <input type="text" class="info" placeholder="Author lastname . . .">
+          <input type="text" id="author_lname" name="author_lname" require class="info" placeholder="Author lastname . . .">
           <div class="line"></div>
           <p class="head">Interpeter firstname :</p>
-          <input type="text" class="info" placeholder="Interpreter firstname . . .">
+          <input type="text" id="interpreter_fname" name="interpreter_fname" class="info" placeholder="Interpeter firstname . . .">
           <div class="line"></div>
           <p class="head">Interpeter lastname :</p>
-          <input type="text" class="info" placeholder="Interpreter lastname . . .">
+          <input type="text" id="interpreter_lname" name="interpreter_lname" class="info" placeholder="Interpeter lastname . . .">
           <div class="line"></div>
           <div class="line"></div>
           <div class="headd">
             <p class="head">Image :</p>
           <input type="file" id="image-upload" name="image-upload" accept="image/*" multiple>
           </div>
-          <!-- <input id="save"type="button" value="save" onclick="save()"> -->
-          <input id="save"type="button" value="save" onclick="save()">
+        </form>
         </div>
+        <input id="save" type="submit" value="add">
       </div>
+      
     </div>
   </div>
   <input type="button" id="delete" value="delete hotel" style="display: none;" onclick="document.getElementById('all').style.display='';document.getElementById('booked').style.display=''";>
@@ -109,16 +110,6 @@
       </div>
     </div>
   </div>
-  <script type="text/javascript">
-      function auto_grow(element){
-        element.style.height = "5px";
-        element.style.height = (element.scrollHeight)+"px";
-      }
-   
-  </script>
-
-
-
 </body>
 
 </html>
@@ -157,7 +148,6 @@
     width: 500px;
     position: absolute;
     right: 0px;
-    /* display: inline-block; */
     text-align: right;
     right: 30px;
     margin-top: 30px;
