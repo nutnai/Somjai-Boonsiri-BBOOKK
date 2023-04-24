@@ -92,7 +92,8 @@
           <input type="text" class="info" placeholder="Book Language . . ." value="<?php echo $book_language ?>"></p>
           <div class="line"></div>
           <p class="head">Book Summary :</p>
-          <textarea id="myTextarea" class="infoo" placeholder="Book Summary . . ."><?php echo $book_summary ?></textarea>
+          <textarea id="myTextarea" placeholder="Book summary..." onkeypress="auto_grow(this);" onkeyup="auto_grow(this);"></textarea>
+          <!-- <textarea id="myTextarea" class="infoo" placeholder="Book Summary . . ."><?php echo $book_summary ?></textarea> -->
           <!-- <textarea type="text" id="myTextarea" class="info" placeholder="Book Sunmmary . . ." value="<?php echo $book_summary ?>"></textarea></p> -->
           <script>
             var myTextarea = document.getElementById("myTextarea");
@@ -143,6 +144,14 @@
       </div>
     </div>
   </div>
+
+  <script type="text/javascript">
+      function auto_grow(element){
+        element.style.height = "5px";
+        element.style.height = (element.scrollHeight)+"px";
+      }
+   
+  </script>
 </body>
 
 </html>
@@ -191,6 +200,9 @@
     border: none;
     background-color: rgb(218, 217, 217);
   }
+
+  
+
 
   #whitebox.infoo{
         /* writing-mode: horizontal-tb !important;

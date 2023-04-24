@@ -62,7 +62,8 @@
           <input type="text" id="book_language" name="book_language" require class="info" placeholder="Book Language . . .">
           <div class="line"></div>
           <p class="head">Book Summary :</p>
-          <input type="text" id="book_summary" name="book_summary" require class="info" placeholder="Book Sunmmary . . .">
+          <textarea placeholder="Book summary..." onkeypress="auto_grow(this);" onkeyup="auto_grow(this);"></textarea>
+          <!-- <input type="text" id="book_summary" name="book_summary" require class="info" placeholder="Book Sunmmary . . ."> -->
           <div class="line"></div>
           <p class="head">Author firstname :</p>
           <input type="text" id="author_fname" name="author_fname" require class="info" placeholder="Author firstname . . .">
@@ -110,6 +111,14 @@
       </div>
     </div>
   </div>
+  <script type="text/javascript">
+      function auto_grow(element){
+        element.style.height = "5px";
+        element.style.height = (element.scrollHeight)+"px";
+      }
+   
+  </script>
+
 </body>
 
 </html>
