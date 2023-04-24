@@ -234,8 +234,8 @@
     height:30px;
     outline: none;
     resize: none;
-    padding: 2px 50px;
-    border-radius: 5px;
+    padding: 0px 50px;
+    /* border-radius: 5px; */
     overflow: hidden;
     font-family: 'Inria Sans';
     font-style: normal;

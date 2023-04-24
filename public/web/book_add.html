@@ -35,6 +35,9 @@
     </div>
     <p id="personal">About Hotel</p>
     <div id="information">
+      <div id="headbox">
+        Book Add
+      </div>
       <div id="yellowbox">
         <div id="whitebox">
           <p class="head">Book Name :</p>
@@ -62,7 +65,7 @@
           <input type="text" class="info" placeholder="Book Language . . .">
           <div class="line"></div>
           <p class="head">Book Summary :</p>
-          <input type="text" class="info" placeholder="Book Sunmmary . . .">
+          <textarea placeholder="Book summary..." onkeypress="auto_grow(this);" onkeyup="auto_grow(this);"></textarea>
           <div class="line"></div>
           <p class="head">Author firstname :</p>
           <input type="text" class="info" placeholder="Author firstname . . .">
@@ -120,16 +123,44 @@
       </div>
     </div>
   </div>
+
+  <script type="text/javascript">
+    function auto_grow(element){
+      element.style.height = "5px";
+      element.style.height = (element.scrollHeight)+"px";
+    }
+ 
+</script>
+
 </body>
 
 </html>
 <style>
-  #yellowbox {
+
+  #headbox {
+    position: absolute;
+    text-align: center;
+    width: 310px;
+    height: 80px;
+    left: 210px;
+    top: 180px;
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: bolder   ;
+    font-size: 35px;
+    line-height: 80px;
+    background: #2a9d8f;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    color: #FFFEFE;
+    }
+
+    #yellowbox {
     position: absolute;
     width: 845px;
     height: max-content;
     left: 210px;
-    top: 200px;
+    top: 261px;
 
     background: #FFEB85;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
