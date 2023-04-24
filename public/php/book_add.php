@@ -31,8 +31,9 @@
     <div id="auth0">
       <input type="button" value="Sign in" id="signin" class="yellow" onclick="window.location.href='../signin.php'" />
     </div>
-    <p id="personal">About Hotel</p>
+    
     <div id="information">
+      <div id="headbox">Book Add</div>
       <div id="yellowbox">
         <div id="whitebox">
         <form method="post" action="./inserter.php">
@@ -123,6 +124,26 @@
 
 </html>
 <style>
+   #headbox {
+    position: absolute;
+    padding-left: 50px;
+    text-align: left;
+    width: 210px;
+    height: 80px;
+    left: 210px;
+    top: 190px;
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 33px;
+    line-height: 80px;
+    background: #2a9d8f;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    color: #FFFEFE;
+    }
+
+
   #yellowbox {
     position: absolute;
     width: 845px;
