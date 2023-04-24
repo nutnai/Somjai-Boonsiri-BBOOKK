@@ -75,7 +75,7 @@ $result_book = mysqli_query($connect, $sql_book);
             </p>
         </div>';
         }
-        ?>
+    ?>
 
 
     </div>

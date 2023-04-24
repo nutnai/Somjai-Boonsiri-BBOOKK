@@ -4,180 +4,206 @@
         left: 17%;
     }
 } */
-*{
+* {
     margin: 0;
 }
 
 @media only screen and (min-width: 300px) and (max-width: 350px) {
+
     /* 500*/
-    body{
+    body {
         position: relative;
         left: 3.5%;
         zoom: 22%;
     }
-    }
+}
 
 @media only screen and (min-width: 350px) and (max-width: 510px) {
+
     /* 400*/
-    body{
+    body {
         position: relative;
         left: 4.3%;
         zoom: 27%;
     }
-    }
+}
 
 @media only screen and (min-width: 510px) and (max-width: 610px) {
+
     /* 300*/
-    body{
+    body {
         position: relative;
         left: 5.5%;
         zoom: 35%;
     }
-    }
+}
 
 
 
 @media only screen and (min-width: 610px) and (max-width: 760px) {
+
     /* 250*/
-    body{
+    body {
         position: relative;
         left: 5.5%;
         zoom: 42%;
     }
-    }
+}
 
 
 @media only screen and (min-width: 760px) and (max-width: 870px) {
+
     /* 200*/
-    body{
+    body {
         position: relative;
         left: 6%;
         zoom: 52%;
     }
-    }
+}
 
 @media only screen and (min-width: 870px) and (max-width: 1020px) {
+
     /* 175*/
-    body{
+    body {
         position: relative;
         left: 6.5%;
         zoom: 59%;
     }
-    }
+}
 
 
 @media only screen and (min-width: 1020px) and (max-width: 1220px) {
+
     /* 150*/
-    body{
+    body {
         position: relative;
         left: 5.8%;
         zoom: 70%;
     }
-    }
+}
 
 
 @media only screen and (min-width: 1220px) and (max-width: 1390px) {
+
     /* 125*/
-    body{
+    body {
         position: relative;
         left: 6%;
         /* zoom: 81%; */
         zoom: 83%;
     }
-    }
-     
-    @media only screen and (min-width: 1390px) and (max-width: 1440px) {
+}
+
+@media only screen and (min-width: 1390px) and (max-width: 1440px) {
+
     /*110*/
-    body{
+    body {
         position: relative;
         left: 7%;
         zoom: 93%;
-    
+
     }
-    }
-    
-    @media only screen and (min-width: 1440px) and (max-width: 1600px) {
+}
+
+@media only screen and (min-width: 1440px) and (max-width: 1600px) {
+
     /* @-ms-viewport { width: 1024px; } */
     /* 100% */
-    body{
+    body {
         position: relative;
         left: 8%;
-        
+
     }
+}
+
+@media only screen and (min-width: 1600px) and (max-width: 1800px) {
+
+    /* 90% */
+    body {
+        position: relative;
+        left: 8%;
+        zoom: 110%;
     }
-    @media only screen and (min-width: 1600px) and (max-width: 1800px) {
-        /* 90% */
-        body{
-            position: relative;
-            left: 8%;
-            zoom: 110%;
-        }
-        }
-    
-    @media only screen and (min-width: 1800px) and (max-width: 2000px) {
+}
+
+@media only screen and (min-width: 1800px) and (max-width: 2000px) {
+
     /*  80% */
-    body{
+    body {
         position: relative;
         left: 9%;
         zoom: 123%;
 
     }
+}
+
+@media only screen and (min-width: 2000px) and (max-width: 2200px) {
+
+    /* 75% */
+    body {
+        position: relative;
+        left: 9%;
+        zoom: 130%;
+
     }
 
-    @media only screen and (min-width: 2000px) and (max-width: 2200px) {
-        /* 75% */
-        body{
-            position: relative;
-            left: 9%;
-            zoom: 130%;
-    
-        }
-        
-    }
-    @media only screen and (min-width: 2200px) and (max-width: 2400px) {
-        /* 67% */
-        body{
-            position: relative;
-            left: 9.3%;
-            zoom: 145%;
-    
-        }
-    }
-    @media only screen and (min-width: 2400px) and (max-width: 3100px) {
-        /* 50% */
-        body{
-            position: relative;
-            left: 10%;
-            zoom: 190%;
-    
-        }
-    }
-    @media only screen and (min-width: 3100px) and (max-width: 4700px) {
-        /* 33% */
-        body{
-            position: relative;
-            left: 10.2%;
-            zoom: 280%;
-    
-        }
-    }
-    @media only screen and (min-width: 4700px){
-        /* 25% */
-        body{
-            position: relative;
-            left: 11%;
-            zoom: 370%;
-    
-        }
-    }
+}
 
-#krobpum{
+@media only screen and (min-width: 2200px) and (max-width: 2400px) {
+
+    /* 67% */
+    body {
+        position: relative;
+        left: 9.3%;
+        zoom: 145%;
+
+    }
+}
+
+@media only screen and (min-width: 2400px) and (max-width: 3100px) {
+
+    /* 50% */
+    body {
+        position: relative;
+        left: 10%;
+        zoom: 190%;
+
+    }
+}
+
+@media only screen and (min-width: 3100px) and (max-width: 4700px) {
+
+    /* 33% */
+    body {
+        position: relative;
+        left: 10.2%;
+        zoom: 280%;
+
+    }
+}
+
+@media only screen and (min-width: 4700px) {
+
+    /* 25% */
+    body {
+        position: relative;
+        left: 11%;
+        zoom: 370%;
+
+    }
+}
+
+#krobpum {
     position: relative;
     margin-top: -90px;
 }
 
+#all {
+    position: relative;
+    height: fit-content;
+}
 
-#search1{
+#search1 {
     position: relative;
     text-align: center;
     top: -60px;
@@ -189,20 +215,23 @@
     line-height: 43px;
     width: 200px;
     padding: 10px 20px;
-    border: 2px; 
-    border-radius: 12px; 
-    color: #ffffff;  
+    border: 2px;
+    border-radius: 12px;
+    color: #ffffff;
     background-color: #2a9d8f;
-    
+
 }
-#dropbox{
+
+#dropbox {
+    position: relative;
     padding-top: 60px;
     padding-bottom: 60px;
     margin-top: 50px;
     margin-left: 33px;
 }
-.textbox{
-    width: 226px;    
+
+.textbox {
+    width: 226px;
     margin-right: 14px;
     padding: 8.8px 10px;
     border-width: 2.587897987908098px;
@@ -215,7 +244,8 @@
     line-height: 29px;
 
 }
-#searchbutton{
+
+#searchbutton {
     margin-left: 900px;
     width: 120px;
     font-family: 'Inria Sans';
@@ -229,10 +259,10 @@
     color: #ffffff;
     background-color: #2a9d8f;
     border-radius: 12px;
-    
+
 }
 
-#box{
+#box {
     display: grid;
     justify-content: left;
     margin-top: -130px;
@@ -245,10 +275,12 @@
     border-radius: 7px;
 
 }
+
 .boxandtext {
     margin-bottom: 20px;
 }
-.box{
+
+.box {
     padding-left: 10px;
     margin-right: 14px;
     width: 250px;
@@ -257,14 +289,15 @@
     border-width: 2.587897987908098px;
     border-radius: 7px;
     border-color: #2a9d8f;
-    
+
     font-family: 'Inria Sans';
     font-style: normal;
     font-weight: 100;
     font-size: 20px;
     line-height: 29px;
 }
-#to{
+
+#to {
     display: inline;
     width: fit-content;
     font-family: 'Inria Sans';
@@ -275,7 +308,8 @@
     margin-right: 14px;
 }
 
-#sifah{
+
+#sifah {
     /* Rectangle 1 */
     position: relative;
     width: 1280px;
@@ -285,7 +319,8 @@
 
     background: #2a9d8f;
 }
-#hua{
+
+/* #hua {
     position: absolute;
     width: 261.02px;
     height: 60px;
@@ -300,15 +335,16 @@
     line-height: 48px;
 
     color: #FFFFFF;
-}
-#regis{
+} */
+
+#regis {
     /* Component 2 */
     position: absolute;
     width: 151px;
     height: 55px;
     left: 886px;
     top: 38px;
-    
+
     font-family: 'Inria Sans';
     font-style: normal;
     font-weight: 700;
@@ -321,15 +357,41 @@
     border-radius: 20px;
 }
 
-#groupsifah2{
-    position: absolute;
+#groupsifah2 {
+    position: relative;
     margin-top: 0px;
     top: -70px;
-    height:10px;
 }
 
+.block {
+    position: relative;
+    width: 1200px;
+    height: 213px;
+    left: 40px;
+    margin-top: 10px;
+    background: #FFEB85;
+    border-radius: 15px;
+    cursor: pointer;
+    top: 40px;
+}
 
-#signin{
+.detailbook {
+    position: relative;
+    width: 50%;
+    height: auto;
+    border-radius: 15px;
+    padding-left: 20px;
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 29px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#signin {
     /* Component 3 */
     position: absolute;
     width: 151px;
@@ -349,19 +411,21 @@
     background: #FFEB85;
     border-radius: 20px;
 }
-#sifah2{
+
+#sifah2 {
     position: relative;
     width: 1200px;
     /* height: 800px; */
     left: 38px;
-    top: 240px;
+    top: 100px;
 
     margin-top: 100px;
     background: #FFEB85;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 15px;
 }
-#where{
+
+#where {
     position: absolute;
     width: 328px;
     height: 63px;
@@ -379,7 +443,8 @@
     line-height: 48px;
 
 }
-#w{
+
+#w {
     position: absolute;
     left: 0%;
     right: 0%;
@@ -398,7 +463,8 @@
 
     color: #1a3448;
 }
-#w::placeholder{
+
+#w::placeholder {
     position: absolute;
     left: 23%;
     top: 34.09%;
@@ -412,7 +478,8 @@
 
     color: #1a3244bd;
 }
-#calendar{
+
+#calendar {
     position: absolute;
     width: 329px;
     height: 63px;
@@ -427,7 +494,8 @@
     font-size: 40px;
     line-height: 48px;
 }
-#guest{
+
+#guest {
     position: absolute;
     width: 329px;
     height: 63px;
@@ -436,13 +504,14 @@
     background: #FFFFFF;
     border-radius: 7px;
 }
-#people{
+
+#people {
     position: absolute;
     left: 0%;
     right: 0%;
     top: 0%;
     bottom: 0%;
-    
+
     padding-left: 23%;
 
     background: #FFFFFF;
@@ -456,11 +525,12 @@
 
     color: #1a3448;
 }
-#people::placeholder{
+
+#people::placeholder {
     position: absolute;
     left: 23%;
     top: 30%;
-    
+
 
     font-family: 'Inria Sans';
     font-style: normal;
@@ -470,6 +540,7 @@
 
     color: #1a3244bd;
 }
+
 /* #search{
     position: absolute;
     width: 125px;
@@ -488,19 +559,9 @@
 
     color: #1A3244;
 } */
-#block{
-    position: relative;
-    width: 1200px;
-    height: 213px;
-    left: 40px;
-    top: 280px;
-    margin-top: 25px;
-    background: #FFEB85;
-    border-radius: 15px;
-    cursor: pointer;
-}
 
-#roob{
+
+#roob {
     cursor: pointer;
     position: relative;
     width: 71px;
@@ -513,26 +574,27 @@
 }
 
 
-#roop{
+#roop {
     position: absolute;
+    height: 90%;
     width: 270px;
     left: 2.79%;
     right: 62.43%;
-    top: 8.04%;
-    bottom: 8.54%;
+    top: 5%;
     background: #FFFFFF;
     border-radius: 15px;
 }
-#name{
+
+#name {
     position: absolute;
     width: 400px;
     height: 45px;
-    left : 281px;
+    left: 281px;
     top: 2px;
-    border: none; 
+    border: none;
     background: #FFFFFF;
-    border-radius: 17px;  
-    
+    border-radius: 17px;
+
     padding-left: 20px;
     font-family: 'Inria Sans';
     font-style: normal;
@@ -541,22 +603,18 @@
     line-height: 44px;
 }
 
-#lowname{
+#lowname {
     position: relative;
     width: 800px;
-    height: 174px;
+    height: 85%;
     left: 340px;
-    top: 20px;
+    top: 5%;
     border: none;
     background: #FFFFFF;
     border-radius: 15px;
     padding-left: 20px;
-    font-family: 'Inria Sans';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 29px;
-   
+    padding-top: 10px;
+
 }
 
 /* #lowerblock{
@@ -572,9 +630,11 @@
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     cursor: pointer;
 }
+
 .blue:active {
     filter: grayscale(70%)brightness(150%);
 }
+
 .yellow:hover {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     cursor: pointer;
@@ -583,16 +643,14 @@
 .yellow:active {
     filter: grayscale(50%)brightness(105%);
 }
-#searchbutton:hover{
+
+#searchbutton:hover {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     cursor: pointer;
 }
 
 
-#asd{
-    margin-top: -140px;
-}
-#tumnang{
+#tumnang {
     position: relative;
     width: 330px;
     height: 30px;
@@ -607,15 +665,15 @@
     font-weight: 700;
     font-size: 16px;
     line-height: 29px;
-    
+
 }
 
-#raka{
+#raka {
     position: relative;
     width: 330px;
     height: 30px;
     left: 350px;
-    top:30px;
+    top: 30px;
     border: none;
     background: white;
     border-radius: 15px;
@@ -626,7 +684,8 @@
     font-size: 16px;
     line-height: 29px;
 }
-#konPak{
+
+#konPak {
     position: relative;
     width: 330px;
     height: 30px;
@@ -643,63 +702,67 @@
     line-height: 29px;
 }
 
-#username{
+#username {
     position: absolute;
     width: 547px;
     height: 52px;
     left: 574px;
     top: 20px;
 
-font-family: 'Inria Sans';
-font-style: normal;
-font-weight: 400;
-font-size: 37px;
-line-height: 45px;
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 37px;
+    line-height: 45px;
 
-color: #FFFFFF;
-text-align: right;
+    color: #FFFFFF;
+    text-align: right;
 }
 
-#roob:hover{
+#roob:hover {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     cursor: pointer;
 }
-#hua:hover{
+
+#hua:hover {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    cursor: pointer;   
-}
-#home{
-    position: relative;
-    left: 194px;
-    top: 25px;
-    width: 38px;
-    height: 42px;
+    cursor: pointer;
 }
 
-#bed{
+#logo {
     position: relative;
-    top:-3px;
-    left:15px;
+    left: 25px;
+    top: 20px;
+    width: auto;
+    height: 100px;
+    cursor: pointer;
+}
+
+#bed {
+    position: relative;
+    top: -3px;
+    left: 15px;
     width: 52px;
     height: 73px;
 }
 
-#calendar1{
+#calendar1 {
     position: relative;
     width: 55px;
     height: 60px;
-    left:-72px;
+    left: -72px;
     bottom: 395px;
 }
 
-#patitin{
+#patitin {
     position: relative;
     width: 120px;
     height: 43px;
-    left:-70px;
+    left: -70px;
     bottom: 419px;
 }
-input[type = "date"]{
+
+input[type="date"] {
     background-color: #ffffff;
     border: none;
     border-radius: 10px;
@@ -711,18 +774,19 @@ input[type = "date"]{
     text-align: center;
 }
 
-input[type = "date"]:hover{
+input[type="date"]:hover {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     cursor: pointer;
 }
 
-#person{
+#person {
     position: relative;
     width: 25px;
     height: 34px;
-    left:27px;
+    left: 27px;
     top: 14px;
 }
+
 .textSearch {
     position: absolute;
     top: 300px;
@@ -732,10 +796,12 @@ input[type = "date"]:hover{
     font-size: 33px;
     line-height: 48px;
 }
+
 #sorry {
     left: 530px;
     color: rgba(255, 0, 0, 0.695);
 }
+
 #loading {
     left: 830px;
 }
