@@ -62,6 +62,7 @@ async function check_number_dropbox(node, value) {
 window.check_number_dropbox = check_number_dropbox;
 
 async function select_dropbox2(node, value) {
+    var node_id = node.id.charAt(node.id.length - 1);
     //new node
     var newtextbox1 = range.createContextualFragment('<input type="text" name="textbox1'+node_id+'" class="textbox" id="textbox1" required>')
     var newtextbox2 = range.createContextualFragment('<input type="text" name="textbox2'+node_id+'" class="textbox" id="textbox2" required>')
