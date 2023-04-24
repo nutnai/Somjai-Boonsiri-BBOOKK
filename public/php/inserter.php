@@ -32,8 +32,6 @@
         $sql_book = "INSERT INTO book (book_id, book_name, book_chapter, publisher_id, book_isbn, book_number_of_pages, book_year, book_price, book_edition, book_language, book_summary, book_status) 
         VALUES ('$book_id','$book_name', '$book_chapter', 20, '$book_isbn', '$book_npage', '$book_year', '$book_price', '$book_edition', '$book_language', '$book_summary', 'valid')";
 
-        $cerror = 0;
-
         if (!(mysqli_query($connect, $sql_book))) {
             $cerror++;
             echo "Error inserting book : " . mysqli_error($connect);
@@ -113,6 +111,67 @@
         } 
         if($cerror==0){
             echo "update successful";
+        }
+    }
+    else if ($type == "editbook"){
+        $book_id = $_POST['book_id'];
+        $book_name = $_POST['book_name'];
+        $book_chapter = $_POST['book_chapter'];
+        $book_isbn = $_POST['book_isbn'];
+        $book_npage = $_POST['book_npage'];
+        $book_year = $_POST['book_year'];
+        $book_price = $_POST['book_price'];
+        $book_edition = $_POST['book_edition'];
+        $book_language = $_POST['book_language'];
+        $book_summary = $_POST['book_summary'];
+        $author_fname = $_POST['author_fname'];
+        $author_lname = $_POST['author_lname'];
+        $interpreter_fname = $_POST['interpreter_fname'];
+        $interpreter_lname = $_POST['interpreter_lname'];
+
+
+        $sql_book = "UPDATE book SET book_name = '$book_name', book_chapter = '$book_chapter', book_isbn = '$book_isbn', book_number_of_pages =  '$book_npage', book_year = '$book_year', book_price = '$book_price',
+         book_edition = '$book_edition', book_language = '$book_language', book_summary = '$book_summary' WHERE book_id = $book_id ";
+
+        if (!(mysqli_query($connect, $sql_book))) {
+            $cerror++;
+            echo "Error updating book : " . mysqli_error($connect);
+        }
+
+        // Insert into author table
+        $sql_author = "UPDATE author SET author_id = '$author_id', author_firstname = '$author_fname', author_lastname = '$author_lname' WHERE ";
+
+        if (!(mysqli_query($connect, $sql_author))) {
+            $cerror++;
+            echo "Error updating author : " . mysqli_error($connect);
+        }
+        $interpreter_id = md5($interpreter_fname . time());
+        // Insert into interpreter table
+        $sql_interpreter = "INSERT INTO interpreter (interpreter_id, interpreter_firstname, interpreter_lastname) 
+        VALUES ('$interpreter_id','$interpreter_fname', '$interpreter_lname')";
+
+        if (!(mysqli_query($connect, $sql_interpreter))) {
+            $cerror++;
+            echo "Error updating interpreter : " . mysqli_error($connect);
+        } 
+        
+        $sql_book_translated = "INSERT INTO book_translated (book_id, interpreter_id) 
+        VALUES ('$book_id','$interpreter_id')";
+
+        if (!(mysqli_query($connect, $sql_book_translated))) {
+            $cerror++;
+            echo "Error updating translated : " . mysqli_error($connect);
+        } 
+        $sql_book_written = "INSERT INTO book_written (book_id, author_id) 
+        VALUES ('$book_id','$author_id')";
+
+        if (!(mysqli_query($connect, $sql_book_written))) {
+            $cerror++;
+            echo "Error inserting translated : " . mysqli_error($connect);
+        } 
+
+        if($cerror==0){
+            echo "Insert successful";
         }
     }
 

@@ -67,57 +67,57 @@
     <div id="information">
       <div id="yellowbox">
         <div id="whitebox">
+        <form method="post" action="./inserter.php">
+          <input type="hidden" name="type" value="editbook">
+          <p class="head">Book ID :</p>
+          <input class="info" id="book_id" name="book_id" require placeholder="Book ID . . ." value="<?php echo $book_id ?>"></p>
+          <div class="line"></div>
           <p class="head">Book Name :</p>
-          <input class="info" placeholder="Book Name . . ." value="<?php echo $book_name ?>"></p>
+          <input class="info" id="book_name" name="book_name" require placeholder="Book Name . . ." value="<?php echo $book_name ?>"></p>
           <div class="line"></div>
           <p class="head">Book Chapter :</p>
-          <input type="text" class="info" placeholder="Book Chapter . . ." value="<?php echo $book_chapter ?>"></p>
+          <input type="text" id="book_chapter" name="book_chapter" require class="info" placeholder="Book Chapter . . ." value="<?php echo $book_chapter ?>"></p>
           <div class="line"></div>
           <p class="head">Book ISBN :</p>
-          <input type="text" class="info" placeholder="Book ISBN . . ." value="<?php echo $book_isbn ?>"></p>
+          <input type="text" id="book_isbn" name="book_isbn" require class="info" placeholder="Book ISBN . . ." value="<?php echo $book_isbn ?>"></p>
           <div class="line"></div>
           <p class="head">Book Number Of Pages :</p>
-          <input type="text" class="info" placeholder="Book Number Of Pages . . ." value="<?php echo $book_numberofpages ?>"></p>
+          <input type="text" id="book_npage" name="book_npage" require class="info" placeholder="Book Number Of Pages . . ." value="<?php echo $book_numberofpages ?>"></p>
           <div class="line"></div>
-          <p class="head">Book Wrtitten date :</p>
-          <input type="text" class="info" placeholder="Book Wrtitten date . . ." value="<?php echo $book_writtendate ?>"></p>
+          <p class="head">Book Year :</p>
+          <input type="text" id="book_yaer" name="book_year" require class="info" placeholder="Book Wrtitten date . . ." value="<?php echo $book_writtendate ?>"></p>
           <div class="line"></div>
           <p class="head">Book Price :</p>
-          <input type="text" class="info" placeholder="Book Price . . ." value="<?php echo $book_price ?>"></p>
+          <input type="text" id="book_price" name="book_price" class="info" placeholder="Book Price . . ." value="<?php echo $book_price ?>"></p>
           <div class="line"></div>
           <p class="head">Book Edition :</p>
-          <input type="text" class="info" placeholder="Book Edition . . ." value="<?php echo $book_edition ?>"></p>
+          <input type="text" id="book_edition" name="book_edition" require class="info" placeholder="Book Edition . . ." value="<?php echo $book_edition ?>"></p>
           <div class="line"></div>
           <p class="head">Book Language :</p>
-          <input type="text" class="info" placeholder="Book Language . . ." value="<?php echo $book_language ?>"></p>
+          <input type="text" id="book_language" name="book_language" class="info" placeholder="Book Language . . ." value="<?php echo $book_language ?>"></p>
           <div class="line"></div>
           <p class="head">Book Summary :</p>
-          <textarea id="myTextarea" placeholder="Book summary..." onkeypress="auto_grow(this);" onkeyup="auto_grow(this);"></textarea>
-          <!-- <textarea id="myTextarea" class="infoo" placeholder="Book Summary . . ."><?php echo $book_summary ?></textarea> -->
-          <!-- <textarea type="text" id="myTextarea" class="info" placeholder="Book Sunmmary . . ." value="<?php echo $book_summary ?>"></textarea></p> -->
-          <script>
-            var myTextarea = document.getElementById("myTextarea");
-            myTextarea.value = "<?php echo $book_summary ?>";
-          </script>
+          <textarea id="book_summary" name="book_summary"  placeholder="Book summary..." onkeypress="auto_grow(this);" onkeyup="auto_grow(this);"><?php echo $book_summary ?></textarea>
           <div class="line"></div>
           <p class="head">Author firstname :</p>
-          <input type="text" class="info" placeholder="Author firstname . . ." value="<?php echo $author_fname ?>"></p>
+          <input type="text" id="author_fname" name="author_fname" require class="info" placeholder="Author firstname . . ." value="<?php echo $author_fname ?>"></p>
           <div class="line"></div>
           <p class="head">Author lastname :</p>
-          <input type="text" class="info" placeholder="Author lastname . . ." value="<?php echo $author_lname ?>"></p>
+          <input type="text" id="author_lname" name="author_lname" require class="info" placeholder="Author lastname . . ." value="<?php echo $author_lname ?>"></p>
           <div class="line"></div>
           <p class="head">Interpeter firstname :</p>
-          <input type="text" class="info" placeholder="Interpreter firstname . . ." value="<?php echo $interpeter_fname ?>"></p>
+          <input type="text" id="interpreter_fname" name="interpreter_fname" class="info" placeholder="Interpreter firstname . . ." value="<?php echo $interpeter_fname ?>"></p>
           <div class="line"></div>
           <p class="head">Interpeter lastname :</p>
-          <input type="text" class="info" placeholder="Interpreter lastname . . ." value="<?php echo $interpeter_lname ?>"></p>
+          <input type="text" id="interpreter_lname" name="interpreter_lname" class="info" placeholder="Interpreter lastname . . ." value="<?php echo $interpeter_lname ?>"></p>
           <div class="line"></div>
           <div class="line"></div>
           <div class="headd">
             <p class="head">Image :</p>
           <input type="file" id="image-upload" name="image-upload" accept="image/*" multiple>
           </div>
-          <input id="save"type="button" value="save" onclick="save()">
+          <input id="save"type="submit" value="save" onclick="save()">
+        </form>
         </div>
       </div>
     </div>

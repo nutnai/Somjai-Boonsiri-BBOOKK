@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="../css/book_add.css">
   <link href='https://fonts.googleapis.com/css?family=Inria Sans' rel='stylesheet'>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>New Book</title>
+  <title>Book Add</title>
   <script type="module" src="../src/hasTopRightAuth.js"></script>
   <script type="module" src="../src/book_add.js"></script>
 </head>
@@ -62,7 +62,7 @@
           <input type="text" id="book_language" name="book_language" require class="info" placeholder="Book Language . . .">
           <div class="line"></div>
           <p class="head">Book Summary :</p>
-          <textarea placeholder="Book summary..." onkeypress="auto_grow(this);" onkeyup="auto_grow(this);"></textarea>
+          <textarea id="book_summary" name="book_summary" placeholder="Book summary..." onkeypress="auto_grow(this);" onkeyup="auto_grow(this);"></textarea>
           <!-- <input type="text" id="book_summary" name="book_summary" require class="info" placeholder="Book Sunmmary . . ."> -->
           <div class="line"></div>
           <p class="head">Author firstname :</p>
@@ -82,10 +82,10 @@
             <p class="head">Image :</p>
           <input type="file" id="image-upload" name="image-upload" accept="image/*" multiple>
           </div>
-        </form>
         </div>
         <input id="save" type="submit" value="add">
-      </div>
+      </form>
+    </div>
       
     </div>
   </div>
