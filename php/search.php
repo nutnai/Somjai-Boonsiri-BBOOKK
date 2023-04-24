@@ -91,7 +91,7 @@ $result = mysqli_query($connect, $sql);
             </div>
             <div id="auth0">
                 <!-- <input type="button" value="Admin" id="regis" class="yellow" onclick="window.location.href='./register.html'" /> -->
-                <input type="button" value="Log in" id="signin" class="yellow" onclick="window.location.href='./signin.html'" />
+                <input type="button" value="Log in" id="signin" class="yellow" onclick="window.location.href='./signin.php'" />
             </div>
         </div>
         <div id="groupsifah2">

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,12 +10,13 @@
     <link href='https://fonts.googleapis.com/css?family=Inria Sans' rel='stylesheet'>
     <title>Sign in</title>
 </head>
+
 <body>
     <div id="sifah">
         <p id="hua" onclick="window.location.href='../index.html'">BbookK</p>
-        
+
         <img id="home" src="https://storage.googleapis.com/travalokail-55abf.appspot.com/lg/lg_home.png">
-            
+
         </img>
     </div>
     <div id="sifah2"></div>
@@ -26,8 +28,8 @@
     </div>
     <div id="roob">
         <img id="person" src="https://storage.googleapis.com/travalokail-55abf.appspot.com/lg/lg_blackPerson.png">
-            
-    </img>
+
+        </img>
     </div>
     <div id="saimail">
         <input type="text" placeholder="Email or phone number" id="saijing">
@@ -39,4 +41,5 @@
     <input type="button" value="Sign in with Google" id="signingoogle" onclick="signIn()">
 
 </body>
+
 </html>

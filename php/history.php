@@ -2,39 +2,40 @@
 <html lang="en">
 
 <?php
-    $borrower_id = 6434484923; //explode("?", $_SERVER["PHP_SELF"])[1];
+$borrower_id = 6434484923; //explode("?", $_SERVER["PHP_SELF"])[1];
 
-    $servername = "localhost";
-    $username = "id20576360_learnjapannutnai";
-    $password = "wn3V%=/uMYin&|o2";
-    $dbname = "id20576360_bbookk";
-    $connect = mysqli_connect($servername, $username, $password, $dbname);
+$servername = "localhost";
+$username = "id20576360_learnjapannutnai";
+$password = "wn3V%=/uMYin&|o2";
+$dbname = "id20576360_bbookk";
+$connect = mysqli_connect($servername, $username, $password, $dbname);
 
-    $sql = "select * from borrower where borrower_id = $borrower_id";
-    $result = mysqli_query($connect, $sql);
-    $row_borrower = mysqli_fetch_assoc($result);
+$sql = "select * from borrower where borrower_id = $borrower_id";
+$result = mysqli_query($connect, $sql);
+$row_borrower = mysqli_fetch_assoc($result);
 
-    $sql_borrowing = "select * from borrowing where borrower_id = $borrower_id";
-    $result_borrowing = mysqli_query($connect, $sql_borrowing);
-    $row_borrowing = mysqli_fetch_assoc($result_borrowing);
+$sql_borrowing = "select * from borrowing where borrower_id = $borrower_id";
+$result_borrowing = mysqli_query($connect, $sql_borrowing);
+$row_borrowing = mysqli_fetch_assoc($result_borrowing);
 
-    $borrowing_id = $row_borrowing["borrowing_id"];
+$borrowing_id = $row_borrowing["borrowing_id"];
 
-    $sql_reference = "select * from reference where borrowing_id = $borrowing_id";
-    $result_reference = mysqli_query($connect, $sql_reference);
-    $row_reference = mysqli_fetch_assoc($result_reference);
+$sql_reference = "select * from reference where borrowing_id = $borrowing_id";
+$result_reference = mysqli_query($connect, $sql_reference);
+$row_reference = mysqli_fetch_assoc($result_reference);
 
-    $book_id = $row_reference["book_id"];
+$book_id = $row_reference["book_id"];
 
-    $sql_book = "select * from book where book_id = $book_id";
-    $result_book = mysqli_query($connect, $sql_book);
-    $row_book = mysqli_fetch_assoc($result_book);
+$sql_book = "select * from book where book_id = $book_id";
+$result_book = mysqli_query($connect, $sql_book);
+$row_book = mysqli_fetch_assoc($result_book);
 
 
-    $book_name = $row_book["book_name"];
-    $borrowing_rent_date = $row_borrowing["borrowing_rent_date"];
-    $borrowing_return_date = $row_borrowing["borrowing_return_date"];
+$book_name = $row_book["book_name"];
+$borrowing_rent_date = $row_borrowing["borrowing_rent_date"];
+$borrowing_return_date = $row_borrowing["borrowing_return_date"];
 ?>
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -52,10 +53,10 @@
             <div id="roob" onclick="clickProfile()">
             </div>
             <p id="username"> username</p>
-          </div>
-          <div id="auth0" >
-            <input type="button" value="Sign in" id="signin" class="yellow" onclick="window.location.href='../signin.php'" />
-          </div>
+        </div>
+        <div id="auth0">
+            <input type="button" value="Sign in" id="signin" class="yellow" onclick="window.location.href='./signin.php'" />
+        </div>
         <p id="hua" onclick="window.location.href='../index.html'">BbookK</p>
 
         <img id="home" src="https://storage.googleapis.com/travalokail-55abf.appspot.com/lg/lg_home.png">
@@ -65,23 +66,23 @@
     <!-- <div id="mid"></div> -->
     <div id="bluebox">
     </div>
-    
+
     <p id="personal">History</p>
 
     <div id="addBlock">
         <div id="block" onclick="selectHotel(this)">
-          <div id="idHotel"></div>
-          <div id="roop"></div>
-          <!-- <p id="name">Book name</p> -->
-          <p id="lowname">
-          <div id="asd">
-            <p id="tumnang">book name : <?php echo $book_name; ?></p>
-            <p id="raka">rent date : <?php echo $borrowing_rent_date; ?></p>
-            <p id="konPak">return date : <?php echo $borrowing_return_date; ?></p>
-          </div>
-          </p>
+            <div id="idHotel"></div>
+            <div id="roop"></div>
+            <!-- <p id="name">Book name</p> -->
+            <p id="lowname">
+            <div id="asd">
+                <p id="tumnang">book name : <?php echo $book_name; ?></p>
+                <p id="raka">rent date : <?php echo $borrowing_rent_date; ?></p>
+                <p id="konPak">return date : <?php echo $borrowing_return_date; ?></p>
+            </div>
+            </p>
         </div>
-      </div>
+    </div>
 
 
 </body>

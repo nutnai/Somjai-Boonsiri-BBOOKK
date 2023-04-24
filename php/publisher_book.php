@@ -41,7 +41,7 @@ $result_book = mysqli_query($connect, $sql_book);
             <p id="username"> username</p>
         </div>
         <div id="auth0">
-            <input type="button" value="Sign in" id="signin" class="yellow" onclick="window.location.href='../signin.php'" />
+            <input type="button" value="Sign in" id="signin" class="yellow" onclick="window.location.href='./signin.php'" />
         </div>
         <p id="hua" onclick="window.location.href='../index.html'">BbookK</p>
 

@@ -103,7 +103,7 @@ $publisher_email = $row_publisher["publisher_email"];
             <p id="username"> username</p>
         </div>
         <div id="auth0">
-            <input type="button" value="Sign in" id="signin" class="yellow" onclick="window.location.href='../signin.php'" />
+            <input type="button" value="Sign in" id="signin" class="yellow" onclick="window.location.href='./signin.php'" />
         </div>
     </div>
 
@@ -129,74 +129,69 @@ $publisher_email = $row_publisher["publisher_email"];
                 <p> Summary &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : <?php echo $book_summary; ?></p>
             </div>
         </div>
-    <div id="fahunder">
-      <div id="sikaw22">
-        <p id="contact">&nbsp;&nbsp;&nbsp;Contact publisher : </p>
-        <p id="phone">&nbsp;&nbsp;&nbsp;Phone : </p>
-        <p id="email">&nbsp;&nbsp;&nbsp;Email : </p>
-      </div>
+        <div id="fahunder">
+            <div id="sikaw22">
+                <p id="contact">&nbsp;&nbsp;&nbsp;Contact publisher : </p>
+                <p id="phone">&nbsp;&nbsp;&nbsp;Phone : </p>
+                <p id="email">&nbsp;&nbsp;&nbsp;Email : </p>
+            </div>
+        </div>
+        <div id="heartborrow">
+            <div class="heart-btn">
+                <div class="content"><span class="heart"></span></div>
+            </div>
+            <input type="button" value="borrow" id="reserve" class="yellow" onclick="document.getElementById('all').style.display = '';document.getElementById('reserveall').style.display = '';document.getElementById('booked').style.display = 'none'">
+        </div>
     </div>
-    <div id="heartborrow">
-      <div class="heart-btn">
-        <div class="content"><span class="heart"></span></div>
-      </div>
-      <input type="button" value="borrow" id="reserve" class="yellow"
-        onclick="document.getElementById('all').style.display = '';document.getElementById('reserveall').style.display = '';document.getElementById('booked').style.display = 'none'">
-    </div>
-  </div>
 
-  <div id="all" style="display: none">
-    <div id="bgall"></div>
-    <div id="all2">
-      <div id="booked" class="bgWhiteAll">
-        <p style="text-align: center;">Are you sure you want to borrow this book?</p>
+    <div id="all" style="display: none">
+        <div id="bgall"></div>
+        <div id="all2">
+            <div id="booked" class="bgWhiteAll">
+                <p style="text-align: center;">Are you sure you want to borrow this book?</p>
+                <input type="button" value="Back" id="backall" onclick="document.getElementById('all').style.display='none';">
+                <input type="button" value="Confirm" id="confirmall" onclick="clickDelete()">
+            </div>
+        </div>
+    </div>
+
+    <div id="booked" class="bgWhiteAll" style="display: none;">
+        <p style="text-align: center;">Successfully booked. Thank you for using the service.</p>
+        <img id="imageCorrect" src="https://storage.googleapis.com/travalokail-55abf.appspot.com/lg/lg_correct.webp">
         <input type="button" value="Back" id="backall" onclick="document.getElementById('all').style.display='none';">
-        <input type="button" value="Confirm" id="confirmall" onclick="clickDelete()">
-      </div>
+        <input type="button" value="See contract" id="contractall" onclick="clickContract()">
     </div>
-  </div>
-
-  <div id="booked" class="bgWhiteAll" style="display: none;">
-    <p style="text-align: center;">Successfully booked. Thank you for using the service.</p>
-    <img id="imageCorrect" src="https://storage.googleapis.com/travalokail-55abf.appspot.com/lg/lg_correct.webp">
-    <input type="button" value="Back" id="backall" onclick="document.getElementById('all').style.display='none';">
-    <input type="button" value="See contract" id="contractall" onclick="clickContract()">
-  </div>
-  </div>
-  </div>
-  <script>
-    $(document).ready(function () {
-      $('.content').click(function () {
-        $('.content').toggleClass("heart-active")
-        $('.heart').toggleClass("heart-active")
-      });
-    });
-  </script>
-
-
-
-
+    </div>
+    </div>
+    <script>
+        $(document).ready(function() {
+            $('.content').click(function() {
+                $('.content').toggleClass("heart-active")
+                $('.heart').toggleClass("heart-active")
+            });
+        });
+    </script>
 </body>
+<style>
+    .roopyai {
+        height: 90%;
+        border-radius: 10%;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        cursor: pointer;
+    }
+
+    .rooprek {
+        position: relative;
+        height: 90%;
+        margin: auto;
+        border-radius: 10%;
+        top: 5%;
+        margin-left: 10px;
+        cursor: pointer;
+    }
+</style>
 
 </html>
-<style>
-  .roopyai {
-    height: 90%;
-    border-radius: 10%;
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    cursor: pointer;
-  }
-
-  .rooprek {
-    position: relative;
-    height: 90%;
-    margin: auto;
-    border-radius: 10%;
-    top: 5%;
-    margin-left: 10px;
-    cursor: pointer;
-  }
-</style>
