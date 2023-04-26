@@ -2,7 +2,8 @@
 <html lang="en">
 
 <?php
-$book_id = 1; //explode("?", $_SERVER["PHP_SELF"])[1];
+$book_id = $_POST['book_id'];
+// $book_id = 1;
 
 $servername = "localhost";
 $username = "id20576360_learnjapannutnai";
@@ -75,6 +76,7 @@ $row_publisher = mysqli_fetch_assoc($result_publisher);
 $publisher_name = $row_publisher["publisher_name"];
 $publisher_phone = $row_publisher["publisher_phone"];
 $publisher_email = $row_publisher["publisher_email"];
+$publisher_address = $row_publisher["publisher_address"];
 ?>
 
 <head>
@@ -131,16 +133,17 @@ $publisher_email = $row_publisher["publisher_email"];
         </div>
         <div id="fahunder">
             <div id="sikaw22">
-                <p id="contact">&nbsp;&nbsp;&nbsp;Contact publisher : </p>
-                <p id="phone">&nbsp;&nbsp;&nbsp;Phone : </p>
-                <p id="email">&nbsp;&nbsp;&nbsp;Email : </p>
+                <p id="contact">&nbsp;&nbsp;&nbsp;Contact publisher : <?php echo $publisher_name; ?></p>
+                <p id="phone">&nbsp;&nbsp;&nbsp;Phone : <?php echo $publisher_phone; ?></p>
+                <p id="email">&nbsp;&nbsp;&nbsp;Email : <?php echo $publisher_email; ?></p>
+                <p id="email">&nbsp;&nbsp;&nbsp;Address : <?php echo $publisher_address; ?></p>
             </div>
         </div>
         <div id="heartborrow">
             <div class="heart-btn">
                 <div class="content"><span class="heart"></span></div>
             </div>
-            <input type="button" value="borrow" id="reserve" class="yellow" onclick="document.getElementById('all').style.display = '';document.getElementById('reserveall').style.display = '';document.getElementById('booked').style.display = 'none'">
+            <input type="button" value="borrow" id="reserve" class="yellow" onclick="document.getElementById('all').style.display = '';">
         </div>
     </div>
 
@@ -150,18 +153,9 @@ $publisher_email = $row_publisher["publisher_email"];
             <div id="booked" class="bgWhiteAll">
                 <p style="text-align: center;">Are you sure you want to borrow this book?</p>
                 <input type="button" value="Back" id="backall" onclick="document.getElementById('all').style.display='none';">
-                <input type="button" value="Confirm" id="confirmall" onclick="clickDelete()">
+                <input type="button" value="Confirm" id="confirmall" onclick="confirmall();document.getElementById('all').style.display='none';">
             </div>
         </div>
-    </div>
-
-    <div id="booked" class="bgWhiteAll" style="display: none;">
-        <p style="text-align: center;">Successfully booked. Thank you for using the service.</p>
-        <img id="imageCorrect" src="https://storage.googleapis.com/travalokail-55abf.appspot.com/lg/lg_correct.webp">
-        <input type="button" value="Back" id="backall" onclick="document.getElementById('all').style.display='none';">
-        <input type="button" value="See contract" id="contractall" onclick="clickContract()">
-    </div>
-    </div>
     </div>
     <script>
         $(document).ready(function() {
@@ -171,6 +165,11 @@ $publisher_email = $row_publisher["publisher_email"];
             });
         });
     </script>
+    <form action="./inserter.php" method="post" target="_blank" id="formpost">
+        <input type="hidden" name="type" value="add_borrowing">
+        <input type="hidden" name="borrower_id" value="" id="borrower_id">
+        <input type="hidden" name="book_id" value="<?php echo $book_id ?>">
+    </form>
 </body>
 <style>
     .roopyai {

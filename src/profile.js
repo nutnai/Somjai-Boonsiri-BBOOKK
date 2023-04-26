@@ -1,5 +1,5 @@
 import { signout, permission, getauth } from "./auth.js";
-import { get_user, set_user } from "./firestoreAPI.js";
+import { set_user } from "./firestoreAPI.js";
 
 function signOut() {
     signout();
@@ -17,7 +17,7 @@ window.signOut = signOut;
 // async function load() {
 
 //     const user_id = JSON.parse(localStorage.getItem("user_detail"))
-//     get_user(user.id).then((result) => {
+//     get_user(user.id).then   ((result) => {
 //         var img = document.createElement("img");
 //         var image = result.image
 //         if (!result.image.includes("https")) {
@@ -90,3 +90,7 @@ async function clickEdit(option) {
     }
 }
 window.clickEdit = clickEdit
+
+var formpost = document.getElementById("formposthtr")
+if (formpost)
+    formpost.appendChild(range.createContextualFragment("<input type='hidden' name='user_id' value='" + JSON.parse(localStorage.getItem("user_detail")).id + "'>"))

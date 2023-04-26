@@ -2,7 +2,7 @@
 <html lang="en">
 
 <?php
-$borrower_id = 6434484923; //explode("?", $_SERVER["PHP_SELF"])[1];
+$borrower_id = $_POST['user_id']; //explode("?", $_SERVER["PHP_SELF"])[1];
 
 $servername = "localhost";
 $username = "id20576360_learnjapannutnai";

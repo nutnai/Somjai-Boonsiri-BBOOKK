@@ -123,8 +123,8 @@ $result = mysqli_query($connect, $sql);
             $author_name = $row_book["author_name"];
             $show_data .= '<p class="detailbook">author name : ' . $author_name . '</p>';
         }
-        echo '<div class="block" onclick="selectHotel(this)">
-            <div id="idHotel"></div>
+        echo '<div class="block" onclick="selectbook(this)">
+            <input type="hidden" id="idbook" value="'.$book_id.'">
             <div id="roop"></div>
             <div id="lowname">
             ' . $show_data . '
@@ -135,7 +135,10 @@ $result = mysqli_query($connect, $sql);
     ?>
 
     <p id="sorry" class="textSearch" style="display: none;">Sorry, we currently don't have hotels in this location.</p>
+
+    <form action="./detail.php" method="post" target="_blank" id="formpost">
+        <input type="hidden" name="book_id" value="" id="book_idpost">
+    </form>
 </body>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 </html>

@@ -191,16 +191,98 @@
     }
 }
 
-.field {
-    position: relative; 
-    top: -70px;
-
+#whitebox2 {
+    position: relative;
+    width: 94%;
+    height: 650px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: #1a3244;
+    margin: 3%;
 }
 
-.field input {
-    position: relative !important;
-    margin-top: 20px;
-    left: 260px;
+#showpeople {
+    position: absolute;
+    top: 1500px;
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+}
+
+#showpeople1 {
+    position: absolute;
+    top: 2400px;
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+}
+
+#showpeople2 {
+    position: absolute;
+    top: 3300px;
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+}
+
+.wb {
+    overflow-y: auto;
+}
+
+#attibute {
+    position: relative;
+    font-size: 22px;
+    top: 1px;
+}
+
+#attibute p {
+    display: inline-block;
+    text-align: center;
+    margin: 20px 0;
+}
+
+#row input[type="text"] {
+    display: inline-block;
+    text-align: right;
+    margin: 20px 0 0 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    background-color: #efefef;
+    border: none;
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+#row input[type=button] {
+    left: 10px;
+    position: relative;
+    width: 94px;
+    height: 45px;
+    display: inline-block;
+    border: none;
+    background: #2a9d8f;
+    border-radius: 10px;
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    bottom: 0px;
+    color: #FFFFFF;
 }
 
 #sifah {
@@ -247,8 +329,8 @@
     position: relative;
     width: 107px;
     height: 45px;
-    left: 660px;
-    padding: 0;
+    left: 655px;
+    top: 25px;
     border: none;
     background: none;
     background: #2a9d8f;
@@ -457,40 +539,28 @@ textarea::-webkit-scrollbar {
 }
 
 #personal {
-    position: absolute;
-    width: 381px;
-    height: 55px;
-    left: 390px;
-    top: 180px;
-
+    position: relative;
+    text-align: center;
+    margin-top: 20px;
     font-family: 'Inria Sans';
     font-style: normal;
     font-weight: 700;
-    font-size: 24px;
+    font-size: 27px;
     line-height: 29px;
 
     color: #FFFFFF;
 }
 
-#delete {
+#bluebox {
     position: absolute;
-    width: 200px;
-    height: 60px;
-    border: none;
-    background: none;
-    cursor: pointer;
-    top: 200px;
-    left: 855px;
-    background: red;
-    border-radius: 10px;
-    position: absolute;
+    width: 301px;
+    height: 82px;
+    left: 210.44px;
+    top: 185px;
 
-    font-family: 'Inria Sans';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 24px;
-    color: #FFFFFF;
+    background: #2a9d8f;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
 }
 
 #logout {
@@ -685,19 +755,6 @@ textarea::-webkit-scrollbar {
     height: 49px;
     left: 997px;
     top: 1100px;
-}
-
-#whiteblock {
-    position: absolute;
-    width: 799px;
-    height: 423px;
-    left: 371px;
-    top: 431px;
-
-    background: #FFFFFF;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 10px;
-    visibility: hidden;
 }
 
 #bady {
@@ -927,99 +984,15 @@ input[type="button"]:active {
 #finish2 {
     background: #2a9d8f;
 }
-
-#yellowbox {
+#showpeople2 #row p {
+    position: relative;
+    display: inline-block;
+}
+.divin {
+    margin-left: 150px;
+}
+.divin input {
     position: absolute;
-    width: 845px;
-    height: max-content;
-    left: 210px;
-    top: 200px;
-
-    background: #FFEB85;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 15px;
-}
-
-#whitebox {
-    position: relative;
-    width: 94%;
-    height: 94%;
-    background: #FFFFFF;
-    border-radius: 10px;
-    font-family: 'Inria Sans';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 24px;
-    line-height: 29px;
-    color: #1a3244;
-    margin: 3%;
-
-}
-
-#whitebox .info {
-    position: absolute;
-    word-wrap: break-word;
-    word-break: break-word;
-    width: 500px;
-    right: 0px;
-    text-align: right;
-    right: 30px;
-    margin-top: 30px;
-    font-size: 18px;
-    border: none;
-    background-color: rgb(218, 217, 217);
-}
-
-#whitebox .head {
-    position: relative;
-    font-size: 20px;
-    padding-left: 30px;
-    display: inline-block;
-    top: 1px;
-}
-
-#addRatePriceButton {
-    position: relative;
-    border: none;
-    height: 40px;
-    width: 40px;
-    background-color: rgb(155, 255, 4);
-    color: white;
-    font-size: 35px;
-}
-
-#removeRatePriceButton {
-    position: relative;
-    border: none;
-    height: 40px;
-    width: 40px;
-    background-color: rgb(255, 24, 24);
-    color: white;
-    font-size: 35px;
-}
-
-.ratePriceZone {
-    position: relative;
-    display: inline-block;
-    border: 0px;
-    background-color: rgb(218, 217, 217);
-    font-family: 'Inria Sans';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 24px;
-    line-height: 29px;
-    color: #1a3244;
-    left: 300px;
-}
-
-.ratePriceZoneText1 {
-    position: relative;
-    left: 300px;
-    display: inline-block;
-}
-
-.ratePriceZoneText2 {
-    position: absolute;
-    right: 30px;
-    display: inline-block;
+    left: 360px;
+    width: 400px !important;
 }
