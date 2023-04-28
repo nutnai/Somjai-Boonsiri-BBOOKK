@@ -62,7 +62,7 @@ $text = $row["publisher_name"];
 
 <body style="background-color: white;">
     <div id="sifah">
-        <p id="hua" onclick="window.location.href='../index.html'">BbookK</p>
+    <img id="logo" src="https://storage.googleapis.com/bbookk-c601f.appspot.com/lg/logo.png" onclick="window.location.href='../index.html'"></img>
 
         <img id="home" src="https://storage.googleapis.com/travalokail-55abf.appspot.com/lg/lg_home.png">
 

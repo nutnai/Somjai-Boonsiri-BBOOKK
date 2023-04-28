@@ -25,20 +25,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/publisher.css">
     <link href='https://fonts.googleapis.com/css?family=Inria Sans' rel='stylesheet'>
-    <script type="module" src="../src/publisher.js"></script>
+    <script type="module" src="../src/profile.js"></script>
     <title>Publisher</title>
 </head>
 
-<body style="background-color: white;">
+<body style="background-color: #fff7e6;">
     <div id="sifah">
-        <p id="hua" onclick="window.location.href='../index.html'">BbookK</p>
-
-        <img id="home" src="https://storage.googleapis.com/travalokail-55abf.appspot.com/lg/lg_home.png">
-
-        </img>
+    <img id="logo" src="https://storage.googleapis.com/bbookk-c601f.appspot.com/lg/logo.png" onclick="window.location.href='../index.html'"></img>
     </div>
-    <div id="mid"></div>
-    <div id="bluebox"></div>
+    <!-- <div id="mid"></div> -->
+    <!-- <div id="bluebox"></div> -->
     <!-- <div id="yellowbox"></div>
     <div id="whitebox"></div> -->
     
@@ -55,7 +51,7 @@
     <input id="Adrress"type="text" placeholder="address..." readonly class="edit">
     <input id="email"type="text" placeholder="email..." readonly class="edit"> -->
         
-    <div id="information">
+    <!-- <div id="information">
         <div id="yellowbox">
           <div id="whitebox">
           <form method="post" action="./inserter.php">
@@ -81,23 +77,25 @@
           </form>
         </div>  
         </div>
-    </div>
+    </div> -->
 
-    <p id="personal">Publisher's details</p>
-    <input id="delete" type="button" value="Delete accout" onclick="myFunction()" style="display: none;">
+    <!-- <p id="personal">Publisher's details</p>
+    <input id="delete" type="button" value="Delete accout" onclick="myFunction()" style="display: none;"> -->
     <input id="logout" type="button" value="Log Out" onclick="signOut()">
-    <p class="reset" style="display: none;">Reset password ?</p>
+    <!-- <p class="reset" style="display: none;">Reset password ?</p>
     <p id="blankk"> </p>
     <div class="popup" id="all">
         <span class="popuptext" id="myPopup"></span>
         <span class="asky" id="ask"> Do &nbsp;you&nbsp;sure&nbsp;&#x3F;</span>
         <input class="noo" type="button" value="No" id="no" onclick="closeWin()">
         <input class="yess" type="button" value="Yes" id="yes">
-    </div>
-    <div class="admin">
+    </div> -->
+    <div id="admin">
 
-        <button type="button" id="adminy" onclick="window.location.href='./book_add.php'">Add Book</button>
-        <button type="button" id="editHotel" onclick="window.location.href='./publisher_book.php'">Book List</button>
+        <button type="button" class="adminy" onclick="window.location.href='./book_add.php'">Add Book</button>
+        <button type="button" class="adminy" onclick="window.location.href='./people_add.php'">Edit Data</button>
+        <!-- <button type="button" class="adminy" onclick="window.location.href='./publisher_book.php'">Book List</button> -->
+        <button type="button" class="adminy" onclick="window.location.href='./history.php'">Edit Borrowing</button>
     </div>
 
     <script>

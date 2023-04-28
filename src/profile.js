@@ -1,6 +1,6 @@
 import { signout, permission, getauth } from "./auth.js";
-import { set_user } from "./firestoreAPI.js";
-
+// import { set_user } from "./firestoreAPI.js";
+var range = document.createRange();
 function signOut() {
     signout();
     (async () => {
@@ -47,7 +47,17 @@ window.signOut = signOut;
 //     })
 
 // }
-// load()
+function load() {
+    const user = JSON.parse(localStorage.getItem("user_detail"))
+    var img = document.createElement("img");
+    img.src = user.image
+    img.style.width = "100%"
+    img.style.height = "100%"
+    img.style.borderRadius = "100%"
+    var mid = document.getElementById("mid");
+    mid.append(img);
+}
+load()
 
 async function clickEdit(option) {
     var editBut = document.getElementById("but1");
@@ -76,7 +86,7 @@ async function clickEdit(option) {
             await set_user(id_user, nameType.value, emailType.value, phoneType.value, addressType.value);
             var storage = JSON.parse(localStorage.getItem("user_detail"))
             storage.name = nameType.value;
-            localStorage.setItem("user_detail",JSON.stringify(storage))
+            localStorage.setItem("user_detail", JSON.stringify(storage))
             load()
             break;
         case "cancel":

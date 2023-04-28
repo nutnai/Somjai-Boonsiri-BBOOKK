@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Book Add</title>
     <script type="module" src="../src/hasTopRightAuth.js"></script>
-    <script type="module" src="../src/book_add.js"></script>
+    <script type="module" src="../src/bookAdd.js"></script>
 </head>
 <?php
 $servername = "localhost";
@@ -33,13 +33,9 @@ if (isset($_POST["user_id"])) {
 }
 ?>
 
-<body>
+<body style="background-color: #fff7e6;">
     <div id="sifah">
-        <p id="hua" onclick="window.location.href='../index.html'" onclick="window.location.href='../index.html'">
-            BbookK
-        </p>
-
-        <img id="home" src="https://storage.googleapis.com/travalokail-55abf.appspot.com/lg/lg_home.png">
+    <img id="logo" src="https://storage.googleapis.com/bbookk-c601f.appspot.com/lg/logo.png" onclick="window.location.href='../index.html'"></img>
 
         </img>
         <div id="auth1" style="display: none;">
@@ -50,13 +46,13 @@ if (isset($_POST["user_id"])) {
 
         </div>
         <div id="auth0">
-            <input type="button" value="Sign in" id="signin" class="yellow" onclick="window.location.href='../signin.php'" />
+            <input type="button" value="Sign in" id="signin" class="yellow" onclick="window.location.href='./signin.php'" />
         </div>
         <p id="personal">About Hotel</p>
         <div id="information">
             <div id="yellowbox">
                 <div id="whitebox">
-                    <form method="post" action="./inserter.php" id="form">
+                    <form method="post" action="./inserter.php" id="form" target="_blank">
                         <input type="hidden" name="type" value="add">
                         <p class="head">Book Name :</p>
                         <input type="text" id="book_name" name="book_name" required class="info" placeholder="Book Name . . .">
@@ -71,7 +67,7 @@ if (isset($_POST["user_id"])) {
                         <input type="number" id="book_npage" name="book_npage" required class="info" placeholder="Book Number Of Pages . . .">
                         <div class="line"></div>
                         <p class="head">Book Year :</p>
-                        <input type="text" id="book_yaer" name="book_year" required class="info" placeholder="Book Wrtitten date . . .">
+                        <input type="text" id="book_yaer" name="book_year" required class="info" placeholder="Book Year . . .">
                         <div class="line"></div>
                         <p class="head">Book Price :</p>
                         <input type="number" id="book_price" name="book_price" class="info" placeholder="Book Price . . .">
@@ -136,7 +132,7 @@ if (isset($_POST["user_id"])) {
                             <input type="file" id="image-upload" name="image-upload" accept="image/*" multiple>
                         </div>
                         <input type="hidden" value="" id="publisher_id">
-                        <input id="save" type="submit" value="add">
+                        <input id="save" type="button" value="add" onclick="uploadImage()">
                     </form>
                 </div>
             </div>
@@ -159,7 +155,7 @@ if (isset($_POST["user_id"])) {
                 <p style="text-align: center;" id="upload2">0%</p>
             </div>
             <div id="finish" class="bgWhiteAll" style="display: none;">
-                <p style="text-align: center;" id="finish1">Add hotel complete</p>
+                <p style="text-align: center;" id="finish1">complete!</p>
                 <input type="button" value="Back" class="backall" onclick="window.history.back();">
                 <input type="button" value="Add more" class="confirmall" onclick="window.location.reload();">
             </div>
@@ -174,31 +170,31 @@ if (isset($_POST["user_id"])) {
         }
 
         async function inputchecklist(node, datalist) {
-            await new Promise((resolve) => {
-                if (!datalist.querySelector("option[value='" + node.value + "']")) {
-                    node.value = "";
-                }
-                resolve();
-            })
-            await new Promise((resolve) => {
-                console.log(node.parentNode.childNodes);
-                if (node.value == "") {
-                    if ((node.parentNode.childNodes.length != 3))
-                        node.remove();
-                } else if (node.parentNode.querySelector("#author_name")) {
-                    var input_author_field = document.getElementById("input_author_field");
-                    if (input_author_field.lastChild.value != "") {
-                        node.parentNode.appendChild(range.createContextualFragment("<input list='author_list' id='author_name' class='info' name='author_name[]' onchange='inputchecklist(this, author_list)' placeholder='Author name . . .'>"))
+                await new Promise((resolve) => {
+                    if (!datalist.querySelector("option[value='" + node.value + "']")) {
+                        node.value = "";
                     }
-                } else if (node.parentNode.querySelector("#interpreter_name")) {
-                    var input_interpreter_field = document.getElementById("input_interpreter_field");
-                    if (input_interpreter_field.lastChild.value != "") {
-                        node.parentNode.appendChild(range.createContextualFragment("<input list='interpreter_list' id='interpreter_name' class='info' name='interpreter_name[]' onchange='inputchecklist(this, interpreter_list)' placeholder='interpreter name . . .'>"))
+                    resolve();
+                })
+                await new Promise((resolve) => {
+                    console.log(node.parentNode.childNodes);
+                    if (node.value == "") {
+                        if ((node.parentNode.childNodes.length != 3))
+                            node.remove();
+                    } else if (node.parentNode.querySelector("#author_name")) {
+                        var input_author_field = document.getElementById("input_author_field");
+                        if (input_author_field.lastChild.value != "") {
+                            node.parentNode.appendChild(range.createContextualFragment("<input list='author_list' id='author_name' class='info' name='author_name[]' onchange='inputchecklist(this, author_list)' placeholder='Author name . . .'>"))
+                        }
+                    } else if (node.parentNode.querySelector("#interpreter_name")) {
+                        var input_interpreter_field = document.getElementById("input_interpreter_field");
+                        if (input_interpreter_field.lastChild.value != "") {
+                            node.parentNode.appendChild(range.createContextualFragment("<input list='interpreter_list' id='interpreter_name' class='info' name='interpreter_name[]' onchange='inputchecklist(this, interpreter_list)' placeholder='interpreter name . . .'>"))
+                        }
                     }
-                }
-                resolve();
-            })
-        }
+                    resolve();
+                })
+            }
     </script>
 
 </body>

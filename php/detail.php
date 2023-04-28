@@ -2,7 +2,7 @@
 <html lang="en">
 
 <?php
-$book_id = $_POST['book_id'];
+$book_id = trim($_POST['book_id']);
 // $book_id = 1;
 
 $servername = "localhost";
@@ -10,37 +10,36 @@ $username = "id20576360_learnjapannutnai";
 $password = "wn3V%=/uMYin&|o2";
 $dbname = "id20576360_bbookk";
 
-$sql = "select * from book where book_id = $book_id";
+$sql = "select * from book where book_id = '$book_id'";
 $connect = mysqli_connect($servername, $username, $password, $dbname);
 $result = mysqli_query($connect, $sql);
 $row_book = mysqli_fetch_assoc($result);
 
 $book_status = $row_book["book_status"];
-$book_id = $row_book["book_id"];
 $book_name = $row_book["book_name"];
 $book_chapter = $row_book["book_chapter"];
 $book_edition = $row_book["book_edition"];
 $book_language = $row_book["book_language"];
 
-$sql_1 = "select * from book_genre where book_id = $book_id";
+$sql_1 = "select * from book_genre where book_id = '$book_id'";
 $result_1 = mysqli_query($connect, $sql_1);
 $row_book_genre = mysqli_fetch_assoc($result_1);
 
 $genre_id = $row_book_genre["genre_id"];
 
-$sql_2 = "select * from genre where genre_id = $genre_id";
+$sql_2 = "select * from genre where genre_id = '$genre_id'";
 $result_2 = mysqli_query($connect, $sql_2);
 $row_genre = mysqli_fetch_assoc($result_2);
 
 $book_genre = $row_genre["genre"];
 
-$sql_3 = "select * from book_written where book_id = $book_id";
+$sql_3 = "select * from book_written where book_id = '$book_id'";
 $result_3 = mysqli_query($connect, $sql_3);
 $row_book_written = mysqli_fetch_assoc($result_3);
 
 $author_id = $row_book_written["author_id"];
 
-$sql_4 = "select * from author where author_id = $author_id";
+$sql_4 = "select * from author where author_id = '$author_id'";
 $result_4 = mysqli_query($connect, $sql_4);
 $row_author = mysqli_fetch_assoc($result_4);
 
@@ -48,19 +47,21 @@ $author_fname = $row_author["author_firstname"];
 $author_lname = $row_author["author_lastname"];
 $author_name = $author_fname . " " . $author_lname;
 
-$sql_5 = "select * from book_translated where book_id = $book_id";
+$sql_5 = "select * from book_translated where book_id = '$book_id'";
 $result_5 = mysqli_query($connect, $sql_5);
 $row_book_interpreter = mysqli_fetch_assoc($result_5);
+if ($row_book_interpreter) {
+    $interpreter_id = $row_book_interpreter["interpreter_id"];
 
-$interpreter_id = $row_book_interpreter["interpreter_id"];
+    $sql_6 = "select * from interpreter where interpreter_id = '$interpreter_id'";
+    $result_6 = mysqli_query($connect, $sql_6);
+    $row_interpreter = mysqli_fetch_assoc($result_6);
 
-$sql_6 = "select * from interpreter where interpreter_id = $interpreter_id";
-$result_6 = mysqli_query($connect, $sql_6);
-$row_interpreter = mysqli_fetch_assoc($result_6);
+    $interpreter_fname = $row_interpreter["interpreter_firstname"];
+    $interpreter_lname = $row_interpreter["interpreter_lastname"];
+    $interpreter_name = $interpreter_fname . " " . $author_lname;
+}
 
-$interpreter_fname = $row_interpreter["interpreter_firstname"];
-$interpreter_lname = $row_interpreter["interpreter_lastname"];
-$interpreter_name = $interpreter_fname . " " . $author_lname;
 
 $book_isbn = $row_book["book_isbn"];
 $book_year = $row_book["book_year"];
@@ -69,7 +70,7 @@ $book_price = $row_book["book_price"];
 $book_summary = $row_book["book_summary"];
 $publisher_id = $row_book["publisher_id"];
 
-$sql_publisher = "select * from publisher where publisher_id = $publisher_id";
+$sql_publisher = "select * from publisher where publisher_id = '$publisher_id'";
 $result_publisher = mysqli_query($connect, $sql_publisher);
 $row_publisher = mysqli_fetch_assoc($result_publisher);
 
@@ -92,15 +93,12 @@ $publisher_address = $row_publisher["publisher_address"];
     <script type="module" src="../src/hasTopRightAuth.js"></script>
 </head>
 
-<body>
+<body style="background-color: #fff7e6;">
     <div id="sifah">
-        <p id="hua" onclick="window.location.href='../index.html'">BbookK</p>
-
-        <img id="home1" src="https://storage.googleapis.com/travalokail-55abf.appspot.com/lg/lg_home.png">
-
-        </img>
+    <img id="logo" src="https://storage.googleapis.com/bbookk-c601f.appspot.com/lg/logo.png" onclick="window.location.href='../index.html'"></img>
         <div id="auth1" style="display: none;">
             <div id="roob" onclick="clickProfile()">
+                <form action="" method="post" id="formposthtr"></form>
             </div>
             <p id="username"> username</p>
         </div>
@@ -110,9 +108,25 @@ $publisher_address = $row_publisher["publisher_address"];
     </div>
 
     <div id="information">
+        <?php
+        $sql_tmp = "select * from book_image where book_id = '$book_id'";
+        $result_tmp = mysqli_query($connect, $sql_tmp);
+        $row_image = mysqli_fetch_assoc($result_tmp);
+        ?>
         <div id="roopyai">
+            <?php
+            $url = "https://storage.googleapis.com/bbookk-c601f.appspot.com/bk/" . $row_image["image_id"];
+            echo "<img class='roopyai'src='$url'; onclick='window.open('$url')'>";
+            ?>
         </div>
         <div id="rooprek">
+            <?php
+            $result_tmp = mysqli_query($connect, $sql_tmp);
+            while ($row_image = mysqli_fetch_assoc($result_tmp)) {
+                $url = "https://storage.googleapis.com/bbookk-c601f.appspot.com/bk/" . $row_image["image_id"];
+                echo "<img class='rooprek'src='$url'; onclick='changeroopyai('$url')'>";
+            }
+            ?>
         </div>
         <div id="detailText">
             <div id="sikaw">

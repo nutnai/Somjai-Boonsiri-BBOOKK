@@ -1,33 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<?php
-$book_id = 2; //explode("?", $_SERVER["PHP_SELF"])[1];
-
-$servername = "localhost";
-$username = "id20576360_learnjapannutnai";
-$password = "wn3V%=/uMYin&|o2";
-$dbname = "id20576360_bbookk";
-
-$connect = mysqli_connect($servername, $username, $password, $dbname);
-
-$sql = "SELECT book.*, author.author_firstname, interpreter.interpreter_firstname,author.author_lastname,interpreter.interpreter_lastname FROM book LEFT JOIN book_written ON book.book_id = book_written.book_id LEFT JOIN author ON book_written.author_id = author.author_id LEFT JOIN book_translated ON book.book_id = book_translated.book_id LEFT JOIN interpreter ON book_translated.interpreter_id = interpreter.interpreter_id where book.book_id = $book_id
-    ";
-$result = mysqli_query($connect, $sql);
-$row = mysqli_fetch_assoc($result);
-$book_name = $row["book_name"];
-$book_chapter = $row["book_chapter"];
-$book_isbn = $row["book_isbn"];
-$book_numberofpages = $row["book_number_of_pages"];
-$book_writtendate = $row["book_year"];
-$book_price = $row["book_price"];
-$book_edition = $row["book_edition"];
-$book_language = $row["book_language"];
-$book_summary = $row["book_summary"];
-$author_fname = $row["author_firstname"];
-$author_lname = $row["author_lastname"];
-$interpeter_fname = $row["interpreter_firstname"];
-$interpeter_lname = $row["interpreter_lastname"];
-?>
 
 <head>
     <meta charset="UTF-8">
@@ -35,18 +7,53 @@ $interpeter_lname = $row["interpreter_lastname"];
     <link rel="stylesheet" href="../css/book_edit.css">
     <link href='https://fonts.googleapis.com/css?family=Inria Sans' rel='stylesheet'>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>edit book</title>
+    <title>Book Edit</title>
     <script type="module" src="../src/hasTopRightAuth.js"></script>
     <script type="module" src="../src/book_edit.js"></script>
 </head>
+<?php
+$book_id = $_POST["book_id"];
 
-<body>
+$servername = "localhost";
+$username = "id20576360_learnjapannutnai";
+$password = "wn3V%=/uMYin&|o2";
+$dbname = "id20576360_bbookk";
+
+$sql = "select * from author";
+$connect = mysqli_connect($servername, $username, $password, $dbname);
+$result_author = mysqli_query($connect, $sql);
+
+$sql = "select * from interpreter";
+$result_interpreter = mysqli_query($connect, $sql);
+
+$sql = "select * from publisher";
+$result_publisher = mysqli_query($connect, $sql);
+
+$sql = "select * from book where book_id = '$book_id'";
+$result_book = mysqli_query($connect, $sql);
+$row_book = mysqli_fetch_assoc($result_book);
+$book_name = $row_book["book_name"];
+$book_chapter = $row_book["book_chapter"];
+$book_isbn = $row_book["book_isbn"];
+$book_number_of_pages = $row_book["book_number_of_pages"];
+$book_year = $row_book["book_year"];
+$book_price = $row_book["book_price"];
+$book_edition = $row_book["book_chapter"];
+$book_language = $row_book["book_language"];
+$book_summary = $row_book["book_summary"];
+$publisher_id = $row_book["publisher_id"];
+
+$sql = "select * from publisher where publisher_id = '$publisher_id'";
+$result_publisher = mysqli_query($connect, $sql);
+$row_publisher = mysqli_fetch_assoc($result_publisher);
+$publisher_name = $row_publisher["publisher_name"];
+
+?>
+
+<body style="background-color: #fff7e6;">
     <div id="sifah">
-        <p id="hua" onclick="window.location.href='../index.html'" onclick="window.location.href='../index.html'">
-            BbookK
-        </p>
+    <img id="logo" src="https://storage.googleapis.com/bbookk-c601f.appspot.com/lg/logo.png" onclick="window.location.href='../index.html'"></img>
 
-        <img id="home" src="https://storage.googleapis.com/travalokail-55abf.appspot.com/lg/lg_home.png">
 
         </img>
         <div id="auth1" style="display: none;">
@@ -57,67 +64,131 @@ $interpeter_lname = $row["interpreter_lastname"];
 
         </div>
         <div id="auth0">
-            <!-- <input type="button" value="Register" id="regis" class="yellow"
-        onclick="window.location.href='../register.html'" /> -->
-            <input type="button" value="Sign in" id="signin" class="yellow" onclick="window.location.href='../signin.html'" />
+            <input type="button" value="Sign in" id="signin" class="yellow" onclick="window.location.href='./signin.php'" />
         </div>
         <p id="personal">About Hotel</p>
         <div id="information">
             <div id="yellowbox">
                 <div id="whitebox">
-                    <form method="post" action="./inserter.php">
-                        <input type="hidden" name="type" value="editbook">
-                        <p class="head">Book ID :</p>
-                        <input class="info" id="book_id" name="book_id" require placeholder="Book ID . . ." value="<?php echo $book_id ?>"></p>
+                    <form method="post" action="./inserter.php" id="form" target="_blank">
+                        <input type="hidden" name="type" value="edit_book">
+                        <p class="head">Book Id :</p>
+                        <input type="text" id="book_id" name="book_id" required class="info" placeholder="Book Name . . ." value="<?php echo $book_id; ?>" style="background-color: transparent;" readonly>
                         <div class="line"></div>
                         <p class="head">Book Name :</p>
-                        <input class="info" id="book_name" name="book_name" require placeholder="Book Name . . ." value="<?php echo $book_name ?>"></p>
+                        <input type="text" id="book_name" name="book_name" required class="info" placeholder="Book Name . . ." value="<?php echo $book_name; ?>">
                         <div class="line"></div>
                         <p class="head">Book Chapter :</p>
-                        <input type="text" id="book_chapter" name="book_chapter" require class="info" placeholder="Book Chapter . . ." value="<?php echo $book_chapter ?>"></p>
+                        <input type="text" id="book_chapter" name="book_chapter" required class="info" placeholder="Book Chapter . . ." value="<?php echo $book_chapter; ?>">
                         <div class="line"></div>
                         <p class="head">Book ISBN :</p>
-                        <input type="text" id="book_isbn" name="book_isbn" require class="info" placeholder="Book ISBN . . ." value="<?php echo $book_isbn ?>"></p>
+                        <input type="number" id="book_isbn" name="book_isbn" required class="info" placeholder="Book ISBN . . ." value="<?php echo $book_isbn; ?>">
                         <div class="line"></div>
                         <p class="head">Book Number Of Pages :</p>
-                        <input type="text" id="book_npage" name="book_npage" require class="info" placeholder="Book Number Of Pages . . ." value="<?php echo $book_numberofpages ?>"></p>
+                        <input type="number" id="book_npage" name="book_npage" required class="info" placeholder="Book Number Of Pages . . ." value="<?php echo $book_number_of_pages; ?>">
                         <div class="line"></div>
                         <p class="head">Book Year :</p>
-                        <input type="text" id="book_yaer" name="book_year" require class="info" placeholder="Book Wrtitten date . . ." value="<?php echo $book_writtendate ?>"></p>
+                        <input type="text" id="book_yaer" name="book_year" required class="info" placeholder="Book Wrtitten date . . ." value="<?php echo $book_year; ?>">
                         <div class="line"></div>
                         <p class="head">Book Price :</p>
-                        <input type="text" id="book_price" name="book_price" class="info" placeholder="Book Price . . ." value="<?php echo $book_price ?>"></p>
+                        <input type="number" id="book_price" name="book_price" class="info" placeholder="Book Price . . ." value="<?php echo $book_price; ?>">
                         <div class="line"></div>
                         <p class="head">Book Edition :</p>
-                        <input type="text" id="book_edition" name="book_edition" require class="info" placeholder="Book Edition . . ." value="<?php echo $book_edition ?>"></p>
+                        <input type="number" id="book_edition" name="book_edition" required class="info" placeholder="Book Edition . . ." value="<?php echo $book_edition; ?>">
                         <div class="line"></div>
                         <p class="head">Book Language :</p>
-                        <input type="text" id="book_language" name="book_language" class="info" placeholder="Book Language . . ." value="<?php echo $book_language ?>"></p>
+                        <input type="text" id="book_language" name="book_language" required class="info" placeholder="Book Language . . ." value="<?php echo $book_language; ?>">
                         <div class="line"></div>
                         <p class="head">Book Summary :</p>
-                        <textarea id="book_summary" name="book_summary" placeholder="Book summary..." onkeypress="auto_grow(this);" onkeyup="auto_grow(this);"><?php echo $book_summary ?></textarea>
+                        <textarea id="book_summary" name="book_summary" placeholder="Book summary..." onchange="auto_grow(this);" onkeyup="auto_grow(this);"><?php echo $book_summary; ?></textarea>
                         <div class="line"></div>
-                        <p class="head">Author firstname :</p>
-                        <input type="text" id="author_fname" name="author_fname" require class="info" placeholder="Author firstname . . ." value="<?php echo $author_fname ?>"></p>
+
+                        <!-- <input type="text" id="book_summary" name="book_summary" required class="info" placeholder="Book Sunmmary . . ."> -->
+                        <p class="head">Publisher Name :</p>
+                        <div class="field" id="input_publisher_field">
+                            <input list="publisher_list" id="publisher_name" class="info" name="publisher_name" onchange="inputchecklist(this, publisher_list)" placeholder="Publisher name . . ." value="<?php echo $publisher_name; ?>">
+                        </div>
+                        <datalist id="publisher_list">
+                            <?php
+                            $sql = "select * from publisher";
+                            $result_publisher = mysqli_query($connect, $sql);
+                            while ($row_publisher = mysqli_fetch_assoc($result_publisher)) {
+                                $publisher_name = $row_publisher["publisher_name"];
+                                echo "<option value='" . $publisher_name . "'>";
+                            }
+                            ?>
+                        </datalist>
                         <div class="line"></div>
-                        <p class="head">Author lastname :</p>
-                        <input type="text" id="author_lname" name="author_lname" require class="info" placeholder="Author lastname . . ." value="<?php echo $author_lname ?>"></p>
+                        <!-- ////////////////////////////////////////////// -->
+                        <p class="head">Author Name :</p>
+                        <div class="field" id="input_author_field">
+                            <?php
+                            $sql = "SELECT author.* FROM book_written join author on author.author_id = book_written.author_id where book_written.book_id = '$book_id'";
+                            $result_author = mysqli_query($connect, $sql);
+                            while ($row_author = mysqli_fetch_assoc($result_author)) {
+                                $author_firstname = $row_author["author_firstname"];
+                                $author_lastname = $row_author["author_lastname"];
+                                $author_name = $author_firstname . " " . $author_lastname;
+                                echo "<input list='author_list' id='author_name' class='info' name='author_name[]' onchange='inputchecklist(this, author_list)' placeholder='Author name . . .' value='$author_name'>";
+                            }
+                            ?>
+                            <input list="author_list" id="author_name" class="info" name="author_name[]" onchange="inputchecklist(this, author_list)" placeholder="Author name . . .">
+                        </div>
+                        <datalist id="author_list">
+                            <?php
+                            $sql = "SELECT * FROM author";
+                            $result_author = mysqli_query($connect, $sql);
+                            while ($row_author = mysqli_fetch_assoc($result_author)) {
+                                $author_firstname = $row_author["author_firstname"];
+                                $author_lastname = $row_author["author_lastname"];
+                                echo "<option value='" . $author_firstname . " " . $author_lastname . "'>";
+                            }
+                            ?>
+                        </datalist>
+                        <!-- //////////////////////////////////////////////// -->
                         <div class="line"></div>
-                        <p class="head">Interpeter firstname :</p>
-                        <input type="text" id="interpreter_fname" name="interpreter_fname" class="info" placeholder="Interpreter firstname . . ." value="<?php echo $interpeter_fname ?>"></p>
+                        <p class="head">Interpreter Name :</p>
+                        <div class="field" id="input_interpreter_field">
+                            <?php
+                            $sql = "SELECT interpreter.* FROM book_translated join interpreter on interpreter.interpreter_id = book_translated.interpreter_id where book_translated.book_id = '$book_id'";
+                            $result_interpreter = mysqli_query($connect, $sql);
+                            while ($row_interpreter = mysqli_fetch_assoc($result_interpreter)) {
+                                $interpreter_firstname = $row_interpreter["interpreter_firstname"];
+                                $interpreter_lastname = $row_interpreter["interpreter_lastname"];
+                                $interpreter_name = $interpreter_firstname . " " . $interpreter_lastname;
+                                echo "<input list='interpreter_list' id='interpreter_name' class='info' name='interpreter_name[]' onchange='inputchecklist(this, interpreter_list)' placeholder='interpreter name . . .' value='$interpreter_name'>";
+                            }
+                            ?>
+                            <input list="interpreter_list" id="interpreter_name" class="info" name="interpreter_name[]" onchange="inputchecklist(this, interpreter_list)" placeholder="interpreter name . . .">
+                        </div>
+                        <datalist id="interpreter_list">
+                            <?php
+                            $sql = "SELECT * FROM interpreter";
+                            $result_interpreter = mysqli_query($connect, $sql);
+                            while ($row_interpreter = mysqli_fetch_assoc($result_interpreter)) {
+                                $interpreter_firstname = $row_interpreter["interpreter_firstname"];
+                                $interpreter_lastname = $row_interpreter["interpreter_lastname"];
+                                echo "<option value='" . $interpreter_firstname . " " . $interpreter_lastname . "'>";
+                            }
+                            ?>
+                        </datalist>
+                        <!-- ////////////////////////////////////////////////////////////// -->
                         <div class="line"></div>
-                        <p class="head">Interpeter lastname :</p>
-                        <input type="text" id="interpreter_lname" name="interpreter_lname" class="info" placeholder="Interpreter lastname . . ." value="<?php echo $interpeter_lname ?>"></p>
-                        <div class="line"></div>
-                        <div class="line"></div>
-                        <div class="headd">
+                        <!-- <div class="headd">
                             <p class="head">Image :</p>
                             <input type="file" id="image-upload" name="image-upload" accept="image/*" multiple>
-                        </div>
-                        <input id="save" type="submit" value="save" onclick="save()">
+                        </div> -->
+                        <input id="save" type="submit" value="save">
+
+                    </form>
+                    <form method="post" action="./inserter.php" id="form" target="_blank">
+                        <input type="hidden" name="type" value="delete_book">
+                        <input type="hidden" name="book_id" value="<?php echo $book_id; ?>">
+                        <input id="save" type="submit" value="delete" style="left: 540px; background-color: red; top: -14px;">
                     </form>
                 </div>
             </div>
+
         </div>
     </div>
     <input type="button" id="delete" value="delete hotel" style="display: none;" onclick="document.getElementById('all').style.display='';document.getElementById('booked').style.display=''" ;>
@@ -142,15 +213,43 @@ $interpeter_lname = $row["interpreter_lastname"];
             </div>
         </div>
     </div>
-
     <script type="text/javascript">
+        var range = document.createRange();
+
         function auto_grow(element) {
             element.style.height = "5px";
             element.style.height = (element.scrollHeight) + "px";
         }
-    </script>
-</body>
 
+        async function inputchecklist(node, datalist) {
+            await new Promise((resolve) => {
+                if (!datalist.querySelector("option[value='" + node.value + "']")) {
+                    node.value = "";
+                }
+                resolve();
+            })
+            await new Promise((resolve) => {
+                console.log(node.parentNode.childNodes);
+                if (node.value == "") {
+                    if ((node.parentNode.childNodes.length != 3))
+                        node.remove();
+                } else if (node.parentNode.querySelector("#author_name")) {
+                    var input_author_field = document.getElementById("input_author_field");
+                    if (input_author_field.lastChild.previousElementSibling.value != "") {
+                        node.parentNode.appendChild(range.createContextualFragment("<input list='author_list' id='author_name' class='info' name='author_name[]' onchange='inputchecklist(this, author_list)' placeholder='Author name . . .'>"))
+                    }
+                } else if (node.parentNode.querySelector("#interpreter_name")) {
+                    var input_interpreter_field = document.getElementById("input_interpreter_field");
+                    if (input_interpreter_field.lastChild.previousElementSibling.value != "") {
+                        node.parentNode.appendChild(range.createContextualFragment("<input list='interpreter_list' id='interpreter_name' class='info' name='interpreter_name[]' onchange='inputchecklist(this, interpreter_list)' placeholder='interpreter name . . .'>"))
+                    }
+                }
+                resolve();
+            })
+        }
+    </script>
+
+</body>
 <style>
     #yellowbox {
         position: absolute;
@@ -177,113 +276,21 @@ $interpeter_lname = $row["interpreter_lastname"];
         line-height: 29px;
         color: #1a3244;
         margin: 3%;
-        word-wrap: break-word;
+
     }
 
     #whitebox .info {
-        word-wrap: visible;
-        resize: auto;
-        overflow-wrap: break-word;
-        text-indent: -180px;
-        width: 500px;
         position: absolute;
+        word-wrap: break-word;
+        word-break: break-word;
+        width: 500px;
         right: 0px;
-        display: inline-block;
         text-align: right;
         right: 30px;
         margin-top: 30px;
         font-size: 18px;
         border: none;
         background-color: rgb(218, 217, 217);
-    }
-
-
-
-
-    #whitebox.infoo {
-        /* writing-mode: horizontal-tb !important;
-    font-style: ;
-    font-variant-ligatures: ;
-    font-variant-caps: ;
-    font-variant-numeric: ;
-    font-variant-east-asian: ;
-    font-variant-alternates: ;
-    font-weight: ;
-    font-stretch: ;
-    font-size: ;
-    font-family: 'Inria Sans';
-    text-rendering: auto;
-    color: fieldtext;
-    letter-spacing: normal;
-    word-spacing: normal;
-    line-height: normal;
-    text-transform: none;
-    text-indent: 0px;
-    text-shadow: none;
-    display: inline-block;
-    text-align: right;
-    appearance: auto;
-    -webkit-rtl-ordering: logical;
-    resize: auto;
-    cursor: text;
-    white-space: pre-wrap;
-    overflow-wrap: break-word;
-    background-color: field;
-    column-count: initial !important;
-    margin: 0em;
-    border-width: 1px;
-    border-style: solid;
-    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
-    border-image: initial;
-    padding: 20px; */
-        writing-mode: horizontal-tb !important;
-        font-style: normal;
-        font-variant-ligatures: none;
-        font-variant-caps: normal;
-        font-variant-numeric: normal;
-        font-variant-east-asian: normal;
-        font-variant-alternates: normal;
-        font-weight: normal;
-        font-stretch: normal;
-        font-size: initial;
-        font-family: 'Inria Sans';
-        text-rendering: auto;
-        color: fieldtext;
-        letter-spacing: normal;
-        word-spacing: normal;
-        line-height: normal;
-        text-transform: none;
-        text-indent: -180px;
-        text-shadow: none;
-        display: inline-block;
-        text-align: right;
-        appearance: auto;
-        -webkit-rtl-ordering: logical;
-        resize: auto;
-        cursor: text;
-        white-space: pre-wrap;
-        overflow-wrap: break-word;
-        background-color: field;
-        column-count: initial !important;
-        margin: 0em;
-        border-width: 1px;
-        /* border-style: solid;
-border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
-border-image: initial; */
-        padding: 20px;
-        word-wrap: visible;
-        resize: auto;
-        overflow-wrap: break-word;
-        width: 500px;
-        position: absolute;
-        right: 30px;
-        display: inline-block;
-        text-align: right;
-        margin-top: 30px;
-        font-size: 18px;
-        border: none;
-        background-color: rgb(218, 217, 217);
-
     }
 
     #whitebox .head {
@@ -293,54 +300,6 @@ border-image: initial; */
         display: inline-block;
         top: 1px;
     }
-
-    #addRatePriceButton {
-        position: relative;
-        border: none;
-        height: 40px;
-        width: 40px;
-        background-color: rgb(155, 255, 4);
-        color: white;
-        font-size: 35px;
-    }
-
-    #removeRatePriceButton {
-        position: relative;
-        border: none;
-        height: 40px;
-        width: 40px;
-        background-color: rgb(255, 24, 24);
-        color: white;
-        font-size: 35px;
-    }
-
-    .ratePriceZone {
-        position: relative;
-        display: inline-block;
-        border: 0px;
-        background-color: rgb(218, 217, 217);
-        font-family: 'Inria Sans';
-        font-style: normal;
-        font-weight: 300;
-        font-size: 24px;
-        line-height: 29px;
-        color: #1a3244;
-        left: 300px;
-    }
-
-    .ratePriceZoneText1 {
-        position: relative;
-        left: 300px;
-        display: inline-block;
-    }
-
-    .ratePriceZoneText2 {
-        position: absolute;
-        right: 30px;
-        display: inline-block;
-    }
 </style>
-
-
 
 </html>

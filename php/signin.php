@@ -11,13 +11,10 @@
     <title>Sign in</title>
 </head>
 
-<body>
+<body style="background-color: #fff7e6;">
     <div id="sifah">
-        <p id="hua" onclick="window.location.href='../index.html'">BbookK</p>
+        <img id="logo" src="https://storage.googleapis.com/bbookk-c601f.appspot.com/lg/logo.png" onclick="window.location.href='../index.html'"></img>
 
-        <img id="home" src="https://storage.googleapis.com/travalokail-55abf.appspot.com/lg/lg_home.png">
-
-        </img>
     </div>
     <div id="sifah2"></div>
     <div id="huasignin">
@@ -39,7 +36,9 @@
     </div>
     <input type="button" value="sign in" id="login" onclick="window.location.href='../index.html'">
     <input type="button" value="Sign in with Google" id="signingoogle" onclick="signIn()">
-
+    <form action="./inserter.php" method="post" target="_blank" id="formpost">
+        <input type="hidden" name="type" value="add_borrower">
+    </form>
 </body>
 
 </html>

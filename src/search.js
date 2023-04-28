@@ -1,3 +1,4 @@
+import { getauth, permission, authed } from "./auth.js"
 
 var type1 = ["ชื่อหนังสือ", "ชื่อตอน", "ชื่อผู้แต่ง", "ชื่อผู้แปล", "ชื่อสำนักพิมพ์", "ISBN"]
 var type2 = ["ครั้งที่พิมพ์", "ปีที่พิมพ์", "ราคา"]
@@ -11,7 +12,6 @@ async function check_number_dropbox(node, value) {
     var node_id = node.id.charAt(node.id.length - 1);
     //new node
     var newbox2 = range.createContextualFragment('<select name="dropbox2' + node_id + '" class="box" id="box2" onchange="select_dropbox2(this.parentNode, this.value)"><option value="เท่ากับ">เท่ากับ</option><option value="มากกว่า">มากกว่า</option><option value="น้อยกว่า">น้อยกว่า</option><option value="ช่วง">ช่วง</option></select>')
-    var newtextbox1 = range.createContextualFragment('<input type="text" name="textbox1' + node_id + '" class="textbox" id="textbox1" required>')
 
     //element
     var number_children = bigbox.children.length
@@ -25,7 +25,7 @@ async function check_number_dropbox(node, value) {
         maximum_dropbox()
     } else if (type1.indexOf(value) != -1) {
         await reset_node(new Array(box2, textbox1, textbox2, to));
-        node.appendChild(newtextbox1);
+        node.appendChild(kid(value, node_id));
         maximum_dropbox()
     } else {
         await reset_node(new Array(box2, textbox1, textbox2, to))
@@ -35,6 +35,19 @@ async function check_number_dropbox(node, value) {
     }
 }
 window.check_number_dropbox = check_number_dropbox;
+
+function kid(value, node_id) {
+    if (value == "ชื่อหนังสือ") {
+        return range.createContextualFragment('<input list="' + "book_list" + '" type="text" name="textbox1' + node_id + '" class="textbox" id="textbox1" required>')
+    } else if (value == "ชื่อผู้แต่ง") {
+        return range.createContextualFragment('<input list="' + "author_list" + '" type="text" name="textbox1' + node_id + '" class="textbox" id="textbox1" required>')
+    } else if (value == "ชื่อผู้แปล") {
+        return range.createContextualFragment('<input list="' + "interpreter_list" + '" type="text" name="textbox1' + node_id + '" class="textbox" id="textbox1" required>')
+    } else if (value == "ชื่อสำนักพิมพ์") {
+        return range.createContextualFragment('<input list="' + "publisher_list" + '" type="text" name="textbox1' + node_id + '" class="textbox" id="textbox1" required>')
+    }
+    else return range.createContextualFragment('<input type="text" name="textbox1' + node_id + '" class="textbox" id="textbox1" required>')
+}
 
 async function select_dropbox2(node, value) {
     var node_id = node.id.charAt(node.id.length - 1);
@@ -82,7 +95,15 @@ maximum_dropbox()
 
 function selectbook(node) {
     var book_id = node.querySelector("#idbook").value
+    var formpost = document.getElementById("formpost");
     document.getElementById("book_idpost").value = book_id;
-    document.getElementById("formpost").submit();
+    permission("clickProfile").then((result) => {
+        if (result == 1) {
+            formpost.setAttribute('action', "./book_edit.php");
+        } else {
+            formpost.setAttribute('action', "./detail.php");
+        }
+        formpost.submit();
+    })
 }
 window.selectbook = selectbook;

@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../css/people_add.css">
     <link href='https://fonts.googleapis.com/css?family=Inria Sans' rel='stylesheet'>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Book Add</title>
+    <title>Data edit</title>
     <script type="module" src="../src/hasTopRightAuth.js"></script>
     <script type="module" src="../src/people_add.js"></script>
 </head>
@@ -25,24 +25,20 @@ $sql2 = "select * from interpreter";
 $result2 = mysqli_query($connect, $sql);
 ?>
 
-<body>
+<body style="background-color: #fff7e6;">
     <div id="sifah">
-        <p id="hua" onclick="window.location.href='../index.html'" onclick="window.location.href='../index.html'">
-            BbookK
-        </p>
+    <img id="logo" src="https://storage.googleapis.com/bbookk-c601f.appspot.com/lg/logo.png" onclick="window.location.href='../index.html'"></img>
 
-        <img id="home" src="https://storage.googleapis.com/travalokail-55abf.appspot.com/lg/lg_home.png">
-
-        </img>
         <div id="auth1" style="display: none;">
 
-            <div id="roob" onclick="clickProfile()">
+        <div id="roob" onclick="clickProfile()">
+                <form action="" method="post" id="formposthtr"></form>
             </div>
             <p id="username"> username</p>
 
         </div>
         <div id="auth0">
-            <input type="button" value="Sign in" id="signin" class="yellow" onclick="window.location.href='../signin.php'" />
+            <input type="button" value="Sign in" id="signin" class="yellow" onclick="window.location.href='./signin.php'" />
         </div>
         <div id="information">
             <div id="bluebox">
@@ -53,12 +49,12 @@ $result2 = mysqli_query($connect, $sql);
                     <form method="post" action="./inserter.php" target="_blank">
                         <input type="hidden" name="type" value="add_author">
                         <p class="head">Author firstname :</p>
-                        <input type="text" id="author_firstname" name="author_firstname" require class="info" placeholder="Author firstname . . ." pattern="^[A-Za-z0-9]+$">
+                        <input type="text" id="author_firstname" name="author_firstname" require class="info" placeholder="Author firstname . . .">
                         <div class="line"></div>
                         <p class="head">Author lastname :</p>
-                        <input type="text" id="author_lastname" name="author_lastname" class="info" placeholder="Author lastname . . ." pattern="^[A-Za-z0-9]+$">
+                        <input type="text" id="author_lastname" name="author_lastname" class="info" placeholder="Author lastname . . .">
                         <div class="line"></div>
-                        <input id="save" type="submit" value="add">
+                        <input id="save" type="submit" value="add" onclick="addpeople()">
                 </div>
             </div>
             </form>
@@ -72,19 +68,19 @@ $result2 = mysqli_query($connect, $sql);
                     <form method="post" action="./inserter.php" target="_blank">
                         <input type="hidden" name="type" value="add_interpreter">
                         <p class="head">Interpreter firstname :</p>
-                        <input type="text" id="interpreter_firstname" name="interpreter_firstname" require class="info" placeholder="Interpreter firstname . . ." pattern="^[A-Za-z0-9]+$">
+                        <input type="text" id="interpreter_firstname" name="interpreter_firstname" require class="info" placeholder="Interpreter firstname . . .">
                         <div class="line"></div>
                         <p class="head">interpreter lastname :</p>
                         <input type="text" id="interpreter_lastname" name="interpreter_lastname" class="info" placeholder="Interpreter lastname . . .">
                         <div class="line"></div>
-                        <input id="save" type="submit" value="add">
+                        <input id="save" type="submit" value="add" onclick="addpeople()">
                 </div>
             </div>
             </form>
         </div>
         <div id="information3">
             <div id="bluebox">
-                <p id="personal">Add Interpreter</p>
+                <p id="personal">Add Publisher</p>
             </div>
             <div id="yellowbox">
                 <div id="whitebox">
@@ -102,7 +98,7 @@ $result2 = mysqli_query($connect, $sql);
                         <p class="head">Publisher Email :</p>
                         <input type="text" id="publisher_email" name="publisher_email" class="info" placeholder="Publisher Email . . .">
                         <div class="line"></div>
-                        <input id="save" type="submit" value="add">
+                        <input id="save" type="submit" value="add" onclick="addpeople()">
                 </div>
             </div>
             </form>
@@ -260,6 +256,9 @@ $result2 = mysqli_query($connect, $sql);
                 location.reload();
             }
 
+        }
+        function addpeople() {
+            location.reload();
         }
 
         function deletepeople(node) {

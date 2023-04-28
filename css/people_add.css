@@ -295,22 +295,13 @@
 
     background: #2a9d8f;
 }
-
-#hua {
-    position: absolute;
-    width: 261.02px;
-    height: 60px;
-    left: 22px;
-    top: 24px;
+#logo {
+    position: relative;
+    left: 25px;
+    top: 20px;
+    width: auto;
+    height: 100px;
     cursor: pointer;
-
-    font-family: 'Inria Sans';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 48px;
-
-    color: #FFFFFF;
 }
 
 #bluebox {
@@ -771,10 +762,6 @@ input[type="button"]:active {
     filter: grayscale(70%)brightness(150%);
 }
 
-#hua:hover {
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    cursor: pointer;
-}
 
 #home {
     position: relative;
@@ -797,7 +784,7 @@ input[type="button"]:active {
     width: 547px;
     height: 52px;
     left: 574px;
-    top: 20px;
+    top: 50px;
 
     font-family: 'Inria Sans';
     font-style: normal;
@@ -822,11 +809,6 @@ input[type="button"]:active {
 }
 
 #roob:hover {
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    cursor: pointer;
-}
-
-#hua:hover {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     cursor: pointer;
 }

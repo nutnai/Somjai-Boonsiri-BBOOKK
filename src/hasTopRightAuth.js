@@ -28,6 +28,7 @@ async function load() {
     }
 }
 load()
+var range = document.createRange();
 var formpost = document.getElementById("formposthtr")
 if (formpost)
     formpost.appendChild(range.createContextualFragment("<input type='hidden' name='user_id' value='" + JSON.parse(localStorage.getItem("user_detail")).id + "'>"))

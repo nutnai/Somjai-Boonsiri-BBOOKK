@@ -51,19 +51,15 @@
   <script type="module" src="../src/receipt.js"></script>
 </head>
 
-<body>
+<body style="background-color: #fff7e6;">
   <div id="sifah">
-    <p id="hua" onclick="window.location.href='../index.html'" onclick="window.location.href='../index.html'">
-      BbookK
-    </p>
+  <img id="logo" src="https://storage.googleapis.com/bbookk-c601f.appspot.com/lg/logo.png" onclick="window.location.href='../index.html'"></img>
 
-    <img id="home" src="https://storage.googleapis.com/travalokail-55abf.appspot.com/lg/lg_home.png">
-
-    </img>
     <div id="auth1">
 
-      <div id="roob" onclick="clickProfile()">
-      </div>
+    <div id="roob" onclick="clickProfile()">
+                <form action="" method="post" id="formposthtr"></form>
+            </div>
       <p id="username"> username</p>
 
     </div>

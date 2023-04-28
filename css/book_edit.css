@@ -7,169 +7,203 @@
 
 
 @media only screen and (min-width: 300px) and (max-width: 350px) {
+
     /* 500*/
-    body{
+    body {
         position: relative;
         left: 3.5%;
         zoom: 22%;
     }
-    }
+}
 
 @media only screen and (min-width: 350px) and (max-width: 510px) {
+
     /* 400*/
-    body{
+    body {
         position: relative;
         left: 4.3%;
         zoom: 27%;
     }
-    }
+}
 
 @media only screen and (min-width: 510px) and (max-width: 610px) {
+
     /* 300*/
-    body{
+    body {
         position: relative;
         left: 5.5%;
         zoom: 35%;
     }
-    }
+}
 
 
 
 @media only screen and (min-width: 610px) and (max-width: 760px) {
+
     /* 250*/
-    body{
+    body {
         position: relative;
         left: 5.5%;
         zoom: 42%;
     }
-    }
+}
 
 
 @media only screen and (min-width: 760px) and (max-width: 870px) {
+
     /* 200*/
-    body{
+    body {
         position: relative;
         left: 6%;
         zoom: 52%;
     }
-    }
+}
 
 @media only screen and (min-width: 870px) and (max-width: 1020px) {
+
     /* 175*/
-    body{
+    body {
         position: relative;
         left: 6.5%;
         zoom: 59%;
     }
-    }
+}
 
 
 @media only screen and (min-width: 1020px) and (max-width: 1220px) {
+
     /* 150*/
-    body{
+    body {
         position: relative;
         left: 5.8%;
         zoom: 70%;
     }
-    }
+}
 
 
 @media only screen and (min-width: 1220px) and (max-width: 1390px) {
+
     /* 125*/
-    body{
+    body {
         position: relative;
         left: 6%;
         /* zoom: 81%; */
         zoom: 83%;
     }
-    }
-     
-    @media only screen and (min-width: 1390px) and (max-width: 1440px) {
+}
+
+@media only screen and (min-width: 1390px) and (max-width: 1440px) {
+
     /*110*/
-    body{
+    body {
         position: relative;
         left: 7%;
         zoom: 93%;
-    
+
     }
-    }
-    
-    @media only screen and (min-width: 1440px) and (max-width: 1600px) {
+}
+
+@media only screen and (min-width: 1440px) and (max-width: 1600px) {
+
     /* @-ms-viewport { width: 1024px; } */
     /* 100% */
-    body{
+    body {
         position: relative;
         left: 8%;
-        
+
     }
+}
+
+@media only screen and (min-width: 1600px) and (max-width: 1800px) {
+
+    /* 90% */
+    body {
+        position: relative;
+        left: 8%;
+        zoom: 110%;
     }
-    @media only screen and (min-width: 1600px) and (max-width: 1800px) {
-        /* 90% */
-        body{
-            position: relative;
-            left: 8%;
-            zoom: 110%;
-        }
-        }
-    
-    @media only screen and (min-width: 1800px) and (max-width: 2000px) {
+}
+
+@media only screen and (min-width: 1800px) and (max-width: 2000px) {
+
     /*  80% */
-    body{
+    body {
         position: relative;
         left: 9%;
         zoom: 123%;
 
     }
+}
+
+@media only screen and (min-width: 2000px) and (max-width: 2200px) {
+
+    /* 75% */
+    body {
+        position: relative;
+        left: 9%;
+        zoom: 130%;
+
     }
 
-    @media only screen and (min-width: 2000px) and (max-width: 2200px) {
-        /* 75% */
-        body{
-            position: relative;
-            left: 9%;
-            zoom: 130%;
-    
-        }
-        
-    }
-    @media only screen and (min-width: 2200px) and (max-width: 2400px) {
-        /* 67% */
-        body{
-            position: relative;
-            left: 9.3%;
-            zoom: 145%;
-    
-        }
-    }
-    @media only screen and (min-width: 2400px) and (max-width: 3100px) {
-        /* 50% */
-        body{
-            position: relative;
-            left: 10%;
-            zoom: 190%;
-    
-        }
-    }
-    @media only screen and (min-width: 3100px) and (max-width: 4700px) {
-        /* 33% */
-        body{
-            position: relative;
-            left: 10.2%;
-            zoom: 280%;
-    
-        }
-    }
-    @media only screen and (min-width: 4700px){
-        /* 25% */
-        body{
-            position: relative;
-            left: 11%;
-            zoom: 370%;
-    
-        }
-    }
+}
 
-#sifah{
+@media only screen and (min-width: 2200px) and (max-width: 2400px) {
+
+    /* 67% */
+    body {
+        position: relative;
+        left: 9.3%;
+        zoom: 145%;
+
+    }
+}
+
+@media only screen and (min-width: 2400px) and (max-width: 3100px) {
+
+    /* 50% */
+    body {
+        position: relative;
+        left: 10%;
+        zoom: 190%;
+
+    }
+}
+
+@media only screen and (min-width: 3100px) and (max-width: 4700px) {
+
+    /* 33% */
+    body {
+        position: relative;
+        left: 10.2%;
+        zoom: 280%;
+
+    }
+}
+
+@media only screen and (min-width: 4700px) {
+
+    /* 25% */
+    body {
+        position: relative;
+        left: 11%;
+        zoom: 370%;
+
+    }
+}
+
+.field {
+    position: relative; 
+    top: -70px;
+
+}
+
+.field input {
+    position: relative !important;
+    margin-top: 20px;
+    left: 260px;
+}
+
+#sifah {
     /* Rectangle 1 */
     position: absolute;
     width: 1280px;
@@ -179,40 +213,33 @@
 
     background: #2a9d8f;
 }
-#hua{
-    position: absolute;
-    width: 261.02px;
-    height: 60px;
-    left: 22px;
-    top: 24px;
+
+#logo {
+    position: relative;
+    left: 25px;
+    top: 20px;
+    width: auto;
+    height: 100px;
     cursor: pointer;
-
-    font-family: 'Inria Sans';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 48px;
-
-    color: #FFFFFF;
 }
 
-#bluebox{
+#bluebox {
     position: absolute;
     width: 301px;
     height: 82px;
     left: 356px;
     top: 185px;
-    
+
     background: #2a9d8f;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
 }
-#save{
+
+#save {
     position: relative;
     width: 107px;
     height: 45px;
-    top: -58px;
-    left:660px;
+    left: 660px;
     padding: 0;
     border: none;
     background: none;
@@ -223,15 +250,14 @@
     font-weight: 700;
     font-size: 24px;
     line-height: 29px;
-    right: 30px;
-    bottom: 20px;
     color: #FFFFFF;
-
+    top: 30px;
 }
-#whitebox textarea{
+
+#whitebox textarea {
     text-align: right;
     width: 410px;
-    height:30px;
+    height: 30px;
     outline: none;
     resize: none;
     padding: 0px 50px;
@@ -242,17 +268,19 @@
     font-weight: 300;
     font-size: 19px;
     line-height: 29px;
-    max-height:430px ;
+    max-height: 430px;
     margin-top: 20px;
     margin-left: 80px;
     background-color: rgb(218, 217, 217);
 }
-textarea:is(focus, :valid){
-    border-color: #FFFFFF ;
+
+textarea:is(focus, :valid) {
+    border-color: #FFFFFF;
     border-width: 2px;
-    padding:14px;
+    padding: 14px;
 }
-textarea::-webkit-scrollbar{
+
+textarea::-webkit-scrollbar {
     width: 0px;
 }
 
@@ -263,7 +291,8 @@ textarea::-webkit-scrollbar{
     height: 2px;
     background-color: rgb(226, 226, 226);
 }
-#edit1{
+
+#edit1 {
     position: absolute;
     width: 81px;
     height: 41px;
@@ -283,7 +312,8 @@ textarea::-webkit-scrollbar{
     color: #000000;
 
 }
-#edit2{
+
+#edit2 {
     position: absolute;
     width: 81px;
     height: 41px;
@@ -304,7 +334,8 @@ textarea::-webkit-scrollbar{
     color: #000000;
 
 }
-#edit3{
+
+#edit3 {
     position: absolute;
     position: absolute;
     width: 81px;
@@ -326,7 +357,8 @@ textarea::-webkit-scrollbar{
     color: #000000;
 
 }
-#edit4{
+
+#edit4 {
     position: absolute;
     position: absolute;
     width: 81px;
@@ -347,7 +379,8 @@ textarea::-webkit-scrollbar{
     color: #000000;
 
 }
-#edit5{
+
+#edit5 {
     position: absolute;
     position: absolute;
     width: 81px;
@@ -368,7 +401,8 @@ textarea::-webkit-scrollbar{
     color: #000000;
 
 }
-#edit6{
+
+#edit6 {
     position: absolute;
     position: absolute;
     width: 81px;
@@ -389,7 +423,8 @@ textarea::-webkit-scrollbar{
     color: #000000;
 
 }
-#edit7{
+
+#edit7 {
     position: absolute;
     position: absolute;
     width: 81px;
@@ -410,22 +445,24 @@ textarea::-webkit-scrollbar{
     color: #000000;
 
 }
-#personal{
+
+#personal {
     position: absolute;
     width: 381px;
     height: 55px;
     left: 390px;
     top: 180px;
-    
+
     font-family: 'Inria Sans';
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
     line-height: 29px;
-    
+
     color: #FFFFFF;
 }
-#delete{
+
+#delete {
     position: absolute;
     width: 200px;
     height: 60px;
@@ -445,7 +482,8 @@ textarea::-webkit-scrollbar{
     line-height: 24px;
     color: #FFFFFF;
 }
-#logout{
+
+#logout {
     position: absolute;
     width: 161px;
     height: 49px;
@@ -461,7 +499,7 @@ textarea::-webkit-scrollbar{
     border: none;
     background: none;
     cursor: pointer;
-    
+
 
     background: #2a9d8f;
     border-radius: 10px;
@@ -469,34 +507,37 @@ textarea::-webkit-scrollbar{
     height: 49px;
     left: 1041px;
     top: 1366px;
-            
+
     font-family: 'Inria Sans';
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
     line-height: 24px;
-    
+
     color: #FFFEFE;
-    
+
 }
-.reset{
+
+.reset {
     position: absolute;
-        
+
     width: 209px;
     height: 29px;
     left: 1003px;
     top: 1074px;
-    
-    
+
+
     font-family: 'Inria Sans';
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
     line-height: 24px;
     cursor: pointer;
-    
-    color: #D9D9D9;}
-#na{
+
+    color: #D9D9D9;
+}
+
+#na {
     position: absolute;
     width: 580px;
     height: 38px;
@@ -512,7 +553,8 @@ textarea::-webkit-scrollbar{
     color: #1a3244;
 
 }
-#email{
+
+#email {
 
     position: absolute;
     width: 580px;
@@ -529,7 +571,8 @@ textarea::-webkit-scrollbar{
     color: #1a3244;
 
 }
-#Phonnumber{
+
+#Phonnumber {
     position: absolute;
     width: 580px;
     height: 38px;
@@ -545,7 +588,8 @@ textarea::-webkit-scrollbar{
     color: #1a3244;
 
 }
-#Adrress{
+
+#Adrress {
     position: absolute;
     width: 580px;
     height: 38px;
@@ -557,10 +601,11 @@ textarea::-webkit-scrollbar{
     font-weight: 300;
     font-size: 24px;
     line-height: 29px;
-    
+
     color: #1a3244;
 }
-#Facility{
+
+#Facility {
     position: absolute;
     width: 580px;
     height: 38px;
@@ -572,10 +617,11 @@ textarea::-webkit-scrollbar{
     font-weight: 300;
     font-size: 24px;
     line-height: 29px;
-    
+
     color: #1a3244;
 }
-#people{
+
+#people {
     position: absolute;
     width: 580px;
     height: 38px;
@@ -587,10 +633,11 @@ textarea::-webkit-scrollbar{
     font-weight: 300;
     font-size: 24px;
     line-height: 29px;
-    
+
     color: #1a3244;
 }
-#price{
+
+#price {
     position: absolute;
     width: 580px;
     height: 38px;
@@ -602,10 +649,11 @@ textarea::-webkit-scrollbar{
     font-weight: 300;
     font-size: 24px;
     line-height: 29px;
-    
+
     color: #1a3244;
 }
-#image{
+
+#image {
     position: absolute;
     width: 580px;
     height: 38px;
@@ -617,10 +665,11 @@ textarea::-webkit-scrollbar{
     font-weight: 300;
     font-size: 24px;
     line-height: 29px;
-    
+
     color: #1a3244;
 }
-#blankk{
+
+#blankk {
     position: absolute;
     width: 161px;
     height: 49px;
@@ -628,7 +677,7 @@ textarea::-webkit-scrollbar{
     top: 1100px;
 }
 
-#whiteblock{
+#whiteblock {
     position: absolute;
     width: 799px;
     height: 423px;
@@ -640,10 +689,12 @@ textarea::-webkit-scrollbar{
     border-radius: 10px;
     visibility: hidden;
 }
-#bady{
+
+#bady {
     position: relative;
     left: -150px;
 }
+
 input[type="button"]:hover {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     cursor: pointer;
@@ -652,42 +703,50 @@ input[type="button"]:hover {
 input[type="button"]:active {
     filter: grayscale(70%)brightness(150%);
 }
-#hua:hover{
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    cursor: pointer;   
+
+#logo {
+    position: relative;
+    left: 25px;
+    top: 20px;
+    width: auto;
+    height: 100px;
+    cursor: pointer;
 }
-#home{
+
+#home {
     position: relative;
     left: 194px;
     top: 62px;
     width: 38px;
     height: 42px;
 }
-#person{
+
+#person {
     position: relative;
     width: 25px;
     height: 34px;
-    left:27px;
+    left: 27px;
     top: 14px;
 }
-#username{
+
+#username {
     position: absolute;
     width: 547px;
     height: 52px;
     left: 574px;
     top: 20px;
 
-font-family: 'Inria Sans';
-font-style: normal;
-font-weight: 400;
-font-size: 37px;
-line-height: 45px;
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 37px;
+    line-height: 45px;
 
-color: #FFFFFF;
-text-align: right;
+    color: #FFFFFF;
+    text-align: right;
 }
 
-#roob{
+#roob {
     cursor: pointer;
     position: absolute;
     width: 71px;
@@ -699,23 +758,27 @@ text-align: right;
     background: #c0c8f7;
 }
 
-#roob:hover{
+#roob:hover {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     cursor: pointer;
 }
-#hua:hover{
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    cursor: pointer;   
+#logo {
+    position: relative;
+    left: 25px;
+    top: 20px;
+    width: auto;
+    height: 100px;
+    cursor: pointer;
 }
 
-#regis{
+#regis {
     /* Component 2 */
     position: absolute;
     width: 151px;
     height: 55px;
     left: 886px;
     top: 38px;
-    
+
     font-family: 'Inria Sans';
     font-style: normal;
     font-weight: 700;
@@ -727,7 +790,8 @@ text-align: right;
     background: #FFEB85;
     border-radius: 20px;
 }
-#signin{
+
+#signin {
     /* Component 3 */
     position: absolute;
     width: 151px;
@@ -747,13 +811,16 @@ text-align: right;
     background: #FFEB85;
     border-radius: 20px;
 }
+
 .blue:hover {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     cursor: pointer;
 }
+
 .blue:active {
     filter: grayscale(70%)brightness(150%);
 }
+
 .yellow:hover {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     cursor: pointer;
@@ -785,10 +852,12 @@ text-align: right;
 
     color: #1A3244;
 }
-#all input[type="button"]:hover{
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); 
+
+#all input[type="button"]:hover {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     cursor: pointer;
 }
+
 #bgall {
     position: relative;
     background-color: black;
@@ -797,6 +866,7 @@ text-align: right;
     height: 1850px;
 
 }
+
 #all2 {
     background-color: #FFEB85;
     position: fixed;
@@ -813,6 +883,7 @@ text-align: right;
     line-height: 29px;
     color: #1A3244;
 }
+
 .bgWhiteAll {
     position: absolute;
     background-color: white;
@@ -823,15 +894,17 @@ text-align: right;
     left: 50%;
     transform: translate(-50%, -50%);
 }
-.backall, .confirmall {
+
+.backall,
+.confirmall {
     position: relative;
-    
+
     top: 50px;
     left: 24%;
     height: 45px;
     width: 200px;
     margin-top: 50px;
-    padding: 0px 20px 0px 20px; 
+    padding: 0px 20px 0px 20px;
     background: #2a9d8f;
     border-radius: 10px;
     font-family: 'Inria Sans';
@@ -841,11 +914,110 @@ text-align: right;
     line-height: 29px;
     /* identical to box height */
     border: 0px;
-    color: #FFFFFF;   
+    color: #FFFFFF;
 }
-.confirmall{
+
+.confirmall {
     background-color: red;
 }
+
 #finish2 {
     background: #2a9d8f;
+}
+
+#yellowbox {
+    position: absolute;
+    width: 845px;
+    height: max-content;
+    left: 210px;
+    top: 200px;
+
+    background: #FFEB85;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+}
+
+#whitebox {
+    position: relative;
+    width: 94%;
+    height: 94%;
+    background: #FFFFFF;
+    border-radius: 10px;
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: #1a3244;
+    margin: 3%;
+    padding-bottom: 55px;
+
+}
+
+#whitebox .info {
+    position: absolute;
+    word-wrap: break-word;
+    word-break: break-word;
+    width: 500px;
+    right: 0px;
+    text-align: right;
+    right: 30px;
+    margin-top: 30px;
+    font-size: 18px;
+    border: none;
+    background-color: rgb(218, 217, 217);
+}
+
+#whitebox .head {
+    position: relative;
+    font-size: 20px;
+    padding-left: 30px;
+    display: inline-block;
+    top: 1px;
+}
+
+#addRatePriceButton {
+    position: relative;
+    border: none;
+    height: 40px;
+    width: 40px;
+    background-color: rgb(155, 255, 4);
+    color: white;
+    font-size: 35px;
+}
+
+#removeRatePriceButton {
+    position: relative;
+    border: none;
+    height: 40px;
+    width: 40px;
+    background-color: rgb(255, 24, 24);
+    color: white;
+    font-size: 35px;
+}
+
+.ratePriceZone {
+    position: relative;
+    display: inline-block;
+    border: 0px;
+    background-color: rgb(218, 217, 217);
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: #1a3244;
+    left: 300px;
+}
+
+.ratePriceZoneText1 {
+    position: relative;
+    left: 300px;
+    display: inline-block;
+}
+
+.ratePriceZoneText2 {
+    position: absolute;
+    right: 30px;
+    display: inline-block;
 }

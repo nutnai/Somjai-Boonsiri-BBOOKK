@@ -84,10 +84,11 @@ export async function upload_image(file) {
     // Create the upload options object
     localStorage.setItem("upload_detail", "0")
     for (let i = 0; i < file.length; i++) {
+        console.log(i);
         const img = file[i];
-        const nameImg = "ht_" + MD5(img.name + time) + ".jpg";
+        const nameImg = "bk_" + MD5(img.name + time) + ".jpg";
         ret.push(nameImg)
-        var storageRef = ref(storage, "ht/" + nameImg);
+        var storageRef = ref(storage, "bk/" + nameImg);
         var uploadTask = uploadBytesResumable(storageRef, img, metadata);
         uploadTask.on('state_changed',
             (snapshot) => {
@@ -109,11 +110,12 @@ export async function upload_image(file) {
                 getDownloadURL(uploadTask.snapshot.ref).then((downloadURL) => {
                     var n = parseInt(localStorage.getItem("upload_detail")) + 1;
                     localStorage.setItem("upload_detail", n)
-                    console.log();
+                    console.log("plus 1");
                 });
             }
         );
     }
+    console.log(ret);
     return ret;
 
 }

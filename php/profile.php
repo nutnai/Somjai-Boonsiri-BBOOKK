@@ -8,7 +8,7 @@ $username = "id20576360_learnjapannutnai";
 $password = "wn3V%=/uMYin&|o2";
 $dbname = "id20576360_bbookk";
 
-$sql = "select * from borrower where borrower_id = $borrower_id";
+$sql = "select * from borrower where borrower_id = '$borrower_id'";
 $connect = mysqli_connect($servername, $username, $password, $dbname);
 $result = mysqli_query($connect, $sql);
 $row = mysqli_fetch_assoc($result);
@@ -32,11 +32,9 @@ $borrower_email = $row["borrower_email"];
     <title>Profile</title>
 </head>
 
-<body style="background-color: white;">
+<body style="background-color: #fff7e6;">
     <div id="sifah">
-        <p id="hua" onclick="window.location.href='../index.html'">BbookK</p>
-
-        <img id="home" src="https://storage.googleapis.com/travalokail-55abf.appspot.com/lg/lg_home.png">
+    <img id="logo" src="https://storage.googleapis.com/bbookk-c601f.appspot.com/lg/logo.png" onclick="window.location.href='../index.html'"></img>
 
         </img>
     </div>

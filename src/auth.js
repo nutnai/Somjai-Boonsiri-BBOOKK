@@ -35,12 +35,12 @@ export function signin() {
                 if (user !== undefined) {
                     console.log("welcome back, " + user.firstname + " " + user.lastname);
                     localStorage.setItem("isAuth", "yes");
-                    localStorage.setItem("user_detail",JSON.stringify({id:user.id, firstname:fullname[0], lastname:fullname[fullname.length - 1], image:user.image}))
+                    localStorage.setItem("user_detail",JSON.stringify({id:user.id, firstname:fullname[0], lastname:fullname[fullname.length - 1], image:user.image, birthday:user.birthday, phone:user.phoneNumber, email:user.email}))
                 } else {
                     console.log("First time? welcome, " + result.user.displayName);
                     add_user(result.user.uid, fullname[0], fullname[fullname.length - 1] , result.user.photoURL, 0).then((result) => {
                         localStorage.setItem("isAuth", "yes");
-                    localStorage.setItem("user_detail",JSON.stringify({id:result.user.uid, firstname:fullname[0], lastname:fullname[fullname.length - 1], image:user.image}))
+                    localStorage.setItem("user_detail",JSON.stringify({id:result.user.uid, firstname:fullname[0], lastname:fullname[fullname.length - 1], image:user.image, birthday:user.birthday, phone:user.phoneNumber, email:user.email}))
                     })
                 }
             })

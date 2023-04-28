@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<?php
-$publisher_id = 20; //explode("?", $_SERVER["PHP_SELF"])[1];
+<?php //explode("?", $_SERVER["PHP_SELF"])[1];
 
 $servername = "localhost";
 $username = "id20576360_learnjapannutnai";
@@ -16,7 +15,6 @@ $sql_book = "SELECT b.*, GROUP_CONCAT(CONCAT(a.author_firstname, ' ', a.author_l
              FROM book b
              LEFT JOIN book_written bw ON b.book_id = bw.book_id
              LEFT JOIN author a ON bw.author_id = a.author_id
-             WHERE b.publisher_id = $publisher_id
              GROUP BY b.book_id";
 $result_book = mysqli_query($connect, $sql_book);
 
@@ -33,21 +31,18 @@ $result_book = mysqli_query($connect, $sql_book);
     <title>Publisher Book</title>
 </head>
 
-<body style="background-color: white;">
+<body style="background-color: #fff7e6;">
     <div id="sifah">
         <div id="auth1" style="display: none;">
             <div id="roob" onclick="clickProfile()">
+                <form action="" method="post" id="formposthtr"></form>
             </div>
             <p id="username"> username</p>
         </div>
         <div id="auth0">
             <input type="button" value="Sign in" id="signin" class="yellow" onclick="window.location.href='./signin.php'" />
         </div>
-        <p id="hua" onclick="window.location.href='../index.html'">BbookK</p>
-
-        <img id="home" src="https://storage.googleapis.com/travalokail-55abf.appspot.com/lg/lg_home.png">
-
-        </img>
+        <img id="logo" src="https://storage.googleapis.com/bbookk-c601f.appspot.com/lg/logo.png" onclick="window.location.href='../index.html'"></img>
     </div>
     <!-- <div id="mid"></div> -->
     <div id="bluebox">
@@ -56,26 +51,47 @@ $result_book = mysqli_query($connect, $sql_book);
     <p id="personal">Book List</p>
 
     <div id="addBlock">
-    <?php
-        while ($row_book = mysqli_fetch_assoc($result_book)) {
+        <?php
+        // while ($row_book = mysqli_fetch_assoc($result_book)) {
+        //     $book_id = $row_book["book_id"];
+        //     $book_name = $row_book["book_name"];
+        //     $book_chapter = $row_book["book_chapter"];
+        //     $author_name = $row_book["author_name"];
+
+        //     echo '<div id="block" onclick="selectHotel(this)">
+        //     <div id="idHotel"></div>
+        //     <div id="roop"></div>
+        //     <p id="lowname">
+        //     <div id="asd">
+
+        //         <p id="bookna">book name : ' . $book_name . '</p>
+        //         <p id="bookch">book chapter : ' . $book_chapter . '</p>
+        //         <p id="bookau">author name : ' . $author_name . '</p>
+        //     </div>
+        //     </p>
+        // </div>';
+        // }
+        while ($row_book = mysqli_fetch_assoc($result)) {
+            $show_data = "";
             $book_id = $row_book["book_id"];
             $book_name = $row_book["book_name"];
             $book_chapter = $row_book["book_chapter"];
-            $author_name = $row_book["author_name"];
 
-            echo '<div id="block" onclick="selectHotel(this)">
-            <div id="idHotel"></div>
-            <div id="roop"></div>
-            <p id="lowname">
-            <div id="asd">
-                <p id="bookna">book name : ' . $book_name . '</p>
-                <p id="bookch">book chapter : ' . $book_chapter . '</p>
-                <p id="bookau">author name : ' . $author_name . '</p>
-            </div>
-            </p>
-        </div>';
+            $show_data .= '<p class="detailbook">book name : ' . $book_name . '</p>';
+            $show_data .= '<p class="detailbook">book chapter : ' . $book_chapter . '</p>';
+            if (!empty($transql)) {
+                $author_name = $row_book["author_name"];
+                $show_data .= '<p class="detailbook">author name : ' . $author_name . '</p>';
+            }
+            echo '<div class="block" onclick="selectbook(this)">
+                <input type="hidden" id="idbook" value="' . $book_id . '">
+                <div id="roop"></div>
+                <div id="lowname">
+                ' . $show_data . '
+                </div>
+            </div>';
         }
-    ?>
+        ?>
 
 
     </div>

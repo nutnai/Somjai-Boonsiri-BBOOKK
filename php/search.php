@@ -66,6 +66,18 @@ if (isset($_POST['submit'])) {
 }
 $sql .= $wheresql . $writesql . $transql . $allsql;
 $result = mysqli_query($connect, $sql);
+
+$sql = "select * from author";
+$result_author = mysqli_query($connect, $sql);
+
+$sql = "select * from interpreter";
+$result_interpreter = mysqli_query($connect, $sql);
+
+$sql = "select * from publisher";
+$result_publisher = mysqli_query($connect, $sql);
+
+$sql = "select * from book";
+$result_book = mysqli_query($connect, $sql);
 ?>
 
 <head>
@@ -77,16 +89,54 @@ $result = mysqli_query($connect, $sql);
     <script type="module" src="../src/search.js"></script>
     <script type="module" src="../src/firestoreAPI.js"></script>
     <script type="module" src="../src/hasTopRightAuth.js"></script>
+    <script type="module" src="../src/auth.js"></script>
 
     <title>Search</title>
 </head>
+<form action="" method="post" id="formposthtr"></form>
 
 <body style="background-color: #fff7e6;">
+    <datalist id="author_list">
+        <?php
+        while ($row_author = mysqli_fetch_assoc($result_author)) {
+            $author_firstname = $row_author["author_firstname"];
+            $author_lastname = $row_author["author_lastname"];
+            echo "<option value='$author_firstname'>";
+        }
+        ?>
+    </datalist>
+    <datalist id="interpreter_list">
+        <?php
+        while ($row_interpreter = mysqli_fetch_assoc($result_interpreter)) {
+            $interpreter_firstname = $row_interpreter["interpreter_firstname"];
+            $interpreter_lastname = $row_interpreter["interpreter_lastname"];
+            echo "<option value='$interpreter_firstname'>";
+        }
+        ?>
+    </datalist>
+    <datalist id="publisher_list">
+        <?php
+        while ($row_publisher = mysqli_fetch_assoc($result_publisher)) {
+            $publisher_firstname = $row_publisher["publisher_name"];
+            echo "<option value='" . $publisher_firstname . "'>";
+        }
+        ?>
+    </datalist>
+    <datalist id="book_list">
+        <?php
+        while ($row_book = mysqli_fetch_assoc($result_book)) {
+            $book_name = $row_book["book_name"];
+            echo "<option value='" . $book_name . "'>";
+        }
+        ?>
+    </datalist>
     <div id="all">
         <div id="sifah">
             <img id="logo" src="https://storage.googleapis.com/bbookk-c601f.appspot.com/lg/logo.png" onclick="window.location.href='../index.html'"></img>
             <div id="auth1" style="display: none;">
-                <div id="roob" onclick="clickProfile()"></div>
+                <div id="roob" onclick="clickProfile()">
+
+                </div>
                 <p id="username"> username</p>
             </div>
             <div id="auth0">
@@ -123,9 +173,14 @@ $result = mysqli_query($connect, $sql);
             $author_name = $row_book["author_name"];
             $show_data .= '<p class="detailbook">author name : ' . $author_name . '</p>';
         }
+
+        $sql = "select * from book_image where book_id = '$book_id'";
+        $result_image = mysqli_query($connect, $sql);
+        $row_image = mysqli_fetch_assoc($result_image);
+        $image_id = $row_image["image_id"];
         echo '<div class="block" onclick="selectbook(this)">
-            <input type="hidden" id="idbook" value="'.$book_id.'">
-            <div id="roop"></div>
+            <input type="hidden" id="idbook" value="' . $book_id . '">
+            <div id="roop" style="display: flex;justify-content: center;align-items: center;"><img style="height:100%;border-radius: 7px"src="https://storage.googleapis.com/bbookk-c601f.appspot.com/bk/' . $image_id . '"></img></div>
             <div id="lowname">
             ' . $show_data . '
             </div>

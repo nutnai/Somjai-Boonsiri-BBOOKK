@@ -11,47 +11,48 @@
     <script type="module" src="./src/hasTopRightAuth.js"></script>
     <title>homapage</title>
     <script>
-        var resw = Math.max((window.screen.availWidth-1280)/2,0)
+        var resw = Math.max((window.screen.availWidth - 1280) / 2, 0)
     </script>
 </head>
 
 <body>
     <div id="bon">
-    <input type="text" placeholder="input here...">
-    <input type="button" value="in">
-   
-    <div id="sifah">
-        
+        <input type="text" placeholder="input here...">
+        <input type="button" value="in">
 
-        <div id="gLeft">
-            <p id="hua">BbookK</p>
-            <img id="home" src="https://storage.googleapis.com/travalokail-55abf.appspot.com/lg/lg_home.png">
-        </img>
-        </div>
-        
-        
-        <p id="search">Today, Are you read book yet ?</p>
+        <div id="sifah">
 
-        <div id="auth1" style="display: none;">
 
-            <div id="roob" onclick="clickProfile()">
-                <form action="" method="post" id="formposthtr"></form>
+            <div id="gLeft">
+                <img id="logo" src="https://storage.googleapis.com/bbookk-c601f.appspot.com/lg/logo.png" onclick="window.location.href='../index.html'"></img>
+                </img>
             </div>
-            <p id="username"> username</p>
 
-        </div>
 
-        <div id="auth0" >
-            <!-- <input type="button" value="Admin" id="regis" class="yellow"
+            <p id="search">Today, Are you read book yet ?</p>
+
+            <div id="auth1" style="display: none;">
+
+                <div id="roob" onclick="clickProfile()">
+                    <form action="" method="post" id="formposthtr"></form>
+                </div>
+                <p id="username"> username</p>
+
+            </div>
+
+            <div id="auth0">
+                <!-- <input type="button" value="Admin" id="regis" class="yellow"
                 onclick="window.location.href='./web/register.html'" /> -->
-            <input type="button" value="Log in" id="signin" class="yellow"
-                onclick="window.location.href='./php/signin.php'" />
-        </div>
+                <input type="button" value="Log in" id="signin" class="yellow"
+                    onclick="window.location.href='./php/signin.php'" />
+            </div>
 
+        </div>
+        <div id="yellow" style="display: flex;justify-content: center;align-items: center;">
+            <img src="https://storage.googleapis.com/bbookk-c601f.appspot.com/lg/team.jpg" alt="" style="width: 70%; border-radius: 12px;">
+        </div>
+        <input type="button" value="Search" id="pum" onclick="window.location.href='./php/search.php'">
     </div>
-    <div id="yellow">
-    </div>
-    <input type="button" value="Search" id="pum" onclick="window.location.href='./php/search.php'">
-   </div>
 </body>
+
 </html>
